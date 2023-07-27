@@ -6,7 +6,7 @@ export function Hero() {
     <section className="">
       <div className="hero-img h-screen py-16  bg-center bg-fixed">
         {/* Overlay */}
-        <div className="absolute inset-0 bg-[#000]/70 z-[2]" />
+        <div className="absolute inset-0 bg-[#000]/70 z-[2] bg-fixed" />
         <Container>
           <div className="z-10 absolute">
             <SectionDescriptor label="ddddddddddddddddddd" primary={false} />
