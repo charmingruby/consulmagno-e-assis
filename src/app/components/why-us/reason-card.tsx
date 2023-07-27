@@ -11,10 +11,9 @@ export function ReasonCard() {
         <h2 className="text-primary-main font-semibold text-xl">
           Profissionais de ponta
         </h2>
-        <p className="leading-relaxed">
+        <p className="leading-relaxed text-gray-400">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id
-          molestias quibusdam! Rem commodi quos animi hic cumque facere laborum
-          itaque est tenetur provident et ea, velit, libero dolor iste.
+          molestias quibusdam! Rem commod
         </p>
       </div>
     </Box>

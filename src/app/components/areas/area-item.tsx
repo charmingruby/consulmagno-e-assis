@@ -12,17 +12,19 @@ interface AreaItemProps {
 export function AreaItem({ description, subtitle, title, url }: AreaItemProps) {
   return (
     <Box interaction>
-      <div className="flex flex-col gap-4">
-        {/* Subtitle */}
-        <small className="font-bold text-xs uppercase text-primary-main">
-          {subtitle}{' '}
-        </small>
+      <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-4">
+          {/* Subtitle */}
+          <small className="font-bold text-xs uppercase text-primary-main">
+            {subtitle}{' '}
+          </small>
 
-        {/* Title */}
-        <h2 className="text-xl font-semibold text-primary-main">{title}</h2>
+          {/* Title */}
+          <h2 className="text-2xl font-semibold text-primary-main">{title}</h2>
 
-        {/* Description */}
-        <p className="leading-snug">{description}</p>
+          {/* Description */}
+          <p className="leading-snug text-gray-400">{description}</p>
+        </div>
 
         {/* Link */}
         <Link

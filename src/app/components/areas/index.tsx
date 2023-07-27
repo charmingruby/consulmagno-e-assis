@@ -10,7 +10,7 @@ export function Areas() {
   return (
     <div className="border-t border-gray-200 py-12">
       <Container>
-        <div className="mb-6">
+        <div className="mb-10">
           <div className="flex flex-col gap-2 mb-4">
             <SectionDescriptor label="Nós oferecemos o que você precisa" />
             <PageTitle title="Áreas de atuação" />
