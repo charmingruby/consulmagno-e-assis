@@ -11,7 +11,7 @@ const button = tv({
     },
     color: {
       primary: 'bg-primary-main text-gray-50',
-      secondary: 'bg-primary-secondary',
+      secondary: 'bg-secondary-main',
       uncolored: 'border',
     },
   },

@@ -16,6 +16,7 @@ module.exports = {
       secondary: {
         main: '#FAA561',
       },
+      white: '#ffffff',
       gray: {
         50: '#eaeaea',
         75: '#E0E0E0',

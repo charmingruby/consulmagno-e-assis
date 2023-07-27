@@ -1,11 +1,11 @@
-import { Container } from '@/components/ui/container'
+import { Hero } from './components/hero'
+import { WhyUs } from './components/why-us'
 
 export default function Home() {
   return (
-    <main className="sm:h-screen py-16">
-      <Container>
-        <div>content</div>
-      </Container>
-    </main>
+    <>
+      <Hero />
+      <WhyUs />
+    </>
   )
 }

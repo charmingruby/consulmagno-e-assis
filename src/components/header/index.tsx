@@ -8,7 +8,6 @@ export function Header() {
       <Container>
         <div className="flex items-center justify-between h-16">
           <BrandLogo />
-
           <Navigation />
         </div>
       </Container>
