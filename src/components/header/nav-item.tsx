@@ -7,7 +7,7 @@ interface NavItemProps {
 
 export function NavItem({ popover = false, label }: NavItemProps) {
   return (
-    <div className="font-medium group h-16 flex items-center border-b-2 border-gray-50 transition-colors hover:border-primary-main cursor-pointer">
+    <div className="font-medium group flex items-center border-b-2 border-gray-75 h-[3.875rem] transition-colors hover:border-primary-main cursor-pointer">
       <span className="group-hover:text-primary-main transition-colors">
         {label}
       </span>
