@@ -1,13 +1,13 @@
 import './globals.css'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 import { Header } from '../components/header'
 import { Footer } from '@/components/footer'
 
-const inter = Inter({
+const montserrat = Montserrat({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-inter',
+  variable: '--font-montserrat',
 })
 
 export const metadata: Metadata = {
@@ -22,7 +22,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans text-gray-900 bg-gray-50`}>
+      <body
+        className={`${montserrat.variable} font-sans text-gray-900 bg-gray-50 scroll-smooth scrollbar-thin scrollbar-track-gray-300 scrollbar-thumb-gray-100`}
+      >
         <Header />
         {children}
         <Footer />
