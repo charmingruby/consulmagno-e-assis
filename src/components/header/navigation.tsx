@@ -7,19 +7,19 @@ import { NavItem } from './nav-item'
 
 const solutionsLinks: DropdownLink[] = [
   {
-    label: 'Solution',
+    label: 'atuação',
     url: '/',
   },
   {
-    label: 'Solution',
+    label: 'atuação',
     url: '/',
   },
   {
-    label: 'Solution',
+    label: 'atuação',
     url: '/',
   },
   {
-    label: 'Solution',
+    label: 'atuação',
     url: '/',
   },
 ]
@@ -30,7 +30,7 @@ export function Navigation() {
       <BurguerButton />
       <nav className="hidden lg:flex lg:items-center gap-4">
         <NavItem label="Início" />
-        <Dropdown label="Soluções" links={solutionsLinks} />
+        <Dropdown label="Áreas de atuação" links={solutionsLinks} />
         <NavItem label="Nossa equipe" />
         <NavItem label="Contato" />
 

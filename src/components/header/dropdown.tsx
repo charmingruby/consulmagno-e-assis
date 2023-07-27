@@ -46,7 +46,7 @@ export function Dropdown({ label, links }: DropdownProps) {
                     <button
                       className={`${
                         active ? 'text-primary-main underline' : 'text-gray-400'
-                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm font-medium`}
                     >
                       {label}
                     </button>

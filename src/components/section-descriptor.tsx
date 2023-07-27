@@ -1,5 +1,5 @@
 interface SectionDescriptorProps {
-  primary: boolean
+  primary?: boolean
   label: string
 }
 
@@ -11,7 +11,7 @@ export function SectionDescriptor({
     <small
       className={`${
         primary ? 'text-primary-main' : 'text-secondary-main'
-      } font-semibold text-base uppercase`}
+      } font-semibold text-base uppercase block`}
     >
       {label}
     </small>
