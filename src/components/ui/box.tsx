@@ -9,7 +9,9 @@ export function Box({ interaction = false, children }: BoxProps) {
   return (
     <div
       className={`p-6 border border-gray-200 rounded-sm bg-gray-50 ${
-        interaction ? 'hover:shadow-md cursor-pointer transition-shadow' : ''
+        interaction
+          ? 'hover:shadow-md cursor-pointer transition-shadow hover:border-primary-main'
+          : ''
       }`}
     >
       {children}

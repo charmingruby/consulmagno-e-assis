@@ -8,7 +8,7 @@ export function ReasonCard() {
         <div className="bg-gray-75 h-12 w-12 flex items-center justify-center rounded-sm">
           <GraduationCap size={32} className="text-primary-main" />
         </div>
-        <h2 className="text-gray-900 font-semibold text-xl">
+        <h2 className="text-primary-main font-semibold text-xl">
           Profissionais de ponta
         </h2>
         <p className="leading-relaxed">
