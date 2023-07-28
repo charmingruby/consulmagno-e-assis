@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .hero-img {
-    background-image: url('../assets/images/lawyers.png')
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('../assets/images/lawyers.png')
 }

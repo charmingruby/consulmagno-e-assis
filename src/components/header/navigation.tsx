@@ -1,6 +1,5 @@
 'use client'
 
-import { Button } from '../ui/button'
 import { BurguerButton } from './burguer-button'
 import { Dropdown, DropdownLink } from './dropdown'
 import { NavItem } from './nav-item'
@@ -32,9 +31,6 @@ export function Navigation() {
         <NavItem label="Início" />
         <Dropdown label="Áreas de atuação" links={solutionsLinks} />
         <NavItem label="Nossa equipe" />
-        <NavItem label="Contato" />
-
-        <Button size="default">Blog</Button>
       </nav>
     </>
   )

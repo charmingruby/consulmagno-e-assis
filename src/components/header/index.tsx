@@ -1,6 +1,7 @@
 import { Container } from '@/components/ui/container'
 import { BrandLogo } from './brand-logo'
 import { Navigation } from './navigation'
+import { ButtonGroup } from './button-group'
 
 export function Header() {
   return (
@@ -9,6 +10,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           <BrandLogo />
           <Navigation />
+          <ButtonGroup />
         </div>
       </Container>
     </header>

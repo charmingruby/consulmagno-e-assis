@@ -3,7 +3,7 @@ import { ReasonCard } from './reason-card'
 
 export function WhyUs() {
   return (
-    <section className="py-12 w-full bg-gray-75">
+    <section className="py-24 w-full bg-gray-75">
       <Container>
         <div className="w-full mb-10">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
