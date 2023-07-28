@@ -8,7 +8,7 @@ interface BoxProps {
 export function Box({ interaction = false, children }: BoxProps) {
   return (
     <div
-      className={`p-6 border border-gray-100 rounded-md bg-gray-50 ${
+      className={`p-6 border border-gray-100 rounded-sm bg-gray-50 ${
         interaction
           ? 'hover:shadow-md cursor-pointer transition-shadow hover:border-primary-main'
           : ''

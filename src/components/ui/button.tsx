@@ -2,11 +2,11 @@ import { ComponentProps, ReactNode } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 
 const button = tv({
-  base: 'h-10 rounded-md uppercase text-sm shadow-sm font-semibold',
+  base: 'h-12 rounded-sm uppercase text-sm shadow-sm font-semibold',
   variants: {
     size: {
-      default: 'h-10 px-8',
-      sm: 'h-8 px-3',
+      default: 'px-8',
+      sm: 'h-10 px-4',
       xs: 'h-6 px-2 text-xs',
     },
     color: {
