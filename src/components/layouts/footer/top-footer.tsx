@@ -1,4 +1,4 @@
-import { Separator } from '../ui/separator'
+import { Separator } from '../../ui/separator'
 import { BrandPresentation } from './brand-presentation'
 import { InternalLinkList } from './internal-link-list'
 import { SocialMedias } from './social-medias'

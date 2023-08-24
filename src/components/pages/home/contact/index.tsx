@@ -1,7 +1,7 @@
 import { Container } from '@/components/ui/container'
 import { EmailForm } from './email-form'
-import { PageTitle } from '@/components/page-title'
-import { Subtitle } from '@/components/subtitle'
+import { PageTitle } from '@/components/shared/page-title'
+import { Subtitle } from '@/components/shared/subtitle'
 
 export function Contact() {
   return (

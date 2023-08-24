@@ -1,4 +1,4 @@
-import { SectionDescriptor } from '@/components/section-descriptor'
+import { SectionDescriptor } from '@/components/shared/section-descriptor'
 import { Button } from '@/components/ui/button'
 import { Container } from '@/components/ui/container'
 

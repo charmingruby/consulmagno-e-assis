@@ -1,4 +1,4 @@
-import { Container } from '../ui/container'
+import { Container } from '../../ui/container'
 import { TopFooter } from './top-footer'
 import { BottomFooter } from './bottom-footer'
 

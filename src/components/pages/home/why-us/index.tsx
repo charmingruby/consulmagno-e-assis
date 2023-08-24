@@ -22,6 +22,12 @@ export function WhyUs() {
           <ReasonCard />
           <ReasonCard />
         </div>
+
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-4 gap-8">
+          <ReasonCard />
+          <ReasonCard />
+          <ReasonCard />
+        </div>
       </Container>
     </section>
   )

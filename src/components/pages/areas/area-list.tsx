@@ -4,7 +4,10 @@ export function AreaList() {
   return (
     <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-8 gap-4">
       <AreaItem
-        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo facere qui aliquam voluptates consectetur tempora fuga sit similique minima nulla tenetur saepe deserunt perferendis est inventore, consequuntur recusandae necessitatibus iusto."
+        description="As empresas familiares representam 90% dos
+        empreendimentos em nosso país, e deste número, cerca de
+        75% fecham após o falecimento do fundador, e somente 15%
+        conseguem sobreviver até a terceira geração."
         subtitle="Atuação em empresas"
         title="Direito do Trabalho"
         url="/"

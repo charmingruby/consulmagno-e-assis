@@ -1,10 +1,10 @@
-import { PageTitle } from '@/components/page-title'
-import { SectionDescriptor } from '@/components/section-descriptor'
 import { Container } from '@/components/ui/container'
 import { Text } from '@/components/ui/text'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import { AreaList } from './area-list'
+import { PageTitle } from '@/components/shared/page-title'
+import { SectionDescriptor } from '@/components/shared/section-descriptor'
 
 export function Areas() {
   return (
