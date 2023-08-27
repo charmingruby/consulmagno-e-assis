@@ -1,9 +1,9 @@
-import { Container } from '@/components/ui/container'
+import * as Container from '@/components/ui/container'
 
 export function Team() {
   return (
-    <section className="">
-      <Container>team</Container>
-    </section>
+    <Container.Root>
+      <Container.Content>team</Container.Content>
+    </Container.Root>
   )
 }

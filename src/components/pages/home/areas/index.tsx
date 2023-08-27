@@ -1,4 +1,4 @@
-import { Container } from '@/components/ui/container'
+import * as Container from '@/components/ui/container'
 import { Text } from '@/components/ui/text'
 import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
@@ -8,8 +8,8 @@ import { SectionDescriptor } from '@/components/shared/section-descriptor'
 
 export function Areas() {
   return (
-    <div className="border-t border-gray-200 py-12">
-      <Container>
+    <Container.Root border="default">
+      <Container.Content>
         <div className="mb-10">
           <div className="flex flex-col gap-2 mb-4">
             <SectionDescriptor label="Nós oferecemos o que você precisa" />
@@ -32,7 +32,7 @@ export function Areas() {
             </div>
           </Button>
         </div>
-      </Container>
-    </div>
+      </Container.Content>
+    </Container.Root>
   )
 }

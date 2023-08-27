@@ -1,7 +1,8 @@
 import { Areas } from '@/components/pages/home/areas'
-import { Blog } from '@/components/pages/home/blog'
+import { Attractive } from '@/components/pages/home/attractive'
 import { Contact } from '@/components/pages/home/contact'
 import { Hero } from '@/components/pages/home/hero'
+import { Insights } from '@/components/pages/home/insights'
 import { WhyUs } from '@/components/pages/home/why-us'
 
 export default function Home() {
@@ -9,8 +10,9 @@ export default function Home() {
     <>
       <Hero />
       <WhyUs />
+      <Attractive />
       <Areas />
-      <Blog />
+      <Insights />
       <Contact />
     </>
   )

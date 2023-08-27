@@ -1,11 +1,11 @@
 import { SectionDescriptor } from '@/components/shared/section-descriptor'
 import { Button } from '@/components/ui/button'
-import { Container } from '@/components/ui/container'
+import * as Container from '@/components/ui/container'
 
 export function Hero() {
   return (
-    <section className="hero-img flex items-center py-16 sm:py-0 bg-no-repeat bg-center bg-fixed md:min-h-screen">
-      <Container>
+    <Container.Root className="hero-img flex items-center py-16 sm:py-0 bg-no-repeat bg-center bg-fixed md:min-h-screen">
+      <Container.Content>
         <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
           <SectionDescriptor
             label="
@@ -30,7 +30,7 @@ export function Hero() {
             <Button color="uncolored">Entre em contato</Button>
           </div>
         </div>
-      </Container>
-    </section>
+      </Container.Content>
+    </Container.Root>
   )
 }

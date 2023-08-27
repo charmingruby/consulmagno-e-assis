@@ -1,10 +1,14 @@
-import { Container } from '@/components/ui/container'
+import * as Container from '@/components/ui/container'
 import { ReasonCard } from './reason-card'
 
 export function WhyUs() {
   return (
-    <section className="py-12 lg:py-24 w-full bg-gray-75">
-      <Container>
+    <Container.Root
+      border="borderless"
+      backgroundColor="gray"
+      className="w-full"
+    >
+      <Container.Content>
         <div className="w-full mb-10">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
             <h2 className="text-4xl font-bold text-primary-main">
@@ -28,7 +32,7 @@ export function WhyUs() {
           <ReasonCard />
           <ReasonCard />
         </div>
-      </Container>
-    </section>
+      </Container.Content>
+    </Container.Root>
   )
 }

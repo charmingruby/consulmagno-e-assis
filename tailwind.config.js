@@ -16,11 +16,10 @@ module.exports = {
       secondary: {
         main: '#FAA561',
       },
-      white: '#ffffff',
+      white: '#f7fafc',
       gray: {
-        50: '#eaeaea',
-        75: '#E0E0E0',
-        100: '#bebebf',
+        50: '#F0F6F9',
+        100: '#D6D6D6',
         200: '#9e9ea0',
         300: '#727275',
         400: '#56565a',
@@ -29,6 +28,7 @@ module.exports = {
         700: '#1f1f23',
         800: '#18181b',
         900: ' #121215',
+        950: '#09090B',
       },
     },
   },
