@@ -9,9 +9,10 @@ export function SectionDescriptor({
 }: SectionDescriptorProps) {
   return (
     <small
-      className={`${
-        primary ? 'text-primary-main' : 'text-secondary-main'
-      } font-semibold text-base uppercase block`}
+      className={`
+      ${primary ? 'text-primary-main' : 'text-secondary-main'}
+         font-semibold text-base  uppercase block mb-6
+      `}
     >
       {label}
     </small>

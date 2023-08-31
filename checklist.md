@@ -12,11 +12,11 @@
         - [ ] Foto do escritorio
         - [ ] Informaçoes
 
-      # Estatistica trabalho remoto (a ver)
-
       - Missao, valor, visao
         - [ ] Missao, valor, visao propriamente x3
         - [ ] Destaque no estilo de trabalho remoto x3
+
+      - Mapa (Sine)
 
       - Areas de atuaçao
         - [ ] Icones
@@ -25,9 +25,7 @@
       - Blog
         - [ ] 3 posts mais recentes
 
-      - Contato
-        - [ ] Formulario
-        - [ ] Usar api resend
+      - CTA para contato
 
     - Areas de atuação
       - [ ] Hero
@@ -40,16 +38,13 @@
         - 2 textos;
           - Primeiro texto apresenta uma abordagem mais ampla e abrangente, incluindo a oferta de soluções inovadoras e o acompanhamento das tendências de mercado. O segundo texto foca mais na expertise legal e regulatória da equipe, bem como na assessoria para estratégias de negócios envolvendo criptoativos. Ambos os textos estão relacionados aos criptoativos e aos serviços jurídicos associados, mas eles enfatizam diferentes aspectos da atuação da equipe.
       - [ ] Serviços, Accordion com titulo e paragrafo descritivo dentro
+      - [ ] Chamar especialista
       - [ ] 3 Insights recentes da area
       - [ ] Veja tambem
       - [ ] CTA para contato
 
-      # Opçoes: Premios, mostrar equipe ou chamar especialista
-
     - Blog (Prisma/Vercel)
       - [ ] Filtros logo abaixo do header(vercel)
-
-      # Opçoess: Search
 
     - Post (Thomsom)
       - [ ] Hero com foto e infos post

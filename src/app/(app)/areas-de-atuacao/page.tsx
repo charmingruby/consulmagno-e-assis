@@ -11,7 +11,7 @@ export default function AreasDeAtuaçao() {
         <Container.Content>listagem de areas</Container.Content>
       </Container.Root>
 
-      <Container.Root border="borderless">
+      <Container.Root>
         <Container.Content>cta para contato</Container.Content>
       </Container.Root>
     </>

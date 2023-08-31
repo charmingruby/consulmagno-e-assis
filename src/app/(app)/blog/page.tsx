@@ -15,7 +15,7 @@ export default function Blog() {
         <Container.Content>Blog com filtro</Container.Content>
       </Container.Root>
 
-      <Container.Root border="borderless">
+      <Container.Root>
         <Container.Content>Carregar mais</Container.Content>
       </Container.Root>
     </>

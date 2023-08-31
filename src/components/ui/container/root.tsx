@@ -4,14 +4,15 @@ import { VariantProps, tv } from 'tailwind-variants'
 const root = tv({
   variants: {
     border: {
-      default: 'border-y border-gray-100',
+      default: 'border-none',
       borderTop: 'border-t border-gray-100',
       borderBottom: 'border-b border-gray-100',
-      borderless: 'border-none',
+      borderY: 'border-y border-gray-100',
     },
     backgroundColor: {
       default: 'bg-gray-50',
-      gray: 'bg-white',
+      white: 'bg-white',
+      primary: 'bg-primary-main',
     },
   },
   defaultVariants: { backgroundColor: 'default', border: 'default' },

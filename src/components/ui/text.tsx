@@ -1,9 +1,35 @@
-import { ReactNode } from 'react'
+import { ComponentProps } from 'react'
+import { VariantProps, tv } from 'tailwind-variants'
 
-interface TextProps {
-  children: ReactNode
-}
+const text = tv({
+  base: 'leading-relaxed text-gray-700 text-lg',
+  variants: {
+    align: {
+      default: '',
+      center: 'text-center',
+    },
+    size: {
+      default: '',
+      md: 'text-base',
+    },
+  },
+  defaultVariants: {
+    align: 'default',
+    size: 'default',
+  },
+})
 
-export function Text({ children }: TextProps) {
-  return <p className="leading-relaxed text-gray-70 text-lg">{children}</p>
+type TextProps = ComponentProps<'p'> & VariantProps<typeof text>
+
+export function Text({ className, align, size, ...props }: TextProps) {
+  return (
+    <div
+      className={text({
+        class: className,
+        align,
+        size,
+      })}
+      {...props}
+    />
+  )
 }

@@ -21,7 +21,7 @@ export default function PostPage({ params }: PostPageProps) {
         <Container.Content>categorias do post</Container.Content>
       </Container.Root>
 
-      <Container.Root border="borderless">
+      <Container.Root>
         <Container.Content>veja tambem</Container.Content>
       </Container.Root>
     </>

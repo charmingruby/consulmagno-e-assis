@@ -31,7 +31,7 @@ export default function AreaPage({ params }: AreaPageProps) {
         <Container.Content>veja tambem</Container.Content>
       </Container.Root>
 
-      <Container.Root border="borderless">
+      <Container.Root>
         <Container.Content>cta para contato</Container.Content>
       </Container.Root>
     </>

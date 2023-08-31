@@ -13,7 +13,7 @@ export default function Team() {
         <Container.Content>time</Container.Content>
       </Container.Root>
 
-      <Container.Root border="borderless">
+      <Container.Root>
         <Container.Content>veja tambem</Container.Content>
       </Container.Root>
     </>

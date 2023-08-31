@@ -1,20 +1,34 @@
-import { ReactNode } from 'react'
+/* eslint-disable */
+import { ComponentProps, ReactNode } from 'react'
+import { VariantProps, tv } from 'tailwind-variants'
 
-interface BoxProps {
-  interaction?: boolean
-  children: ReactNode
-}
+const box = tv({
+  base: 'border border-gray-200 rounded-sm bg-white',
+  variants: {
+    spacing: {
+      default: 'p-6',
+      lg: '',
+      sm: '',
+      spaceless: 'p-0'
+    },
+    interaction: {
+      default: 'hover:shadow-md cursor-pointer transition-all hover:border-gray-300',
+      noInteraction: ''
+    }
+  },
+  defaultVariants: {
+    interaction: 'default',
+    spacing: 'default'
+  }
+})
 
-export function Box({ interaction = false, children }: BoxProps) {
+type BoxProps = ComponentProps<'div'> & VariantProps<typeof box>
+
+export function Box({ interaction, spacing, className, ...props }: BoxProps) {
   return (
-    <div
-      className={`p-6 border border-gray-100 rounded-sm bg-white ${
-        interaction
-          ? 'hover:shadow-md cursor-pointer transition-shadow hover:border-primary-main'
-          : ''
-      }`}
-    >
-      {children}
-    </div>
+    <div className={box({
+      interaction: interaction, spacing, class: className
+
+    })} {...props} />
   )
 }

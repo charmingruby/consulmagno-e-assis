@@ -3,11 +3,7 @@ import { ReasonCard } from './reason-card'
 
 export function WhyUs() {
   return (
-    <Container.Root
-      border="borderless"
-      backgroundColor="gray"
-      className="w-full"
-    >
+    <Container.Root className="w-full bg-white">
       <Container.Content>
         <div className="w-full mb-10">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
@@ -22,12 +18,6 @@ export function WhyUs() {
           </div>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <ReasonCard />
-          <ReasonCard />
-          <ReasonCard />
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 mt-4 gap-8">
           <ReasonCard />
           <ReasonCard />
           <ReasonCard />

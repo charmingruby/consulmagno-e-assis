@@ -15,7 +15,7 @@ export default function Cases() {
         <Container.Content>destaque de clientes</Container.Content>
       </Container.Root>
 
-      <Container.Root border="borderless">
+      <Container.Root>
         <Container.Content>todos clientes</Container.Content>
       </Container.Root>
     </>

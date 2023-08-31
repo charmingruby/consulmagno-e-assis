@@ -4,18 +4,16 @@ import { Button } from '@/components/ui/button'
 import { ArrowRight } from 'lucide-react'
 import { AreaList } from './area-list'
 import { PageTitle } from '@/components/shared/page-title'
-import { SectionDescriptor } from '@/components/shared/section-descriptor'
 
 export function Areas() {
   return (
-    <Container.Root border="default">
+    <Container.Root border="borderY">
       <Container.Content>
-        <div className="mb-10">
+        <div className="mb-10 flex flex-col items-center max-w-2xl mx-auto">
           <div className="flex flex-col gap-2 mb-4">
-            <SectionDescriptor label="Nós oferecemos o que você precisa" />
             <PageTitle title="Áreas de atuação" />
           </div>
-          <Text>
+          <Text align="center">
             Nossa equipe de advogados comprometidos entende a importância do seu
             caso. Com experiência em várias áreas de atuação, o(a) Brand lidará
             com seus problemas legais com cuidado e profissionalismo.
@@ -24,7 +22,7 @@ export function Areas() {
 
         <AreaList />
 
-        <div className="w-full flex justify-center mt-4">
+        <div className="w-full flex justify-center mt-6">
           <Button>
             <div className="flex gap-2 items-center">
               Ver todas as áreas
