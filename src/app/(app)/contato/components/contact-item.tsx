@@ -1,4 +1,4 @@
-import { IconBadge } from '@/components/shared/icon-badge'
+import { IconBadge } from '@/components/icon-badge'
 import { ElementType } from 'react'
 
 interface ContactItemProps {
