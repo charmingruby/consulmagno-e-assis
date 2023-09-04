@@ -210,21 +210,21 @@ export default function Home() {
                 prefetch={false}
                 className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
               >
-                <Linkedin className=" text-secondary-main h-6 w-6 " />
+                <Linkedin className=" text-secondary-main h-8 w-8 " />
               </Link>
               <Link
                 href="/"
                 prefetch={false}
                 className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
               >
-                <Facebook className=" text-secondary-main h-6 w-6 " />
+                <Facebook className=" text-secondary-main h-8 w-8 " />
               </Link>
               <Link
                 href="/"
                 prefetch={false}
                 className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
               >
-                <Instagram className=" text-secondary-main h-6 w-6 " />
+                <Instagram className=" text-secondary-main h-8 w-8 " />
               </Link>
             </div>
 

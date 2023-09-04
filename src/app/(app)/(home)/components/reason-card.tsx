@@ -15,7 +15,7 @@ export function ReasonCard({ icon: Icon, prefixTitle, sufixTitle, description }:
     <Box>
       <div className="flex flex-col gap-4">
         <div className='flex items-center justify-center mb-4'>
-          <Icon className="w-14 h-14" />
+          <Icon className="w-14 h-14 text-primary-main" />
         </div>
 
         <h2 className="text-primary-main font-semibold text-2xl text-center">
