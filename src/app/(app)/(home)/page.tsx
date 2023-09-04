@@ -3,11 +3,13 @@ import { Button } from '@/components/ui/button'
 import * as Container from '@/components/ui/container'
 import {
   ArrowRight,
+  Eye,
   Facebook,
+  Gem,
   Instagram,
   Lightbulb,
   Linkedin,
-  Map,
+  Target,
 } from 'lucide-react'
 import { Text } from '@/components/ui/text'
 import Link from 'next/link'
@@ -15,35 +17,34 @@ import { AreaList } from './components/area-list'
 import { InsightCard } from './components/insight-card'
 import { PageTitle } from '@/components/page-title'
 import { SectionDescriptor } from '@/components/section-descriptor'
+import map from '@/assets/images/map.png'
+import Image from 'next/image'
+import { MapAnnotations } from './components/map-annotations'
 
 export default function Home() {
   return (
     <>
       {/* Hero */}
-      <Container.Root className="hero-img flex items-center py-16 sm:py-0 bg-no-repeat bg-center bg-fixed md:min-h-screen">
-        <Container.Content>
+      <Container.Root className="hero-img flex items-center sm:py-0 bg-no-repeat bg-center bg-fixed md:min-h-screen">
+        <Container.Content >
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
-            <SectionDescriptor
-              label="
-              Advogados trabalhistas e criminais"
-              primary={false}
-            />
+
             {/* Title */}
-            <h1 className="text-gray-50 font-semibold m-0 text-3xl md:text-4xl mb-4 break-words">
+            <h1 className="text-gray-50 font-semibold m-0 text-3xl md:text-4xl mb-6 break-words">
               Defesa Legal em Suas Mãos: Advocacia Especializada e Comprometida
               com seus Direitos
             </h1>
 
-            <p className="text-gray-100 text-lg mb-8">
+            <p className="text-gray-100 text-lg mb-16">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
               Incidunt, sapiente qui asperiores deserunt exercitationem impedit
               nam quas molestiae eligendi sed neque quae repellat iste quaerat
               dolorem quo non facilis distinctio.
             </p>
 
-            <div className="flex flex-col md:flex-row gap-4">
-              <Button color="secondary">Soluções</Button>
-              <Button color="uncolored">Entre em contato</Button>
+            <div className="flex flex-col md:flex-row gap-6">
+              <Button color="primary">Soluções</Button>
+              <Button color="secondary">Entre em contato</Button>
             </div>
           </div>
         </Container.Content>
@@ -65,38 +66,43 @@ export default function Home() {
             </div>
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <ReasonCard />
-            <ReasonCard />
-            <ReasonCard />
+            <ReasonCard
+              icon={Target}
+              prefixTitle='Nossa'
+              sufixTitle='missão'
+              description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod'
+            />
+            <ReasonCard
+              icon={Eye}
+              prefixTitle='Nossa'
+              sufixTitle='visão'
+              description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod'
+            />
+            <ReasonCard
+              icon={Gem}
+              prefixTitle='Nossos'
+              sufixTitle='valores'
+              description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod'
+            />
           </div>
         </Container.Content>
       </Container.Root>
 
-      {/* Attractive */}
+      {/* Map */}
       <Container.Root className="bg-white">
-        <Container.Content className="grid grid-cols-2">
-          <div>
-            <div>
-              <strong>Title</strong>
-              <span>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Commodi quod alias quae fugit impedit, ab obcaecati sed eligendi
-                autem pariatur at quos. Soluta possimus laborum quis
-                perspiciatis, esse facere adipisci.
-              </span>
-            </div>
-            <div>
-              <strong>Title</strong>
-              <span>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Commodi quod alias quae fugit impedit, ab obcaecati sed eligendi
-                autem pariatur at quos. Soluta possimus laborum quis
-                perspiciatis, esse facere adipisci.
-              </span>
-            </div>
+        <Container.Content className="grid grid-cols-1 md:grid-cols-2">
+          <div className="flex flex-col justify-center gap-12">
+            <MapAnnotations
+              title="Title"
+              description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, nobis dolore. Adipisci porro, nesciunt exercitationem, ab tenetur numquam praesentium tempora fugiat mollitia vero aspernatur, ut eligendi perferendis ad soluta dignissimos!"
+            />
+            <MapAnnotations
+              title="Title"
+              description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, nobis dolore. Adipisci porro, nesciunt exercitationem, ab tenetur numquam praesentium tempora fugiat mollitia vero aspernatur, ut eligendi perferendis ad soluta dignissimos!"
+            />
           </div>
-          <div>
-            <Map />
+          <div className='order-first md:order-last'>
+            <Image src={map} alt="Mapa de onde atuamos" />
           </div>
         </Container.Content>
       </Container.Root>
@@ -117,8 +123,8 @@ export default function Home() {
 
           <AreaList />
 
-          <div className="w-full flex justify-center mt-6">
-            <Button>
+          <div className='w-full flex justify-center'>
+            <Button className='w-full md:w-fit flex items-center justify-center mt-6'>
               <div className="flex gap-2 items-center">
                 Ver todas as áreas
                 <ArrowRight size={18} className="text-secondary-main" />
@@ -126,15 +132,15 @@ export default function Home() {
             </Button>
           </div>
         </Container.Content>
-      </Container.Root>
+      </Container.Root >
 
       {/* Insights */}
-      <Container.Root className="bg-white">
+      <Container.Root className="bg-white" >
         <Container.Content>
           <div className="mb-8 flex items-center gap-2">
             <Lightbulb className="h-8 w-8 text-secondary-main" />
 
-            <div className="text-4xl text-primary-main">
+            <div className="text-3xl md:text-4xl text-primary-main">
               <span>Últimas</span> <strong>publicações</strong>
             </div>
           </div>
@@ -149,7 +155,7 @@ export default function Home() {
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <InsightCard
               imageUrl=""
               title="Novo direito civil"
@@ -170,21 +176,21 @@ export default function Home() {
             />
           </div>
           <div className="w-full flex justify-center mt-6">
-            <Button>
+            <Button className='w-full md:w-fit flex justify-center items-center'>
               <div className="flex gap-2 items-center">
                 Blog <ArrowRight size={18} className="text-secondary-main" />
               </div>
             </Button>
           </div>
         </Container.Content>
-      </Container.Root>
+      </Container.Root >
 
       {/* CTA */}
-      <Container.Root backgroundColor="primary">
-        <Container.Content>
+      < Container.Root backgroundColor="primary" >
+        <Container.Content spacing='spaceless' className='py-10'>
           <div className="max-w-2xl mx-auto space-y-8">
-            <div>
-              <strong className="text-4xl text-white">
+            <div className='text-center'>
+              <strong className="text-3xl md:text-4xl text-white">
                 Nos diga como podemos te ajudar
               </strong>
             </div>
@@ -230,7 +236,7 @@ export default function Home() {
             </Link>
           </div>
         </Container.Content>
-      </Container.Root>
+      </ Container.Root>
     </>
   )
 }

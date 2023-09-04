@@ -3,7 +3,7 @@ import { ComponentProps, ReactNode } from 'react'
 import { VariantProps, tv } from 'tailwind-variants'
 
 const box = tv({
-  base: 'border border-gray-200 rounded-sm bg-white',
+  base: 'border border-gray-200 rounded-md bg-white',
   variants: {
     spacing: {
       default: 'p-6',
@@ -12,7 +12,7 @@ const box = tv({
       spaceless: 'p-0'
     },
     interaction: {
-      default: 'hover:shadow-md cursor-pointer transition-all hover:border-gray-300',
+      default: 'hover:shadow-md cursor-pointer transition-all hover:border-secondary-main',
       noInteraction: ''
     }
   },

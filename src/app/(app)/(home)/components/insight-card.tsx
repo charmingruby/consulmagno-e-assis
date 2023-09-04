@@ -23,7 +23,9 @@ export function InsightCard({
     <Link href={url} prefetch={false}>
       <Box
         spacing="spaceless"
-        className={`flex ${horizontal ? 'h-full flex-row flex-1' : 'flex-col'}`}
+        className={`
+          flex ${horizontal ? 'md:h-full md:flex-row md:flex-1 flex-col' : 'flex-col'
+          }`}
       >
         {/* Image */}
         <div>
@@ -40,7 +42,9 @@ export function InsightCard({
           </span>
 
           {/* Title */}
-          <strong className={`mb-2 ${horizontal ? 'text-4xl' : 'text-2xl'}`}>
+          <strong
+            className={`mb-2 ${horizontal ? 'text-2xl md:text-4xl' : 'text-2xl'}`}
+          >
             {title}
           </strong>
 

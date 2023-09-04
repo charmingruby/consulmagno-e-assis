@@ -12,6 +12,10 @@ const text = tv({
       default: '',
       md: 'text-base',
     },
+    opacity: {
+      default: '',
+      low: 'text-gray-400',
+    },
   },
   defaultVariants: {
     align: 'default',
@@ -21,13 +25,14 @@ const text = tv({
 
 type TextProps = ComponentProps<'p'> & VariantProps<typeof text>
 
-export function Text({ className, align, size, ...props }: TextProps) {
+export function Text({ className, align, size, opacity, ...props }: TextProps) {
   return (
     <div
       className={text({
         class: className,
         align,
         size,
+        opacity,
       })}
       {...props}
     />
