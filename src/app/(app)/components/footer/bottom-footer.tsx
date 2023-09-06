@@ -5,7 +5,7 @@ export function BottomFooter() {
     <div className="flex justify-between items-center">
       {/* Copyright */}
       <div className="text-gray-300 text-sm">
-        © Copyright 2023, Marca. Todos direitos reservados.
+        © Copyright 2023, Consulmagno & Assis Advocacia. Todos direitos reservados.
       </div>
 
       <ScrollBackToTopButton />

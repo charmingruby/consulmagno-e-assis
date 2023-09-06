@@ -90,7 +90,7 @@ export default function Home() {
 
       {/* Map */}
       <Container.Root className="bg-white">
-        <Container.Content className="grid grid-cols-1 md:grid-cols-2">
+        <Container.Content className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="flex flex-col justify-center gap-12">
             <MapAnnotations
               title="Title"
@@ -103,6 +103,24 @@ export default function Home() {
           </div>
           <div className='order-first md:order-last'>
             <Image src={map} alt="Mapa de onde atuamos" />
+
+            <div className='space-y-4 border border-gray-100 rounded-md p-4'>
+              <small className='text-base font-semibold'>Legenda</small>
+              <div className='space-y-2 text-sm'>
+                {/* Atuaçao */}
+                <div className='flex items-center gap-2'>
+                  <div className='h-3 w-8 rounded-sm bg-secondary-main' />
+                  <span className='font-medium'>Áreas que já atuamos</span>
+                </div>
+
+                {/* Nao atua */}
+                <div className='flex items-center gap-2'>
+                  <div className='h-3 w-8 rounded-sm bg-primary-main' />
+                  <span className='font-medium'>Nunca atuamos</span>
+                </div>
+
+              </div>
+            </div>
           </div>
         </Container.Content>
       </Container.Root>
