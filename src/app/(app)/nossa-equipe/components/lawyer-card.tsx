@@ -1,72 +1,72 @@
+import { Badge } from "@/components/badge"
 import { Box } from "@/components/ui/box"
 import { AtSign, Instagram, Linkedin, Phone } from "lucide-react"
 
 import { StaticImport } from "next/dist/shared/lib/get-img-props"
 import Image from 'next/image'
 import Link from "next/link"
+import { SocialMedia } from "./social-media"
+
+interface Area {
+  label: string
+  url: string
+}
 
 interface LawyerCardProps {
-    name: string
-    description: string
-    linkedinUrl: string
-    phoneNumber: string
-    instagramUrl: string
-    emailUrl: string
-    role: string
-    avatarUrl: StaticImport | string
-    areas: string[]
+  name: string
+  description: string
+  linkedinUrl: string
+  phoneNumber: string
+  instagramUrl: string
+  emailUrl: string
+  role: string
+  avatarUrl: StaticImport | string
+  areas: Area[]
 }
 
 export function LayerCard(props: LawyerCardProps) {
-    return (
-        <Box >
-            <div className="grid-rows-5">
+  return (
+    <Box >
+      <div className="flex flex-col items-center">
+        {/* Foto  */}
+        <div className="p-2 border border-gray-100 rounded-full w-fit">
+          <Image alt="foto do John" src={props.avatarUrl} className="rounded-full h-40 w-40" />
+        </div>
 
-                {/* Foto  */}
-                <div>
-                    <Image alt="foto do John" src={props.avatarUrl} />
-                </div>
+        {/* Nome, Função e descrição  */}
+        <div className="flex flex-col text-center mt-4" >
+          <strong className="text-lg">{props.name}</strong>
+          <small className="text-sm font-medium text-gray-400">{props.role}</small>
+        </div>
 
-                {/* Nome, Função e descrição  */}
-                <div className="mt-4 mb-4" >
-                    <div className="flex gap-2 items-center pb-2">
-                        <strong>{props.name}</strong>
-                        <small>{props.role}</small>
-                    </div>
+        <div className="mt-6">
+          <p className="text-sm">{props.description}</p>
+        </div>
 
-                    <div>
-                        <p>{props.description}</p>
-                    </div>
-                </div>
+        {/* Áreas */}
+        <div className="flex flex-wrap gap-1 w-full mt-4">
+          {props.areas.map((area) => (
+            <Badge label={area.label} url={area.url} />
+          ))}
+        </div>
 
-                {/* Áreas  */}
-                <div >
-                    <p >{props.areas.map((area) => (
-                        <Link prefetch={false} href="/">
-                            <span key={area}>{area}</span>
-                        </Link>
-                    ))}</p>
-                </div>
+        <div className="flex flex-col w-full mt-8 gap-2 ">
+          <div className="flex items-center gap-1">
+            <AtSign strokeWidth={1.5} className="w-4 h-4" />
+            <small>{props.emailUrl}</small>
+          </div>
+          <div className="flex items-center gap-1">
+            <Phone strokeWidth={1.5} className="w-4 h-4" />
+            <small>{props.phoneNumber}</small>
+          </div>
+        </div>
 
-                {/* Contato  */}
-                <div className="mt-4 mb-4" >
-                    <div className="flex gap-2 ">{/* email  */}
-                        <AtSign className=" text-primary-main" />
-                        <span>{props.emailUrl}</span>
-                    </div>
-                    <div className="flex gap-2">{/* telefone  */}
-                        <Phone className=" text-primary-main" />
-                        <span>{props.phoneNumber}</span>
-                    </div>
-                </div>
-
-                {/* redes sociais  */}
-                <div className="flex justify-center gap-4 text-primary-main " >
-                    <Link href={props.linkedinUrl} prefetch={false} target="_blank"><Linkedin className=" hover:text-secondary-main" /></Link>
-                    <Link href={props.instagramUrl} prefetch={false} target="_blank"><Instagram className=" hover:text-secondary-main" /></Link>
-                </div>
-
-            </div>
-        </Box>
-    )
+        {/* redes sociais  */}
+        <div className="flex justify-evenly gap-4 text-primary-main mt-4" >
+          <SocialMedia url={props.instagramUrl} icon={Instagram} />
+          <SocialMedia url={props.linkedinUrl} icon={Linkedin} />
+        </div>
+      </div>
+    </Box>
+  )
 }

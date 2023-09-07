@@ -29,7 +29,7 @@ export function InsightCard({
       >
         {/* Image */}
         <div>
-          <Image src={exampleImage} alt={title} />
+          <Image src={exampleImage} alt={title} className={`${horizontal ? 'rounded-tl-md' : 'rounded-t-md'} h-full`} />
         </div>
 
         <div className={`p-4 flex flex-col ${horizontal && 'justify-center'}`}>
