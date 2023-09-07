@@ -1,6 +1,7 @@
 import Image from "next/image";
 import logo from '@/assets/images/logo.png'
-import { AtSign, Building, Building2, Phone } from "lucide-react";
+import { AtSign, Building, Building2, Navigation, Phone } from "lucide-react";
+import Link from "next/link";
 
 export function BrandPresentation() {
   return (
@@ -12,8 +13,14 @@ export function BrandPresentation() {
         {/* Address */}
         <div className="flex items-center gap-2">
           <Building className="h-4 w-4" />
-          <small className="text-sm font-medium">
+          <small className="text-sm font-medium flex gap-2">
             Avenida Barão do Rio Branco, nº 1871, Sala 613, Centro, Juiz de Fora - MG
+            <Link 
+              href="https://www.google.com.br/maps/place/Av.+Bar%C3%A3o+do+Rio+Branco,+1871+-+Sala+613+-+Centro,+Juiz+de+Fora+-+MG,+41615-001/@-21.7583338,-43.3528323,17z/data=!3m1!4b1!4m6!3m5!1s0x989c9f39f31b85:0xfe746fb5fc325d6c!8m2!3d-21.7583388!4d-43.3502574!16s%2Fg%2F11s4g2t3vk?entry=ttu"
+              target="_blank"
+              prefetch={false} >
+                <Navigation className="hover:text-secondary-main"></Navigation>
+            </Link>
           </small>
         </div>
 

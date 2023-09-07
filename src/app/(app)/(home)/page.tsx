@@ -43,8 +43,12 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col md:flex-row gap-6">
-              <Button color="primary">Soluções</Button>
-              <Button color="secondary">Entre em contato</Button>
+              <Link href="/relatos" prefetch={false} className="flex justify-center">
+                <Button color="primary">Soluções</Button>
+              </Link>
+              <Link href="/contato" prefetch={false} className="flex justify-center">
+                <Button color="secondary">Entre em contato</Button>
+              </Link>
             </div>
           </div>
         </Container.Content>
@@ -124,12 +128,14 @@ export default function Home() {
           <AreaList />
 
           <div className='w-full flex justify-center'>
-            <Button className='w-full md:w-fit flex items-center justify-center mt-6'>
-              <div className="flex gap-2 items-center">
-                Ver todas as áreas
-                <ArrowRight size={18} className="text-secondary-main" />
-              </div>
-            </Button>
+            <Link href="/areas-de-atuacao" prefetch={false} className="flex justify-center">
+              <Button className='w-full md:w-fit flex items-center justify-center mt-6'>
+                <div className="flex gap-2 items-center">
+                  Ver todas as áreas
+                  <ArrowRight size={18} className="text-secondary-main" />
+                </div>
+              </Button>
+            </Link>
           </div>
         </Container.Content>
       </Container.Root >
@@ -176,11 +182,13 @@ export default function Home() {
             />
           </div>
           <div className="w-full flex justify-center mt-6">
-            <Button className='w-full md:w-fit flex justify-center items-center'>
-              <div className="flex gap-2 items-center">
-                Blog <ArrowRight size={18} className="text-secondary-main" />
-              </div>
-            </Button>
+            <Link href="/blog" prefetch={false} className="flex justify-center">
+              <Button className='w-full md:w-fit flex justify-center items-center'>
+                <div className="flex gap-2 items-center">
+                  Blog <ArrowRight size={18} className="text-secondary-main" />
+                </div>
+              </Button>
+            </Link>
           </div>
         </Container.Content>
       </Container.Root >
@@ -206,21 +214,24 @@ export default function Home() {
 
             <div className="flex justify-center gap-4">
               <Link
-                href="/"
+                href="https://www.linkedin.com/company/consulmagnoeassis/"
+                target='_blank'
                 prefetch={false}
                 className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
               >
                 <Linkedin className=" text-secondary-main h-8 w-8 " />
               </Link>
               <Link
-                href="/"
+                href="https://www.facebook.com/ConsulmagnoAssis"
+                target='_blank'
                 prefetch={false}
                 className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
               >
                 <Facebook className=" text-secondary-main h-8 w-8 " />
               </Link>
               <Link
-                href="/"
+                href="https://www.instagram.com/consulmagnoassisadv/"
+                target='_blank'
                 prefetch={false}
                 className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
               >
@@ -228,7 +239,7 @@ export default function Home() {
               </Link>
             </div>
 
-            <Link href="/" prefetch={false} className="flex justify-center">
+            <Link href="/contato" prefetch={false} className="flex justify-center">
               <Button color="secondary" className="flex items-center gap-2">
                 <span>Entre em contato</span>
                 <ArrowRight className="h-4 w-4" />

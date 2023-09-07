@@ -10,7 +10,7 @@ export function Navigation() {
       <nav className="hidden lg:flex lg:items-center gap-4">
         <NavItem label="Início" url="/" />
         <NavItem label="Áreas de atuação" url="/areas-de-atuacao" />
-        <NavItem label="Relatos" url="cases" />
+        <NavItem label="Relatos" url="relatos" />
         <NavItem label="Nossa equipe" url="nossa-equipe" />
       </nav>
     </>

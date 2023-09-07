@@ -37,15 +37,15 @@ const socialSection: LinkSectionProps = {
   links: [
     {
       label: 'Linkedin',
-      url: '/'
+      url: 'https://www.linkedin.com/company/consulmagnoeassis/'
     },
     {
       label: 'Instagram',
-      url: '/'
+      url: 'https://www.instagram.com/consulmagnoassisadv/'
     },
     {
       label: 'Facebook',
-      url: '/'
+      url: 'https://www.facebook.com/ConsulmagnoAssis'
     }
   ]
 }
