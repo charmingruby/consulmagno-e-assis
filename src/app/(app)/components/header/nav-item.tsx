@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 interface NavItemProps {
   label: string
@@ -6,15 +7,22 @@ interface NavItemProps {
 }
 
 export function NavItem({ label, url }: NavItemProps) {
+  const currentPath = usePathname()
+
   return (
     <Link
       prefetch={false}
       href={url}
-      className="font-medium group flex items-center border-b-2 border-white h-16 transition-colors hover:border-primary-main cursor-pointer"
+      className={`
+        ${
+          currentPath === url
+            ? 'text-primary-main border-secondary-main'
+            : 'border-white hover:text-secondary-main'
+        }
+        font-medium group flex items-center border-b-2 h-16 transition-colors cursor-pointer
+      `}
     >
-      <span className="group-hover:text-primary-main transition-colors">
-        {label}
-      </span>
+      <span>{label}</span>
     </Link>
   )
 }

@@ -16,7 +16,6 @@ import Link from 'next/link'
 import { AreaList } from './components/area-list'
 import { InsightCard } from './components/insight-card'
 import { PageTitle } from '@/components/page-title'
-import { SectionDescriptor } from '@/components/section-descriptor'
 import map from '@/assets/images/map.png'
 import Image from 'next/image'
 import { MapAnnotations } from './components/map-annotations'
@@ -26,9 +25,8 @@ export default function Home() {
     <>
       {/* Hero */}
       <Container.Root className="hero-img flex items-center sm:py-0 bg-no-repeat bg-center bg-fixed md:min-h-screen">
-        <Container.Content >
+        <Container.Content>
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
-
             {/* Title */}
             <h1 className="text-gray-50 font-semibold m-0 text-3xl md:text-4xl mb-6 break-words">
               Defesa Legal em Suas Mãos: Advocacia Especializada e Comprometida
@@ -43,11 +41,23 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col md:flex-row gap-6">
-              <Link href="/relatos" prefetch={false} className="flex justify-center">
-                <Button color="primary">Soluções</Button>
+              <Link
+                href="/relatos"
+                prefetch={false}
+                className="flex justify-center"
+              >
+                <Button color="primary" className="w-full">
+                  Soluções
+                </Button>
               </Link>
-              <Link href="/contato" prefetch={false} className="flex justify-center">
-                <Button color="secondary">Entre em contato</Button>
+              <Link
+                href="/contato"
+                prefetch={false}
+                className="flex justify-center"
+              >
+                <Button color="secondary" className="w-full">
+                  Entre em contato
+                </Button>
               </Link>
             </div>
           </div>
@@ -72,21 +82,21 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ReasonCard
               icon={Target}
-              prefixTitle='Nossa'
-              sufixTitle='missão'
-              description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod'
+              prefixTitle="Nossa"
+              sufixTitle="missão"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod"
             />
             <ReasonCard
               icon={Eye}
-              prefixTitle='Nossa'
-              sufixTitle='visão'
-              description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod'
+              prefixTitle="Nossa"
+              sufixTitle="visão"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod"
             />
             <ReasonCard
               icon={Gem}
-              prefixTitle='Nossos'
-              sufixTitle='valores'
-              description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod'
+              prefixTitle="Nossos"
+              sufixTitle="valores"
+              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod"
             />
           </div>
         </Container.Content>
@@ -105,7 +115,7 @@ export default function Home() {
               description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, nobis dolore. Adipisci porro, nesciunt exercitationem, ab tenetur numquam praesentium tempora fugiat mollitia vero aspernatur, ut eligendi perferendis ad soluta dignissimos!"
             />
           </div>
-          <div className='order-first md:order-last'>
+          <div className="order-first md:order-last">
             <Image src={map} alt="Mapa de onde atuamos" />
           </div>
         </Container.Content>
@@ -127,9 +137,13 @@ export default function Home() {
 
           <AreaList />
 
-          <div className='w-full flex justify-center'>
-            <Link href="/areas-de-atuacao" prefetch={false} className="flex justify-center">
-              <Button className='w-full md:w-fit flex items-center justify-center mt-6'>
+          <div className="w-full flex justify-center">
+            <Link
+              href="/areas-de-atuacao"
+              prefetch={false}
+              className="flex justify-center w-full"
+            >
+              <Button className="w-full md:w-fit flex items-center justify-center mt-6">
                 <div className="flex gap-2 items-center">
                   Ver todas as áreas
                   <ArrowRight size={18} className="text-secondary-main" />
@@ -138,10 +152,10 @@ export default function Home() {
             </Link>
           </div>
         </Container.Content>
-      </Container.Root >
+      </Container.Root>
 
       {/* Insights */}
-      <Container.Root className="bg-white" >
+      <Container.Root className="bg-white">
         <Container.Content>
           <div className="mb-8 flex items-center gap-2">
             <Lightbulb className="h-8 w-8 text-secondary-main" />
@@ -182,8 +196,12 @@ export default function Home() {
             />
           </div>
           <div className="w-full flex justify-center mt-6">
-            <Link href="/blog" prefetch={false} className="flex justify-center">
-              <Button className='w-full md:w-fit flex justify-center items-center'>
+            <Link
+              href="/blog"
+              prefetch={false}
+              className="flex justify-center w-full"
+            >
+              <Button className="w-full md:w-fit flex justify-center items-center">
                 <div className="flex gap-2 items-center">
                   Blog <ArrowRight size={18} className="text-secondary-main" />
                 </div>
@@ -191,13 +209,13 @@ export default function Home() {
             </Link>
           </div>
         </Container.Content>
-      </Container.Root >
+      </Container.Root>
 
       {/* CTA */}
-      < Container.Root backgroundColor="primary" >
-        <Container.Content spacing='spaceless' className='py-10'>
+      <Container.Root backgroundColor="primary">
+        <Container.Content spacing="spaceless" className="py-10">
           <div className="max-w-2xl mx-auto space-y-8">
-            <div className='text-center'>
+            <div className="text-center">
               <strong className="text-3xl md:text-4xl text-white">
                 Nos diga como podemos te ajudar
               </strong>
@@ -215,7 +233,7 @@ export default function Home() {
             <div className="flex justify-center gap-4">
               <Link
                 href="https://www.linkedin.com/company/consulmagnoeassis/"
-                target='_blank'
+                target="_blank"
                 prefetch={false}
                 className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
               >
@@ -223,7 +241,7 @@ export default function Home() {
               </Link>
               <Link
                 href="https://www.facebook.com/ConsulmagnoAssis"
-                target='_blank'
+                target="_blank"
                 prefetch={false}
                 className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
               >
@@ -231,7 +249,7 @@ export default function Home() {
               </Link>
               <Link
                 href="https://www.instagram.com/consulmagnoassisadv/"
-                target='_blank'
+                target="_blank"
                 prefetch={false}
                 className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
               >
@@ -239,15 +257,22 @@ export default function Home() {
               </Link>
             </div>
 
-            <Link href="/contato" prefetch={false} className="flex justify-center">
-              <Button color="secondary" className="flex items-center gap-2">
+            <Link
+              href="/contato"
+              prefetch={false}
+              className="flex justify-center w-full"
+            >
+              <Button
+                color="secondary"
+                className="flex justify-center items-center gap-2 w-full md:w-fit"
+              >
                 <span>Entre em contato</span>
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </Link>
           </div>
         </Container.Content>
-      </ Container.Root>
+      </Container.Root>
     </>
   )
 }

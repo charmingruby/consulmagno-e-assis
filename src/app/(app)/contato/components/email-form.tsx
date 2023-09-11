@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button'
-import { TextAreaInput, TextInput } from '@/components/ui/input'
+import { TextInput } from '@/components/ui/form/text-input'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
@@ -29,11 +29,14 @@ export function EmailForm() {
   //   })
 
   return (
-    <form className="flex flex-col gap-4">
-      <TextInput placeholder="Nome" />
-      <TextInput placeholder="E-mail" />
-      <TextInput placeholder="Assunto" />
-      <TextAreaInput placeholder="Mensagem" />
+    <form className="flex flex-col gap-8 w-full">
+      <div className="flex flex-col gap-4">
+        <TextInput name="email" placeholder="Email" />
+        <TextInput name="email" placeholder="Telefone" />
+        <TextInput name="assunto" placeholder="Assunto" />
+        <TextInput name="sua-mensagem" placeholder="Sua mensagem" />
+      </div>
+
       <Button color="primary">Enviar</Button>
     </form>
   )

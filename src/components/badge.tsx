@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from 'next/link'
 
 interface BadgeProps {
   label: string
@@ -6,11 +6,12 @@ interface BadgeProps {
 }
 
 export function Badge({ label, url }: BadgeProps) {
-
   if (!url) {
-    return <div>
-      <small>{label}</small>
-    </div>
+    return (
+      <div>
+        <small>{label}</small>
+      </div>
+    )
   }
 
   return (
@@ -18,5 +19,6 @@ export function Badge({ label, url }: BadgeProps) {
       <div className="py-0.5 px-3 bg-primary-main text-secondary-main rounded-full text-sm w-fit font-semibold">
         <small>{label}</small>
       </div>
-    </Link>)
+    </Link>
+  )
 }

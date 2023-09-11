@@ -24,12 +24,19 @@ export function InsightCard({
       <Box
         spacing="spaceless"
         className={`
-          flex ${horizontal ? 'md:h-full md:flex-row md:flex-1 flex-col' : 'flex-col'
+          flex ${
+            horizontal ? 'md:h-full md:flex-row md:flex-1 flex-col' : 'flex-col'
           }`}
       >
         {/* Image */}
         <div>
-          <Image src={exampleImage} alt={title} className={`${horizontal ? 'rounded-tl-md' : 'rounded-t-md'} h-full`} />
+          <Image
+            src={exampleImage}
+            alt={title}
+            className={`${
+              horizontal ? 'rounded-tl-md' : 'rounded-t-md'
+            } h-full`}
+          />
         </div>
 
         <div className={`p-4 flex flex-col ${horizontal && 'justify-center'}`}>
@@ -43,7 +50,9 @@ export function InsightCard({
 
           {/* Title */}
           <strong
-            className={`mb-2 ${horizontal ? 'text-2xl md:text-4xl' : 'text-2xl'}`}
+            className={`mb-2 ${
+              horizontal ? 'text-2xl md:text-4xl' : 'text-2xl'
+            }`}
           >
             {title}
           </strong>
