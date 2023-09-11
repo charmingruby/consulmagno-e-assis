@@ -30,7 +30,7 @@ export default function Team() {
       <Container.Root border="borderBottom">
         <Container.Content>
           <div className="max-w-2xl mx-auto text-center flex flex-col items-center">
-            <Users className="text-secondary-main h-8 w-8 mb-2" />
+            <Users className="text-secondary-main h-8 w-8 mb-4" />
             <PageTitle title="Conheça nossa equipe" />
             <Text className="mt-4">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea eos
