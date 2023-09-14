@@ -2,14 +2,23 @@ import * as Container from '@/components/ui/container'
 import { Text } from '@/components/ui/text'
 import { EmailForm } from './components/email-form'
 import { MeanItem } from './components/mean-item'
-import { AtSign, Instagram, Mails, Phone, Pin } from 'lucide-react'
+import {
+  ArrowRight,
+  AtSign,
+  Building,
+  Globe2,
+  Instagram,
+  Mails,
+  Phone,
+} from 'lucide-react'
 import { PageTitle } from '@/components/page-title'
 import { Box } from '@/components/ui/box'
+import { Button } from '@/components/ui/button'
 
 export default function Contact() {
   return (
     <>
-      <Container.Root className=" min-h-screen flex flex-col justify-center pt-8">
+      <Container.Root className=" min-h-screen flex flex-col justify-center pt-8 bg-white">
         <Container.Content className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12">
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl md:text-4xl font-semibold text-primary-main">
@@ -39,32 +48,71 @@ export default function Contact() {
         </Container.Content>
       </Container.Root>
 
-      <Container.Root>
+      <Container.Root className="bg-white">
         <Container.Content>
-          <div className="max-w-2xl mx-auto text-center flex flex-col items-center">
-            <Pin className="text-secondary-main h-8 w-8 mb-4" />
-            <div className="flex flex-col gap-4 mb-12">
-              <PageTitle title="Nossas localidades" />
-              <Text>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptatem doloremque consequuntur explicabo, possimus
-                blanditiis odit commodi dicta provident dolorum aliquid ut
-                dolor, alias illo odio voluptas quis quae tenetur hic!
-              </Text>
-            </div>
+          <div className="grid grid-cols-1 gap-4 mb-12">
+            <PageTitle title="Nossas localidades" />
+
+            <p className="text-gray-400 leading-relaxed">
+              Atendemos quando e onde voce quiser.
+            </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-12">
-            <Box>office</Box>
-            <Box>remote</Box>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+            {/* Office option */}
+            <Box className="flex flex-col gap-8">
+              <div className="flex items-center gap-2">
+                <Building className="w-8 h-8 text-secondary-main" />
+                <strong className="font-semibold text-primary-main text-2xl">
+                  Escritorio
+                </strong>
+              </div>
+              <Text>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
+                veniam, eveniet vitae harum eos deleniti numquam molestias
+                exercitationem omnis nam expedita repellendus mollitia quasi est
+                suscipit quam dicta corporis error?
+              </Text>
+              <Button className="w-full">Localização</Button>
+            </Box>
+
+            {/* Remote */}
+            <Box className="bg-primary-main flex flex-col gap-8 hover:bg-primary-main/90 transition-colors">
+              <div className="flex items-center gap-2">
+                <Globe2 className="text-gray-50 w-8 h-8" />
+                <strong className="font-semibold text-gray-50 text-2xl">
+                  Remoto
+                </strong>
+              </div>
+              <Text className="text-gray-50">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
+                veniam, eveniet vitae harum eos deleniti numquam molestias
+                exercitationem omnis nam expedita repellendus mollitia quasi est
+                suscipit quam dicta corporis error?
+              </Text>
+              <Button color="secondary" className="w-full">
+                Contato
+              </Button>
+            </Box>
           </div>
         </Container.Content>
       </Container.Root>
 
-      <Container.Root>
+      <Container.Root border="borderTop" className="bg-gray-50">
         <Container.Content>
-          <div>content</div>
-          <div>options</div>
+          <div className="max-w-2xl mx-auto flex flex-col md:items-center gap-12">
+            <PageTitle title="Conheça nossos serviços" />
+            <Text className="md:text-center">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
+              cum! Ut dolores mollitia odit ea culpa harum eveniet voluptate,
+              cum et repellendus eaque expedita deleniti vel ipsum autem
+              blanditiis illum.
+            </Text>
+            <Button className="flex gap-2 items-center justify-center w-full md:w-fit">
+              <span>Ver tudo</span>
+              <ArrowRight className="h-4 w-4 text-secondary-main" />
+            </Button>
+          </div>
         </Container.Content>
       </Container.Root>
     </>

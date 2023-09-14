@@ -20,7 +20,7 @@ export function BrandPresentation() {
           className="flex items-center gap-2 hover:text-primary-main hover:underline transition-all"
         >
           <Building className="h-4 w-4" />
-          <small className="text-sm font-medium flex gap-2">
+          <small className="items-center text-sm font-medium flex md:gap-2">
             Avenida Barão do Rio Branco, nº 1871, Sala 613, Centro, Juiz de Fora
             - MG
             <ArrowUpRight className="w-4 h-4"></ArrowUpRight>
