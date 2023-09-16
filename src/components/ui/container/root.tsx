@@ -12,7 +12,7 @@ const root = tv({
     backgroundColor: {
       default: 'bg-gray-50',
       white: 'bg-white',
-      primary: 'bg-primary-main',
+      primary: 'bg-primary-gradient',
     },
   },
   defaultVariants: { backgroundColor: 'default', border: 'default' },

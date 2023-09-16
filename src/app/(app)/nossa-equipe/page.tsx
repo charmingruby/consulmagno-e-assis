@@ -3,7 +3,8 @@ import * as Container from '@/components/ui/container'
 import { LayerCard } from './components/lawyer-card'
 import lawyer from '@/assets/images/lawyer.jpg'
 import { Text } from '@/components/ui/text'
-import { Users } from 'lucide-react'
+import { ArrowRight, Users } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Team() {
   return (
@@ -27,7 +28,7 @@ export default function Team() {
       </Container.Root>
 
       {/* Mostrar membros do time com foto */}
-      <Container.Root border="borderBottom">
+      <Container.Root>
         <Container.Content>
           <div className="max-w-2xl mx-auto text-center flex flex-col items-center">
             <Users className="text-secondary-main h-8 w-8 mb-4" />
@@ -107,9 +108,22 @@ export default function Team() {
         </Container.Content>
       </Container.Root>
 
-      {/* Componente */}
+      {/* Algumas areas de atuaçao imprescindiveis para novos trabalhadores */}
+
+      {/* Trabalhe conosco */}
       <Container.Root>
-        <Container.Content>veja tambem</Container.Content>
+        <Container.Content>
+          <h2>Venha trabalhar conosco</h2>
+          <Text>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            vero rem facilis quaerat minima sequi est quod neque fugit, alias in
+            ipsum doloremque assumenda nisi, velit autem eligendi omnis beatae.
+          </Text>
+          <Link prefetch={false} href="/">
+            <span>Link</span>
+            <ArrowRight className="" />
+          </Link>
+        </Container.Content>
       </Container.Root>
     </>
   )
