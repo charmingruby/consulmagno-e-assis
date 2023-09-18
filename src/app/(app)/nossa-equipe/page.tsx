@@ -3,7 +3,7 @@ import * as Container from '@/components/ui/container'
 import { LayerCard } from './components/lawyer-card'
 import lawyer from '@/assets/images/lawyer.jpg'
 import { Text } from '@/components/ui/text'
-import { ArrowRight, Briefcase, Pin, Users } from 'lucide-react'
+import { ArrowRight, Pin, Users } from 'lucide-react'
 import Link from 'next/link'
 import { AreaCard } from './components/area-card'
 import { Button } from '@/components/ui/button'
@@ -114,27 +114,37 @@ export default function Team() {
       <Container.Root className="bg-white">
         <Container.Content>
           <div>
-            <div className='flex gap-2 '>
-              <Pin className="text-secondary-main h-8 w-8 mb-4 " ></Pin>
-              <PageTitle title='Áreas imprescindíveis'></PageTitle>
+            <div className="flex gap-2 ">
+              <Pin className="text-secondary-main h-8 w-8 mb-4 "></Pin>
+              <PageTitle title="Áreas imprescindíveis"></PageTitle>
             </div>
-          <Text className='pt-4 pb-8'>
-          No nosso escritório, entendemos que cada caso é único e merece a atenção dedicada e especializada que ele exige. É por isso que oferecemos expertise em diversas áreas do direito para atender às necessidades variadas dos nossos clientes.<br/><br/>
-Nossos advogados são altamente qualificados e têm vasta experiência em uma ampla gama de campos jurídicos. Abaixo, você encontrará links para algumas das áreas mais importantes em que atuamos:
-          </Text>
+            <Text className="pt-4 pb-8">
+              No nosso escritório, entendemos que cada caso é único e merece a
+              atenção dedicada e especializada que ele exige. É por isso que
+              oferecemos expertise em diversas áreas do direito para atender às
+              necessidades variadas dos nossos clientes.
+              <br />
+              <br />
+              Nossos advogados são altamente qualificados e têm vasta
+              experiência em uma ampla gama de campos jurídicos. Abaixo, você
+              encontrará links para algumas das áreas mais importantes em que
+              atuamos:
+            </Text>
           </div>
-          <div className='flex  flex-wrap justify-center gap-4'>
+          <div className="flex  flex-wrap justify-center gap-4">
             <div>
-              <AreaCard name='Direito do Trabalho' url='#'></AreaCard>
-              <AreaCard name='Direito Societário e M&A' url='#'></AreaCard>
-              <AreaCard name='Direito Civil e Consumeirista' url='#'></AreaCard>
+              <AreaCard name="Direito do Trabalho" url="#"></AreaCard>
+              <AreaCard name="Direito Societário e M&A" url="#"></AreaCard>
+              <AreaCard name="Direito Civil e Consumeirista" url="#"></AreaCard>
             </div>
             <div>
-              <AreaCard name='Direito Sucessório e Planejamento Patrimonial' url='#'></AreaCard>
-              <AreaCard name='Direito Administrativo' url='#'></AreaCard>
-              <AreaCard name='Direito Imobiliário' url='#'></AreaCard>
+              <AreaCard
+                name="Direito Sucessório e Planejamento Patrimonial"
+                url="#"
+              ></AreaCard>
+              <AreaCard name="Direito Administrativo" url="#"></AreaCard>
+              <AreaCard name="Direito Imobiliário" url="#"></AreaCard>
             </div>
-            
           </div>
         </Container.Content>
       </Container.Root>
@@ -159,7 +169,6 @@ Nossos advogados são altamente qualificados e têm vasta experiência em uma am
           </Link>
         </Container.Content>
       </Container.Root>  */}
-    
 
       <Container.Root backgroundColor="primary">
         <Container.Content spacing="spaceless" className="py-10">
