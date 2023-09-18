@@ -114,7 +114,7 @@ export default function Team() {
       <Container.Root className="bg-white">
         <Container.Content>
           <div>
-            <div className="flex gap-2 ">
+            <div className="flex gap-2 justify-center">
               <Pin className="text-secondary-main h-8 w-8 mb-4 "></Pin>
               <PageTitle title="Áreas imprescindíveis"></PageTitle>
             </div>
@@ -131,13 +131,13 @@ export default function Team() {
               atuamos:
             </Text>
           </div>
-          <div className="flex  flex-wrap justify-center gap-4">
-            <div>
+          <div className=" flex flex-col justify-start">
+            <div className='flex justify-center flex-wrap '>
               <AreaCard name="Direito do Trabalho" url="#"></AreaCard>
               <AreaCard name="Direito Societário e M&A" url="#"></AreaCard>
               <AreaCard name="Direito Civil e Consumeirista" url="#"></AreaCard>
             </div>
-            <div>
+            <div className='flex  justify-center flex-wrap sm: '>
               <AreaCard
                 name="Direito Sucessório e Planejamento Patrimonial"
                 url="#"
