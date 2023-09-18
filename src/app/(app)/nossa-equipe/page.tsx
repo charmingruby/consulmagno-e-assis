@@ -132,12 +132,12 @@ export default function Team() {
             </Text>
           </div>
           <div className=" flex flex-col justify-start">
-            <div className='flex justify-center flex-wrap '>
+            <div className="flex justify-center flex-wrap ">
               <AreaCard name="Direito do Trabalho" url="#"></AreaCard>
               <AreaCard name="Direito Societário e M&A" url="#"></AreaCard>
               <AreaCard name="Direito Civil e Consumeirista" url="#"></AreaCard>
             </div>
-            <div className='flex  justify-center flex-wrap sm: '>
+            <div className="flex  justify-center flex-wrap sm: ">
               <AreaCard
                 name="Direito Sucessório e Planejamento Patrimonial"
                 url="#"
