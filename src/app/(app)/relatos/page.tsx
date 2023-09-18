@@ -1,4 +1,7 @@
 import * as Container from '@/components/ui/container'
+import { Text } from '@/components/ui/text'
+import { ArrowRight } from 'lucide-react'
+import Image from 'next/image'
 
 export default function Cases() {
   return (
@@ -12,16 +15,67 @@ export default function Cases() {
         </Container.Content>
       </Container.Root>
 
-      <Container.Root border="borderBottom">
-        <Container.Content>carrosel</Container.Content>
-      </Container.Root>
-
-      <Container.Root border="borderBottom">
-        <Container.Content>destaque de clientes</Container.Content>
-      </Container.Root>
-
+      {/* Carrosel de clientes */}
       <Container.Root>
-        <Container.Content>todos clientes</Container.Content>
+        <Container.Content>
+          {/* Clientes */}
+          <div></div>
+        </Container.Content>
+      </Container.Root>
+
+      {/* Principais clientes */}
+      <Container.Root>
+        <Container.Content>
+          {/* Depoimentos de clientes */}
+          <div>
+            {/* Card */}
+            <div>
+              {/* Header */}
+              <div>
+                {/* Logo */}
+                <Image src={'/'} alt="" />
+                <div>
+                  <strong>Cliente</strong>
+                  <ArrowRight />
+                </div>
+              </div>
+
+              <div>
+                {/* Titulo */}
+                <strong>
+                  Como `Marca` ajudou na resoluçao dos problemas civis bla bla
+                </strong>
+                {/* Explicaçao */}
+                <Text>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Similique animi perspiciatis et blanditiis aut. Eligendi
+                  maxime doloremque praesentium eius minima. Tenetur illo quos
+                  sit corporis sapiente eius fuga in laudantium.
+                </Text>
+              </div>
+
+              <footer>
+                {/* Areas de ajuda */}
+                <div></div>
+              </footer>
+            </div>
+          </div>
+        </Container.Content>
+      </Container.Root>
+
+      {/* Todos clientes */}
+      <Container.Root>
+        <Container.Content>
+          {/* Listagem de clientes */}
+          <div></div>
+        </Container.Content>
+      </Container.Root>
+
+      {/* CTA */}
+      <Container.Root>
+        <Container.Content>
+          <div>Venha ser nosso cliente</div>
+        </Container.Content>
       </Container.Root>
     </>
   )
