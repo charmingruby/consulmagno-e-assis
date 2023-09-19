@@ -30,7 +30,7 @@ export default function Team() {
       </Container.Root>
 
       {/* Mostrar membros do time com foto */}
-      <Container.Root>
+      <Container.Root backgroundColor="white">
         <Container.Content>
           <div className="max-w-2xl mx-auto text-center flex flex-col items-center">
             <Users className="text-secondary-main h-8 w-8 mb-4" />
@@ -111,7 +111,7 @@ export default function Team() {
       </Container.Root>
 
       {/* Algumas areas de atuaçao imprescindiveis para novos trabalhadores */}
-      <Container.Root className="bg-white">
+      <Container.Root border="borderTop">
         <Container.Content>
           <div>
             <div className="flex gap-2 justify-center">

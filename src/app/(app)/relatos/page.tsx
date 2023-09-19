@@ -1,10 +1,10 @@
 import * as Container from '@/components/ui/container'
 import { CustomerCase } from './components/customer-case'
 import { PageTitle } from '@/components/page-title'
-import { Box } from '@/components/ui/box'
-import { Quote, User } from 'lucide-react'
 import { Text } from '@/components/ui/text'
 import { Button } from '@/components/ui/button'
+import { CustomerStory } from './components/customer-story'
+import { ArrowRight } from 'lucide-react'
 
 export default function Cases() {
   return (
@@ -23,6 +23,10 @@ export default function Cases() {
       {/* Principais clientes */}
       <Container.Root backgroundColor="white">
         <Container.Content>
+          <div className="mb-12">
+            <PageTitle title="Parcerias bem sucedidas" />
+          </div>
+
           {/* Depoimentos de clientes */}
           <div className="grid grid-cols-3 gap-8">
             <CustomerCase />
@@ -33,50 +37,49 @@ export default function Cases() {
       </Container.Root>
 
       {/* Todos clientes */}
-      <Container.Root backgroundColor="default" border="borderY">
+      <Container.Root backgroundColor="white">
         <Container.Content>
-          <PageTitle title="Nossos clientes" />
+          <div className="grid grid-cols-3 gap-8">
+            <div className="col-span-2 flex flex-col gap-4">
+              <PageTitle title="Nossos clientes" />
+              <Text>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
+                accusamus molestiae voluptatum recusandae atque, labore,
+                deserunt quas mollitia saepe maiores, velit nihil earum. Quam ad
+                aut cupiditate quod totam culpa.
+              </Text>
+            </div>
+            <div className="flex flex-col justify-center items-end gap-2">
+              <span className="text-xl">
+                {' '}
+                <strong className="text-primary-main">+200</strong> clientes
+                satisfeitos
+              </span>
+
+              <span className="text-xl">
+                {' '}
+                <strong className="text-primary-main">+22</strong> cidades
+                diferentes
+              </span>
+            </div>
+          </div>
+
           {/* Listagem de clientes */}
-          <div className="grid grid-cols-3">
-            <Box>
-              {/* Nome do cliente */}
-              <div className="flex items-center gap-2">
-                {/* Logo */}
-                <div className="border-2 border-primary-main h-12 w-12 rounded-full flex items-center justify-center">
-                  <User className="text-primary-main" />
-                </div>
-
-                {/* Nome */}
-                <div className="flex flex-col">
-                  <strong className="text-lg">Ymir</strong>
-                  <small className="text-sm">Loja de Software</small>
-                </div>
-              </div>
-
-              {/* Tags */}
-              <div>
-                <small>Direito civil</small>
-              </div>
-
-              <div>
-                <Quote />
-                <Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Quidem eveniet eius impedit odio. Nulla perferendis
-                  dignissimos eligendi similique incidunt magni dolore deserunt
-                  illum. Deserunt quasi nesciunt sapiente consequuntur,
-                  temporibus distinctio.
-                </Text>
-              </div>
-            </Box>
+          <div className="grid grid-cols-3 gap-8 mt-12">
+            <CustomerStory />
+            <CustomerStory />
+            <CustomerStory />
+            <CustomerStory />
+            <CustomerStory />
+            <CustomerStory />
           </div>
         </Container.Content>
       </Container.Root>
 
       {/* CTA */}
-      <Container.Root backgroundColor="white">
-        <Container.Content>
-          <div className="max-w-2xl mx-auto text-center">
+      <Container.Root backgroundColor="default" border="borderTop">
+        <Container.Content className="flex flex-col items-center gap-8">
+          <div className="max-w-2xl mx-auto text-center flex flex-col gap-8 items-center">
             <PageTitle title="Venha ser nosso próximo cliente" />
             <Text>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -84,8 +87,11 @@ export default function Cases() {
               natus exercitationem quis, consequatur eaque sint earum quia
               incidunt labore ea eos.
             </Text>
-            <Button>Conheça no que atuamos</Button>
           </div>
+          <Button className="w-fit flex items-center justify-center gap-2">
+            <span>Conheça no que atuamos</span>
+            <ArrowRight className="text-secondary-main h-4 w-4" />
+          </Button>
         </Container.Content>
       </Container.Root>
     </>
