@@ -9,6 +9,6 @@
 
 @layer components {
   .bg-primary-gradient {
-    @apply bg-gradient-to-b from-primary-main to-primary-dark;
+    @apply bg-gradient-to-r from-primary-dark via-primary-main to-primary-dark;
   }
 }

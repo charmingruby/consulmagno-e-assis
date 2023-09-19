@@ -12,7 +12,7 @@ const box = tv({
       spaceless: 'p-0'
     },
     interaction: {
-      default: 'hover:shadow-md cursor-pointer transition-all hover:bg-white/60',
+      default: 'hover:shadow-md cursor-pointer transition-all hover:bg-white/60 hover:border-primary-main',
       noInteraction: ''
     }
   },

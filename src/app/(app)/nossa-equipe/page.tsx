@@ -3,7 +3,7 @@ import * as Container from '@/components/ui/container'
 import { LayerCard } from './components/lawyer-card'
 import lawyer from '@/assets/images/lawyer.jpg'
 import { Text } from '@/components/ui/text'
-import { ArrowRight, Pin, Users } from 'lucide-react'
+import { ArrowRight, Eye, Users } from 'lucide-react'
 import Link from 'next/link'
 import { AreaCard } from './components/area-card'
 import { Button } from '@/components/ui/button'
@@ -111,76 +111,60 @@ export default function Team() {
       </Container.Root>
 
       {/* Algumas areas de atuaçao imprescindiveis para novos trabalhadores */}
-      <Container.Root border="borderTop">
-        <Container.Content>
-          <div>
-            <div className="flex gap-2 justify-center">
-              <Pin className="text-secondary-main h-8 w-8 mb-4 "></Pin>
-              <PageTitle title="Áreas imprescindíveis"></PageTitle>
+      <Container.Root backgroundColor="white">
+        <Container.Content className="grid grid-cols-1 gap-8">
+          <div className="flex flex-col gap-8">
+            <div className="flex gap-2">
+              <Eye className="text-secondary-main h-8 w-8 mb-4 "></Eye>
+              <PageTitle title="Valores imprescindíveis"></PageTitle>
             </div>
-            <Text className="pt-4 pb-8">
-              No nosso escritório, entendemos que cada caso é único e merece a
-              atenção dedicada e especializada que ele exige. É por isso que
-              oferecemos expertise em diversas áreas do direito para atender às
-              necessidades variadas dos nossos clientes.
-              <br />
-              <br />
-              Nossos advogados são altamente qualificados e têm vasta
-              experiência em uma ampla gama de campos jurídicos. Abaixo, você
-              encontrará links para algumas das áreas mais importantes em que
-              atuamos:
-            </Text>
+            <div className="flex flex-col gap-2">
+              <Text>
+                No nosso escritório, entendemos que cada caso é único e merece a
+                atenção dedicada e especializada que ele exige. É por isso que
+                oferecemos expertise em diversas áreas do direito para atender
+                às necessidades variadas dos nossos clientes.
+              </Text>
+              <Text>
+                Nossos advogados são altamente qualificados e têm vasta
+                experiência em uma ampla gama de campos jurídicos. Abaixo, você
+                encontrará links para algumas das áreas mais importantes em que
+                atuamos:
+              </Text>
+            </div>
           </div>
-          <div className=" flex flex-col justify-start">
-            <div className="flex justify-center flex-wrap ">
-              <AreaCard name="Direito do Trabalho" url="#"></AreaCard>
-              <AreaCard name="Direito Societário e M&A" url="#"></AreaCard>
-              <AreaCard name="Direito Civil e Consumeirista" url="#"></AreaCard>
-            </div>
-            <div className="flex  justify-center flex-wrap sm: ">
+          <div className=" flex flex-col">
+            <div className="grid grid-cols-2 gap-4">
               <AreaCard
-                name="Direito Sucessório e Planejamento Patrimonial"
-                url="#"
-              ></AreaCard>
-              <AreaCard name="Direito Administrativo" url="#"></AreaCard>
-              <AreaCard name="Direito Imobiliário" url="#"></AreaCard>
+                name="Respeito"
+                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"
+              />
+              <AreaCard
+                name="Gentileza"
+                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"
+              />
+              <AreaCard
+                name="Esforço"
+                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"
+              />
+              <AreaCard
+                name="Harmonia"
+                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"
+              />
             </div>
           </div>
         </Container.Content>
       </Container.Root>
 
-      {/* Trabalhe conosco - exemplo
-      <Container.Root>
+      <Container.Root backgroundColor="default" border="borderY">
         <Container.Content>
-        <div>
-            <div className='flex gap-2 justify-center'>
-              <Briefcase className="text-secondary-main h-8 w-8 mb-4" ></Briefcase>
-              <PageTitle title='Trabalhe conosco'></PageTitle>
-            </div>
-            <Text>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-              vero rem facilis quaerat minima sequi est quod neque fugit, alias in
-              ipsum doloremque assumenda nisi, velit autem eligendi omnis beatae.
-            </Text>
-          </div>
-          <Link prefetch={false} href="/">
-            <span>Link</span>
-            <ArrowRight className="" />
-          </Link>
-        </Container.Content>
-      </Container.Root>  */}
-
-      <Container.Root backgroundColor="primary">
-        <Container.Content spacing="spaceless" className="py-10">
           <div className="max-w-2xl mx-auto space-y-8">
             <div className="text-center">
-              <strong className="text-3xl md:text-4xl text-white">
-                Trabalhe Conosco
-              </strong>
+              <PageTitle title="Trabalhe conosco" />
             </div>
 
             <div>
-              <Text size="md" align="center" className="text-gray-50">
+              <Text align="center">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
                 odio veniam ad exercitationem fugit dolorum enim eveniet
                 voluptatum laboriosam soluta repellendus fugiat reprehenderit
@@ -193,12 +177,9 @@ export default function Team() {
               prefetch={false}
               className="flex justify-center w-full"
             >
-              <Button
-                color="secondary"
-                className="flex justify-center items-center gap-2 w-full md:w-fit"
-              >
+              <Button className="flex justify-center items-center gap-2 w-full md:w-fit">
                 <span>Entre em contato</span>
-                <ArrowRight className="h-4 w-4" />
+                <ArrowRight className="h-4 w-4 text-secondary-main" />
               </Button>
             </Link>
           </div>
