@@ -48,14 +48,12 @@ export default function Contact() {
         </Container.Content>
       </Container.Root>
 
-      <Container.Root className="bg-white">
+      <Container.Root backgroundColor="default" border="borderY">
         <Container.Content>
           <div className="grid grid-cols-1 gap-4 mb-12">
             <PageTitle title="Nossas localidades" />
 
-            <p className="text-gray-400 leading-relaxed">
-              Atendemos quando e onde voce quiser.
-            </p>
+            <Text opacity="low">Atendemos quando e onde voce quiser.</Text>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -98,7 +96,7 @@ export default function Contact() {
         </Container.Content>
       </Container.Root>
 
-      <Container.Root border="borderTop" className="bg-gray-50">
+      <Container.Root backgroundColor="white">
         <Container.Content>
           <div className="max-w-2xl mx-auto flex flex-col md:items-center gap-12">
             <PageTitle title="Conheça nossos serviços" />

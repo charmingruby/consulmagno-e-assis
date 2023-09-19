@@ -2,7 +2,7 @@ import { ComponentProps } from 'react'
 import { VariantProps, tv } from 'tailwind-variants'
 
 const content = tv({
-  base: 'sm:max-w-7xl px-4 lg:px-6 w-full sm:mx-auto',
+  base: 'sm:max-w-[88rem] px-4 lg:px-6 w-full sm:mx-auto',
   variants: {
     spacing: {
       default: 'py-10 md:py-16',
