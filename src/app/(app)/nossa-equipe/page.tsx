@@ -112,10 +112,10 @@ export default function Team() {
 
       {/* Algumas areas de atuaçao imprescindiveis para novos trabalhadores */}
       <Container.Root backgroundColor="white">
-        <Container.Content className="grid grid-cols-1 gap-8">
-          <div className="flex flex-col gap-8">
-            <div className="flex gap-2">
-              <Eye className="text-secondary-main h-8 w-8 mb-4 "></Eye>
+        <Container.Content className="grid grid-cols-1 gap-12">
+          <div className="flex flex-col gap-4 max-w-2xl">
+            <div className="flex flex-col md:flex-row gap-1 md:gap-2">
+              <Eye className="text-secondary-main h-8 w-8"></Eye>
               <PageTitle title="Valores imprescindíveis"></PageTitle>
             </div>
             <div className="flex flex-col gap-2">
@@ -125,16 +125,10 @@ export default function Team() {
                 oferecemos expertise em diversas áreas do direito para atender
                 às necessidades variadas dos nossos clientes.
               </Text>
-              <Text>
-                Nossos advogados são altamente qualificados e têm vasta
-                experiência em uma ampla gama de campos jurídicos. Abaixo, você
-                encontrará links para algumas das áreas mais importantes em que
-                atuamos:
-              </Text>
             </div>
           </div>
           <div className=" flex flex-col">
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
               <AreaCard
                 name="Respeito"
                 description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"

@@ -2,7 +2,6 @@ import { Box } from '@/components/ui/box'
 import { Text } from '@/components/ui/text'
 import exampleHeader from '@/assets/images/lawyers.png'
 import Image from 'next/image'
-import { Badge } from '@/components/badge'
 
 export function CustomerCase() {
   return (
@@ -13,11 +12,6 @@ export function CustomerCase() {
 
       <div className="p-6 mt-4">
         <div>
-          {/* Tags */}
-          <div>
-            <Badge label="Direito Civil" />
-          </div>
-
           {/* Titulo */}
           <strong className="text-xl mb-4 block">
             Como `Marca` ajudou na resoluçao dos problemas civis bla bla

@@ -18,7 +18,7 @@ import { Button } from '@/components/ui/button'
 export default function Contact() {
   return (
     <>
-      <Container.Root className=" min-h-screen flex flex-col justify-center pt-8 bg-white">
+      <Container.Root className=" min-h-screen flex flex-col justify-center pt-16 bg-white">
         <Container.Content className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-12">
           <div className="flex flex-col justify-center">
             <h2 className="text-3xl md:text-4xl font-semibold text-primary-main">

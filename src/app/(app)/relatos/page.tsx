@@ -28,7 +28,7 @@ export default function Cases() {
           </div>
 
           {/* Depoimentos de clientes */}
-          <div className="grid grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <CustomerCase />
             <CustomerCase />
             <CustomerCase />
@@ -39,8 +39,8 @@ export default function Cases() {
       {/* Todos clientes */}
       <Container.Root backgroundColor="white">
         <Container.Content>
-          <div className="grid grid-cols-3 gap-8">
-            <div className="col-span-2 flex flex-col gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="md:col-span-2 flex flex-col gap-4">
               <PageTitle title="Nossos clientes" />
               <Text>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
@@ -49,7 +49,7 @@ export default function Cases() {
                 aut cupiditate quod totam culpa.
               </Text>
             </div>
-            <div className="flex flex-col justify-center items-end gap-2">
+            <div className="flex flex-col md:justify-center md:items-end gap-2">
               <span className="text-xl">
                 {' '}
                 <strong className="text-primary-main">+200</strong> clientes
@@ -65,7 +65,7 @@ export default function Cases() {
           </div>
 
           {/* Listagem de clientes */}
-          <div className="grid grid-cols-3 gap-8 mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             <CustomerStory />
             <CustomerStory />
             <CustomerStory />
