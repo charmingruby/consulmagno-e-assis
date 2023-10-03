@@ -150,7 +150,7 @@ export default function Team() {
         </Container.Content>
       </Container.Root>
 
-      <Container.Root backgroundColor="default" border="borderY">
+      <Container.Root backgroundColor="default" border="borderTop">
         <Container.Content>
           <div className="max-w-2xl mx-auto space-y-8">
             <div className="text-center">
