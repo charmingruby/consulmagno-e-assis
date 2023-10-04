@@ -2,6 +2,24 @@ import { PageTitle } from '@/components/page-title'
 import { Button } from '@/components/ui/button'
 import * as Container from '@/components/ui/container'
 import { NameCard } from './components/name-card'
+import {
+  Briefcase,
+  DollarSign,
+  Lock,
+  Home,
+  Heart,
+  Globe,
+  ShoppingBag,
+  Clipboard,
+  File,
+  Umbrella,
+  Monitor,
+  PenTool,
+  Vote,
+  Map,
+  Star,
+  ArrowRight,
+} from 'lucide-react'
 
 export default function AreasDeAtuaçao() {
   return (
@@ -27,14 +45,97 @@ export default function AreasDeAtuaçao() {
               <PageTitle title="Áreas de Atuação" />
             </div>
             <div className="grid grid-cols-4 gap-6 ">
-              <NameCard name="Direito Civil" url="#" bg={true}></NameCard>
-              <NameCard name="Direito Civil" url="#" bg={false}></NameCard>
-              <NameCard name="Direito Civil" url="#" bg={true}></NameCard>
-              <NameCard name="Direito Civil" url="#" bg={false}></NameCard>
-              <NameCard name="Direito Civil" url="#" bg={false}></NameCard>
-              <NameCard name="Direito Civil" url="#" bg={true}></NameCard>
-              <NameCard name="Direito Civil" url="#" bg={false}></NameCard>
-              <NameCard name="Direito Civil" url="#" bg={true}></NameCard>
+              <NameCard
+                name="Direito do Trabalho"
+                url="#"
+                icon={<Briefcase />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito Tributário"
+                url="#"
+                icon={<DollarSign />}
+              ></NameCard>
+
+              <NameCard name="Direito Penal" url="#" icon={<Lock />}></NameCard>
+
+              <NameCard
+                name="Direito Empresarial"
+                url="#"
+                icon={<Briefcase />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito Ambiental"
+                url="#"
+                icon={<Globe />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito de Família"
+                url="#"
+                icon={<Heart />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito Imobiliário"
+                url="#"
+                icon={<Home />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito Previdenciário"
+                url="#"
+                icon={<Umbrella />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito do Consumidor"
+                url="#"
+                icon={<ShoppingBag />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito Administrativo"
+                url="#"
+                icon={<Clipboard />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito Contratual"
+                url="#"
+                icon={<File />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito Internacional"
+                url="#"
+                icon={<Map />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito da Saúde"
+                url="#"
+                icon={<Star />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito Eleitoral"
+                url="#"
+                icon={<Vote />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito da Tecnologia da Informação"
+                url="#"
+                icon={<Monitor />}
+              ></NameCard>
+
+              <NameCard
+                name="Direito de Propriedade Intelectual"
+                url="#"
+                icon={<PenTool />}
+              ></NameCard>
             </div>
           </div>
         </Container.Content>
@@ -48,10 +149,10 @@ export default function AreasDeAtuaçao() {
       </Container.Root>
 
       {/* CTA */}
-      <Container.Root backgroundColor="white" border="borderTop">
+      <Container.Root backgroundColor="default" border="borderTop">
         <Container.Content className="flex flex-col items-center gap-8">
           <div className="max-w-2xl mx-auto text-center flex flex-col gap-8 items-center">
-            <PageTitle title="Venha ver o que dizem sobre nós" />
+            <PageTitle title="Descubra o que falam de nós" />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Explicabo eius enim illum, dolorem nulla nesciunt quaerat ab. Quod
@@ -59,8 +160,9 @@ export default function AreasDeAtuaçao() {
               incidunt labore ea eos.
             </p>
           </div>
-          <Button className="w-fit flex items-center justify-center gap-2 bg-secondary-main ">
-            <span className="text-white">Descubra os relatos dos clientes</span>
+          <Button className="w-fit flex items-center justify-center gap-2">
+            <span>Conheça os relatos dos clientes</span>
+            <ArrowRight className="text-secondary-main h-4 w-4" />
           </Button>
         </Container.Content>
       </Container.Root>

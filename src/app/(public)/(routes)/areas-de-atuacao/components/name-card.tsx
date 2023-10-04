@@ -1,24 +1,22 @@
-import { Box } from '@/components/ui/box'
 import Link from 'next/link'
 
 interface NameCardProps {
   name: string
   url: string
-  bg: boolean
+  icon: React.ReactNode
 }
 
 export function NameCard(props: NameCardProps) {
   return (
-    <Box
-      className={
-        props.bg
-          ? 'text-primary-main text-center'
-          : 'text-secondary-main text-center'
-      }
+    <Link
+      prefetch={false}
+      href={props.url}
+      className="text-primary-main border border-primary-main hover:bg-primary-main hover:text-white text-center uppercase font-bold hover:border-none py-4 rounded"
     >
-      <Link prefetch={false} href={props.url}>
-        {props.name}
-      </Link>
-    </Box>
+      <div className="flex gap-2 justify-center">
+        <span>{props.icon}</span>
+        <span>{props.name}</span>
+      </div>
+    </Link>
   )
 }
