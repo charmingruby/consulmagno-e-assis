@@ -1,9 +1,11 @@
+import { IconBadge } from '@/components/icon-badge'
 import Link from 'next/link'
+import { ElementType } from 'react'
 
 interface NameCardProps {
   name: string
   url: string
-  icon: React.ReactNode
+  icon: ElementType
 }
 
 export function NameCard(props: NameCardProps) {
@@ -11,11 +13,13 @@ export function NameCard(props: NameCardProps) {
     <Link
       prefetch={false}
       href={props.url}
-      className="text-primary-main border border-primary-main hover:bg-primary-main hover:text-white text-center uppercase font-bold hover:border-none py-4 rounded"
+      className="text-primary-main border  border-primary-main hover:bg-primary-main hover:text-white text-center hover:border-none p-6 rounded flex flex-col items-center gap-4 justify-center"
     >
-      <div className="flex gap-2 justify-center">
-        <span>{props.icon}</span>
-        <span>{props.name}</span>
+      <IconBadge defaultSize={false} icon={props.icon} />
+
+      <div className="text-xl">
+        <span className="font-semibold">Direito </span>
+        <span className="font-bold text-secondary-main">{props.name}</span>
       </div>
     </Link>
   )

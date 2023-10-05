@@ -45,104 +45,52 @@ export default function AreasDeAtuaçao() {
               <PageTitle title="Áreas de Atuação" />
             </div>
             <div className="grid grid-cols-4 gap-6 ">
-              <NameCard
-                name="Direito do Trabalho"
-                url="#"
-                icon={<Briefcase />}
-              ></NameCard>
+              <NameCard name="do Trabalho" url="#" icon={Briefcase} />
+
+              <NameCard name="Tributário" url="#" icon={DollarSign} />
+
+              <NameCard name="Penal" url="#" icon={Lock} />
+
+              <NameCard name="Empresarial" url="#" icon={Briefcase} />
+
+              <NameCard name="Ambiental" url="#" icon={Globe} />
+
+              <NameCard name="de Família" url="#" icon={Heart} />
+
+              <NameCard name="Imobiliário" url="#" icon={Home} />
+
+              <NameCard name="Previdenciário" url="#" icon={Umbrella} />
+
+              <NameCard name="do Consumidor" url="#" icon={ShoppingBag} />
+
+              <NameCard name="Administrativo" url="#" icon={Clipboard} />
+
+              <NameCard name="Contratual" url="#" icon={File} />
+
+              <NameCard name="Internacional" url="#" icon={Map} />
+
+              <NameCard name="da Saúde" url="#" icon={Star} />
+
+              <NameCard name="Eleitoral" url="#" icon={Vote} />
 
               <NameCard
-                name="Direito Tributário"
+                name="da Tecnologia da Informação"
                 url="#"
-                icon={<DollarSign />}
-              ></NameCard>
-
-              <NameCard name="Direito Penal" url="#" icon={<Lock />}></NameCard>
+                icon={Monitor}
+              />
 
               <NameCard
-                name="Direito Empresarial"
+                name="de Propriedade Intelectual"
                 url="#"
-                icon={<Briefcase />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito Ambiental"
-                url="#"
-                icon={<Globe />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito de Família"
-                url="#"
-                icon={<Heart />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito Imobiliário"
-                url="#"
-                icon={<Home />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito Previdenciário"
-                url="#"
-                icon={<Umbrella />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito do Consumidor"
-                url="#"
-                icon={<ShoppingBag />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito Administrativo"
-                url="#"
-                icon={<Clipboard />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito Contratual"
-                url="#"
-                icon={<File />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito Internacional"
-                url="#"
-                icon={<Map />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito da Saúde"
-                url="#"
-                icon={<Star />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito Eleitoral"
-                url="#"
-                icon={<Vote />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito da Tecnologia da Informação"
-                url="#"
-                icon={<Monitor />}
-              ></NameCard>
-
-              <NameCard
-                name="Direito de Propriedade Intelectual"
-                url="#"
-                icon={<PenTool />}
-              ></NameCard>
+                icon={PenTool}
+              />
             </div>
           </div>
         </Container.Content>
       </Container.Root>
 
       {/* Veja tambem */}
-      <Container.Root border="borderBottom">
+      <Container.Root border="borderBottom" backgroundColor="white">
         <Container.Content>
           <PageTitle title="Veja tambem" />
         </Container.Content>
