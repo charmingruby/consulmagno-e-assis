@@ -11,7 +11,7 @@ export function Navigation() {
         <NavItem label="Início" url="/" />
         <NavItem label="Áreas de atuação" url="/areas-de-atuacao" />
         <NavItem label="Relatos" url="/relatos" />
-        <NavItem label="Nossa equipe" url="/nossa-equipe" />
+        <NavItem label="Equipe" url="/nossa-equipe" />
       </nav>
     </>
   )

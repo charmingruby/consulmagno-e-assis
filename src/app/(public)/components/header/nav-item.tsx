@@ -17,7 +17,7 @@ export function NavItem({ label, url }: NavItemProps) {
         ${
           currentPath === url
             ? 'text-primary-main border-secondary-main'
-            : 'border-white hover:text-secondary-main'
+            : 'border-white text-gray-300 hover:text-primary-main transition-colors'
         }
         font-medium group flex items-center border-b-2 h-16 transition-colors cursor-pointer
       `}

@@ -128,7 +128,7 @@ export default function Team() {
             </div>
           </div>
           <div className=" flex flex-col">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <AreaCard
                 name="Respeito"
                 description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"

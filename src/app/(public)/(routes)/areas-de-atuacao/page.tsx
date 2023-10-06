@@ -38,15 +38,14 @@ export default function AreasDeAtuaçao() {
       </Container.Root>
 
       {/* Áreas de Atuação */}
-      <Container.Root>
+      <Container.Root backgroundColor="white">
         <Container.Content>
           <div className="grid grid-row">
             <div className="flex justify-center mb-12">
               <PageTitle title="Áreas de Atuação" />
             </div>
-            <div className="grid grid-cols-4 gap-6 ">
+            <div className="grid grid-cols-3 gap-6 ">
               <NameCard name="do Trabalho" url="#" icon={Briefcase} />
-
               <NameCard name="Tributário" url="#" icon={DollarSign} />
 
               <NameCard name="Penal" url="#" icon={Lock} />
@@ -90,7 +89,7 @@ export default function AreasDeAtuaçao() {
       </Container.Root>
 
       {/* Veja tambem */}
-      <Container.Root border="borderBottom" backgroundColor="white">
+      <Container.Root backgroundColor="white">
         <Container.Content>
           <PageTitle title="Veja tambem" />
         </Container.Content>
