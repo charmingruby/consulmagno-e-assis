@@ -2,7 +2,7 @@ import { ComponentProps, ReactNode } from 'react'
 import { tv, VariantProps } from 'tailwind-variants'
 
 const button = tv({
-  base: 'h-12 rounded-md uppercase text-sm shadow-sm font-semibold',
+  base: 'h-12 rounded-sm uppercase text-sm shadow-sm font-semibold',
   variants: {
     size: {
       default: 'px-8',
@@ -16,6 +16,8 @@ const button = tv({
         'bg-secondary-main hover:bg-secondary-main/90 transition-colors',
       uncolored:
         'border border-primary-main text-gray-50 hover:bg-primary-main transition-colors',
+      outline:
+        'border border-gray-400 text-gray-400 hover:bg-primary-main transition-colors hover:text-gray-50',
     },
   },
   defaultVariants: {
