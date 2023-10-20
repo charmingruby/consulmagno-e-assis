@@ -22,15 +22,34 @@ import {
 } from 'lucide-react'
 
 export default function AreasDeAtuaçao() {
+  const itens = [
+    { name: 'do Trabalho', url: '#', icon: Briefcase },
+    { name: 'Tributário', url: '#', icon: DollarSign },
+    { name: 'Penal', url: '#', icon: Lock },
+    { name: 'Empresarial', url: '#', icon: Briefcase },
+    { name: 'Ambiental', url: '#', icon: Globe },
+    { name: 'de Família', url: '#', icon: Heart },
+    { name: 'Imobiliário', url: '#', icon: Home },
+    { name: 'Previdenciário', url: '#', icon: Umbrella },
+    { name: 'do Consumidor', url: '#', icon: ShoppingBag },
+    { name: 'Administrativo', url: '#', icon: Clipboard },
+    { name: 'Contratual', url: '#', icon: File },
+    { name: 'Internacional', url: '#', icon: Map },
+    { name: 'da Saúde', url: '#', icon: Star },
+    { name: 'Eleitoral', url: '#', icon: Vote },
+    { name: 'da Tecnologia da Informação', url: '#', icon: Monitor },
+    { name: 'de Propriedade Intelectual', url: '#', icon: PenTool },
+  ]
+
   return (
     <>
       {/* HERO */}
       <Container.Root className="pt-16 bg-primary-gradient">
-        <Container.Content className="pt-24 flex flex-col items-center gap-6">
-          <h2 className="text-white font-bold text-5xl">
+        <Container.Content className="md:pt-24 flex flex-col items-center gap-6 pt-8">
+          <h2 className="text-white font-bold md:text-5xl text-3xl">
             Conheça Nossas Áreas de Atuação
           </h2>
-          <span className="text-gray-200 text-xl">
+          <span className="text-gray-200 text-lg md:text-xl">
             Onde a Experiência e o Comprometimento se Encontram para Proteger
             Seus Interesses
           </span>
@@ -39,50 +58,15 @@ export default function AreasDeAtuaçao() {
 
       {/* Áreas de Atuação */}
       <Container.Root backgroundColor="white">
-        <Container.Content>
+        <Container.Content className="">
           <div className="grid grid-row">
             <div className="flex justify-center mb-12">
               <PageTitle title="Áreas de Atuação" />
             </div>
-            <div className="grid grid-cols-3 gap-6 ">
-              <NameCard name="do Trabalho" url="#" icon={Briefcase} />
-              <NameCard name="Tributário" url="#" icon={DollarSign} />
-
-              <NameCard name="Penal" url="#" icon={Lock} />
-
-              <NameCard name="Empresarial" url="#" icon={Briefcase} />
-
-              <NameCard name="Ambiental" url="#" icon={Globe} />
-
-              <NameCard name="de Família" url="#" icon={Heart} />
-
-              <NameCard name="Imobiliário" url="#" icon={Home} />
-
-              <NameCard name="Previdenciário" url="#" icon={Umbrella} />
-
-              <NameCard name="do Consumidor" url="#" icon={ShoppingBag} />
-
-              <NameCard name="Administrativo" url="#" icon={Clipboard} />
-
-              <NameCard name="Contratual" url="#" icon={File} />
-
-              <NameCard name="Internacional" url="#" icon={Map} />
-
-              <NameCard name="da Saúde" url="#" icon={Star} />
-
-              <NameCard name="Eleitoral" url="#" icon={Vote} />
-
-              <NameCard
-                name="da Tecnologia da Informação"
-                url="#"
-                icon={Monitor}
-              />
-
-              <NameCard
-                name="de Propriedade Intelectual"
-                url="#"
-                icon={PenTool}
-              />
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-center justify-center ">
+              {itens.map(({ name, url, icon }, index) => (
+                <NameCard name={name} url={url} icon={icon} key={index} />
+              ))}
             </div>
           </div>
         </Container.Content>

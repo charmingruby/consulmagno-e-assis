@@ -19,7 +19,7 @@ export function NameCard({ icon: Icon, ...props }: NameCardProps) {
 
           <div className="h-6 w-px bg-gray-100" />
 
-          <div className="text-xl">
+          <div className="text-lg md:text-xl">
             <span className="font-medium">Direito </span>
             <span className="font-bold text-secondary-main">{props.name}</span>
           </div>
