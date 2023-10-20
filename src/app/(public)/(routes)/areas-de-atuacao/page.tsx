@@ -73,8 +73,8 @@ export default function AreasDeAtuaçao() {
       </Container.Root>
 
       {/* Veja tambem */}
-      <Container.Root backgroundColor="white">
-        <Container.Content>
+      <Container.Root backgroundColor="white" border="borderTop">
+        <Container.Content className="text-center">
           <PageTitle title="Veja tambem" />
         </Container.Content>
       </Container.Root>
