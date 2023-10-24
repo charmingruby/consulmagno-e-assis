@@ -14,6 +14,7 @@ import {
 import { PageTitle } from '@/components/page-title'
 import { Box } from '@/components/ui/box'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export default function Contact() {
   return (
@@ -32,9 +33,21 @@ export default function Contact() {
             </Text>
 
             <div className="mt-12 flex flex-col gap-4">
-              <MeanItem content="ymir@email.com" icon={AtSign} url="/" />
-              <MeanItem content="(32) 9 9999-9999" icon={Phone} url="/" />
-              <MeanItem content="/user" icon={Instagram} url="/" />
+              <MeanItem
+                content="contato@consulmagnoassis.com"
+                icon={AtSign}
+                url="mailto:contato@consulmagnoassis.com"
+              />
+              <MeanItem
+                content="(32)9 8834-4973"
+                icon={Phone}
+                url="https://wa.me/5532988344973?text=Ol%C3%A1%2C%20estou%20interessado%20nos%20seus%20servi%C3%A7os"
+              />
+              <MeanItem
+                content="/consulmagnoassisadv"
+                icon={Instagram}
+                url="https://www.instagram.com/consulmagnoassisadv/"
+              />
             </div>
           </div>
 
@@ -71,7 +84,13 @@ export default function Contact() {
                 exercitationem omnis nam expedita repellendus mollitia quasi est
                 suscipit quam dicta corporis error?
               </Text>
-              <Button className="w-full">Localização</Button>
+              <Link
+                target="_blank"
+                prefetch={false}
+                href="https://www.google.com.br/maps/place/Av.+Bar%C3%A3o+do+Rio+Branco,+1871+-+Sala+613+-+Centro,+Juiz+de+Fora+-+MG,+41615-001/@-21.7583388,-43.3502574,17z/data=!3m1!4b1!4m6!3m5!1s0x989c9f39f31b85:0xfe746fb5fc325d6c!8m2!3d-21.7583388!4d-43.3502574!16s%2Fg%2F11s4g2t3vk?entry=ttu"
+              >
+                <Button className="w-full">Localização</Button>
+              </Link>
             </Box>
 
             {/* Remote */}
@@ -88,9 +107,15 @@ export default function Contact() {
                 exercitationem omnis nam expedita repellendus mollitia quasi est
                 suscipit quam dicta corporis error?
               </Text>
-              <Button color="secondary" className="w-full">
-                Contato
-              </Button>
+              <Link
+                target="_blank"
+                href="https://wa.me/5532988344973?text=Ol%C3%A1%2C%20estou%20interessado%20nos%20seus%20servi%C3%A7os"
+                prefetch={false}
+              >
+                <Button color="secondary" className="w-full">
+                  Contato
+                </Button>
+              </Link>
             </Box>
           </div>
         </Container.Content>
@@ -106,10 +131,12 @@ export default function Contact() {
               cum et repellendus eaque expedita deleniti vel ipsum autem
               blanditiis illum.
             </Text>
-            <Button className="flex gap-2 items-center justify-center w-full md:w-fit">
-              <span>Ver tudo</span>
-              <ArrowRight className="h-4 w-4 text-secondary-main" />
-            </Button>
+            <Link href="/areas-de-atuacao" prefetch={false}>
+              <Button className="flex gap-2 items-center justify-center w-full md:w-fit">
+                <span>Ver tudo</span>
+                <ArrowRight className="h-4 w-4 text-secondary-main" />
+              </Button>
+            </Link>
           </div>
         </Container.Content>
       </Container.Root>

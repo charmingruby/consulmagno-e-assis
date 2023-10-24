@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import * as Container from '@/components/ui/container'
 import { AreaList } from './components/area-list'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function AreasDeAtuaçao() {
   return (
@@ -51,10 +52,12 @@ export default function AreasDeAtuaçao() {
               incidunt labore ea eos.
             </p>
           </div>
-          <Button className="w-fit flex items-center justify-center gap-2">
-            <span>Conheça os relatos dos clientes</span>
-            <ArrowRight className="text-secondary-main h-4 w-4" />
-          </Button>
+          <Link href="/relatos" prefetch={false}>
+            <Button className="w-fit flex items-center justify-center gap-2">
+              <span>Conheça os relatos dos clientes</span>
+              <ArrowRight className="text-secondary-main h-4 w-4" />
+            </Button>
+          </Link>
         </Container.Content>
       </Container.Root>
     </>

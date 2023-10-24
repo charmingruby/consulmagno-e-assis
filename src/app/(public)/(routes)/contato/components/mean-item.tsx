@@ -12,6 +12,7 @@ export function MeanItem({ content, url, icon: Icon }: MeanItemProps) {
     <Link
       href={url}
       prefetch={false}
+      target="_blank"
       className="group flex items-center gap-2 transition-all w-fit"
     >
       <div className="group-hover:bg-primary-main p-1.5 bg-gray-100 rounded-full transition-all">

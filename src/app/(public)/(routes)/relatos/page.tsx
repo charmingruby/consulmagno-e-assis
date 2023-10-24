@@ -5,6 +5,7 @@ import { Text } from '@/components/ui/text'
 import { Button } from '@/components/ui/button'
 import { CustomerStory } from './components/customer-story'
 import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Cases() {
   return (
@@ -88,10 +89,12 @@ export default function Cases() {
               incidunt labore ea eos.
             </Text>
           </div>
-          <Button className="w-fit flex items-center justify-center gap-2">
-            <span>Conheça no que atuamos</span>
-            <ArrowRight className="text-secondary-main h-4 w-4" />
-          </Button>
+          <Link href="/areas-de-atuacao" prefetch={false}>
+            <Button className="w-fit flex items-center justify-center gap-2">
+              <span>Conheça no que atuamos</span>
+              <ArrowRight className="text-secondary-main h-4 w-4" />
+            </Button>
+          </Link>
         </Container.Content>
       </Container.Root>
     </>

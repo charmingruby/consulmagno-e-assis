@@ -11,6 +11,8 @@ export interface LinkSectionProps {
 }
 
 export function LinkSection({ title, links }: LinkSectionProps) {
+  const isSocialSection = title === 'Redes'
+
   return (
     <div>
       <strong>{title}</strong>
@@ -19,7 +21,7 @@ export function LinkSection({ title, links }: LinkSectionProps) {
           <Link
             prefetch={false}
             href={link.url}
-            // target="_blank"
+            target={isSocialSection ? '_blank' : undefined}
             key={link.label}
           >
             <small className="text-sm font-medium text-gray-400 hover:text-primary-main hover:underline transition-all">
