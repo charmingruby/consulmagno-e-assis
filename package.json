@@ -33,6 +33,7 @@
     "@rocketseat/eslint-config": "^2.1.0",
     "@typescript-eslint/eslint-plugin": "^5.62.0",
     "@typescript-eslint/parser": "^5.62.0",
+    "daisyui": "^3.9.3",
     "eslint": "^8.48.0",
     "eslint-config-airbnb-typescript": "^17.1.0",
     "tailwind-scrollbar": "^3.0.4"
