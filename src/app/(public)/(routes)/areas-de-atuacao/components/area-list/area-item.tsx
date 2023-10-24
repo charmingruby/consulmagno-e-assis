@@ -1,27 +1,22 @@
-import { Box } from '@/components/ui/box'
 import { ChevronRight } from 'lucide-react'
+import { AreaItemProps } from '.'
 import Link from 'next/link'
-import { ElementType } from 'react'
+import { Box } from '@/components/ui/box'
 
-interface NameCardProps {
-  name: string
-  url: string
-  icon: ElementType
-}
+export function AreaItem({ icon: Icon, name, url }: AreaItemProps) {
+  const fullUrl = '/areas-de-atuacao' + url
 
-export function NameCard({ icon: Icon, ...props }: NameCardProps) {
   return (
-    <Link prefetch={false} href={props.url} className="flex">
+    <Link prefetch={false} href={fullUrl} className="flex">
       <Box className="text-primary-main flex flex-col  justify-center">
         <div className="flex gap-3">
-          {/* <IconBadge defaultSize={false} icon={props.icon} /> */}
           <Icon className="h-6" />
 
           <div className="h-6 w-px bg-gray-100" />
 
           <div className="text-lg md:text-xl">
             <span className="font-medium">Direito </span>
-            <span className="font-bold text-secondary-main">{props.name}</span>
+            <span className="font-bold text-secondary-main">{name}</span>
           </div>
         </div>
 

@@ -1,57 +1,21 @@
 import { PageTitle } from '@/components/page-title'
 import { Button } from '@/components/ui/button'
 import * as Container from '@/components/ui/container'
-import { NameCard } from './components/name-card'
-import {
-  Briefcase,
-  DollarSign,
-  Lock,
-  Home,
-  Heart,
-  Globe,
-  ShoppingBag,
-  Clipboard,
-  File,
-  Umbrella,
-  Monitor,
-  PenTool,
-  Vote,
-  Map,
-  Star,
-  ArrowRight,
-} from 'lucide-react'
+import { AreaList } from './components/area-list'
+import { ArrowRight } from 'lucide-react'
 
 export default function AreasDeAtuaçao() {
-  const itens = [
-    { name: 'do Trabalho', url: '#', icon: Briefcase },
-    { name: 'Tributário', url: '#', icon: DollarSign },
-    { name: 'Penal', url: '#', icon: Lock },
-    { name: 'Empresarial', url: '#', icon: Briefcase },
-    { name: 'Ambiental', url: '#', icon: Globe },
-    { name: 'de Família', url: '#', icon: Heart },
-    { name: 'Imobiliário', url: '#', icon: Home },
-    { name: 'Previdenciário', url: '#', icon: Umbrella },
-    { name: 'do Consumidor', url: '#', icon: ShoppingBag },
-    { name: 'Administrativo', url: '#', icon: Clipboard },
-    { name: 'Contratual', url: '#', icon: File },
-    { name: 'Internacional', url: '#', icon: Map },
-    { name: 'da Saúde', url: '#', icon: Star },
-    { name: 'Eleitoral', url: '#', icon: Vote },
-    { name: 'da Tecnologia da Informação', url: '#', icon: Monitor },
-    { name: 'de Propriedade Intelectual', url: '#', icon: PenTool },
-  ]
-
   return (
     <>
-      {/* HERO */}
+      {/* Hero */}
       <Container.Root className="pt-16 bg-primary-gradient">
-        <Container.Content className="md:pt-24 flex flex-col items-center gap-6 pt-8">
-          <h2 className="text-white font-bold md:text-5xl text-3xl">
+        <Container.Content className="pt-24 flex flex-col items-center gap-6">
+          <h2 className="text-white font-bold text-5xl">
             Conheça Nossas Áreas de Atuação
           </h2>
-          <span className="text-gray-200 text-lg md:text-xl">
+          <span className="text-gray-200 text-xl">
             Onde a Experiência e o Comprometimento se Encontram para Proteger
-            Seus Interesses
+            Seus Interesses{' '}
           </span>
         </Container.Content>
       </Container.Root>
@@ -63,11 +27,7 @@ export default function AreasDeAtuaçao() {
             <div className="flex justify-center mb-12">
               <PageTitle title="Áreas de Atuação" />
             </div>
-            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-center justify-center ">
-              {itens.map(({ name, url, icon }, index) => (
-                <NameCard name={name} url={url} icon={icon} key={index} />
-              ))}
-            </div>
+            <AreaList />
           </div>
         </Container.Content>
       </Container.Root>

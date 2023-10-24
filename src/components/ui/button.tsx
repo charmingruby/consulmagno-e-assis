@@ -17,7 +17,7 @@ const button = tv({
       uncolored:
         'border border-primary-main text-gray-50 hover:bg-primary-main transition-colors',
       outline:
-        'border border-gray-400 text-gray-400 hover:bg-primary-main transition-colors hover:text-gray-50',
+        'border border-primary-main text-primary-main hover:bg-primary-main transition-colors hover:text-gray-50',
     },
   },
   defaultVariants: {
