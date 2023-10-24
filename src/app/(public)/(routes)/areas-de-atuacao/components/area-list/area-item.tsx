@@ -7,7 +7,7 @@ export function AreaItem({ icon: Icon, name, url }: AreaItemProps) {
   const fullUrl = '/areas-de-atuacao' + url
 
   return (
-    <Link prefetch={false} href={fullUrl} className="flex">
+    <Link prefetch={false} href={fullUrl} className="flex h-full">
       <Box className="text-primary-main flex flex-col  justify-center">
         <div className="flex gap-3">
           <Icon className="h-6" />

@@ -1,9 +1,7 @@
+import { MenuContextProvider } from '@/contexts/menu-context'
 import '../styles/globals.css'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
-import { Footer } from '@/app/(public)/components/footer'
-import { Header } from './(public)/components/header'
-import { ContactWidget } from '@/components/contact-widget'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -22,15 +20,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body
-        className={`${montserrat.variable} font-sans relative text-gray-900 bg-gray-50 scroll-smooth scrollbar-thin scrollbar-track-gray-300 scrollbar-thumb-gray-100`}
-      >
-        <Header />
-        <ContactWidget />
-        {children}
-        <Footer />
-      </body>
+    <html lang="pt-BR">
+      <MenuContextProvider>
+        <body
+          className={`${montserrat.variable} font-sans text-gray-900 bg-gray-50 scroll-smooth scrollbar-thin scrollbar-track-gray-300 scrollbar-thumb-gray-100`}
+        >
+          {children}
+        </body>
+      </MenuContextProvider>
     </html>
   )
 }
