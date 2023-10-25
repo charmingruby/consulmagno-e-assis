@@ -39,12 +39,12 @@ export default function Contact() {
                 url="mailto:contato@consulmagnoassis.com"
               />
               <MeanItem
-                content="(32)9 8834-4973"
+                content="(32) 98834-4973"
                 icon={Phone}
                 url="https://wa.me/5532988344973?text=Ol%C3%A1%2C%20estou%20interessado%20nos%20seus%20servi%C3%A7os"
               />
               <MeanItem
-                content="/consulmagnoassisadv"
+                content="@consulmagnoassisadv"
                 icon={Instagram}
                 url="https://www.instagram.com/consulmagnoassisadv/"
               />
