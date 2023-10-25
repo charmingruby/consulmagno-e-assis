@@ -4,6 +4,7 @@ import * as Container from '@/components/ui/container'
 import { AreaList } from './components/area-list'
 import { ArrowRight } from 'lucide-react'
 import Link from 'next/link'
+import { SearchBar } from './components/search-bar'
 
 export default function AreasDeAtuaçao() {
   return (
@@ -25,9 +26,15 @@ export default function AreasDeAtuaçao() {
       <Container.Root backgroundColor="white">
         <Container.Content className="">
           <div className="grid grid-row">
-            <div className="flex justify-center mb-12">
-              <PageTitle title="Áreas de Atuação" />
+            <div className="grid grid-cols-2 w-full gap-2 mb-12">
+              <div className="flex items-center gap-2">
+                <PageTitle title="Áreas de Atuação" />
+              </div>
+              <div className="flex items-center">
+                <SearchBar />
+              </div>
             </div>
+
             <AreaList />
           </div>
         </Container.Content>

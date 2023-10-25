@@ -18,7 +18,7 @@ const TextAreaInput = forwardRef<HTMLTextAreaElement, TextAreaInputProps>(
           id={inputId}
           name={name}
           className={`
-          w-full bg-white min-h-[8rem] px-3 outline-none box-border placeholder-shown:pt-4 pt-6 peer transition-colors border rounded-lg focus:outline-secondary-main focus:border-gray-50 cursor-pointer
+          w-full bg-white min-h-[8rem] px-3 outline-none box-border placeholder-shown:pt-4 pt-6 peer transition-colors border rounded-lg focus:outline-secondary-main focus:border-gray-50
           ${hasError
               ? 'border-danger-300 placeholder-danger-300'
               : 'border-gray-100 placeholder-gray-200 focus:border-primary-300 '
