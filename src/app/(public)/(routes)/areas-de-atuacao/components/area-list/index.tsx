@@ -45,7 +45,7 @@ const areaItems: AreaItemProps[] = [
 
 export function AreaList() {
   return (
-    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 items-center justify-center ">
+    <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
       {areaItems.map(({ name, url, icon }, index) => (
         <AreaItem name={name} url={url} icon={icon} key={index} />
       ))}

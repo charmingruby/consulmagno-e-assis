@@ -10,8 +10,8 @@ export default function AreasDeAtuaçao() {
   return (
     <>
       {/* Hero */}
-      <Container.Root className="pt-16 bg-primary-gradient">
-        <Container.Content className="pt-24 flex flex-col items-center gap-6">
+      <Container.Root className="md:pt-16 bg-primary-gradient">
+        <Container.Content className="pt-24 flex flex-col text-center lg:text-start items-center gap-6">
           <h2 className="text-white font-bold text-5xl">
             Conheça Nossas Áreas de Atuação
           </h2>
@@ -26,7 +26,7 @@ export default function AreasDeAtuaçao() {
       <Container.Root backgroundColor="white">
         <Container.Content className="">
           <div className="grid grid-row">
-            <div className="grid grid-cols-2 w-full gap-2 mb-12">
+            <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 lg:gap-2 mb-6 lg:mb-12">
               <div className="flex items-center gap-2">
                 <PageTitle title="Áreas de Atuação" />
               </div>

@@ -28,7 +28,7 @@ export default function Home() {
         <Container.Content>
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
             {/* Title */}
-            <h1 className="text-gray-50 font-semibold m-0 text-3xl md:text-4xl mb-6 break-words">
+            <h1 className="text-gray-50 font-semibold m-0 text-4xl md:text-4xl mb-6 break-words">
               Defesa Legal em Suas Mãos: Advocacia Especializada e Comprometida
               com seus Direitos
             </h1>
