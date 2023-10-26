@@ -12,7 +12,7 @@ export default function Team() {
   return (
     <>
       {/* Foto da equipe com uma texto */}
-      <Container.Root className="hero-img flex items-center sm:py-0 bg-no-repeat bg-center bg-fixed md:min-h-screen">
+      <Container.Root className="hero-img flex items-center sm:py-16 bg-no-repeat bg-center bg-fixed md:min-h-screen">
         <Container.Content>
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center">
             <h1 className="text-gray-50 font-semibold m-0 text-3xl md:text-4xl mb-6 break-words">

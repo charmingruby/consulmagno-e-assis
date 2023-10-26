@@ -1,6 +1,6 @@
 # BAIXA
-  - [ ] Trocar descriçao do footer por informaçoes do escritorio.
-  - [ ] Descentralizar heros no mobile.
+  - [x] Trocar descriçao do footer por informaçoes do escritorio.
+  - [x] Descentralizar heros no mobile.
 
 # MEDIA
   - [ ] Post mais recentes section.

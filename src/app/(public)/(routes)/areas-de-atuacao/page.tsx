@@ -11,7 +11,7 @@ export default function AreasDeAtuaçao() {
     <>
       {/* Hero */}
       <Container.Root className="md:pt-16 bg-primary-gradient">
-        <Container.Content className="pt-24 flex flex-col text-center lg:text-start items-center gap-6">
+        <Container.Content className="pt-24 flex flex-col md:text-center text-left lg:text-start items-center gap-6">
           <h2 className="text-white font-bold text-5xl">
             Conheça Nossas Áreas de Atuação
           </h2>

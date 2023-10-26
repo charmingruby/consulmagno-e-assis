@@ -39,7 +39,7 @@ export default function AreaPage({ params: { slug } }: AreaPageProps) {
             <Image
               src={brandLogo}
               alt="Consulmagno & Assis logo"
-              className="w-32 h-32"
+              className="w-32 h-32 hidden sm:block"
             />
           </div>
         </Container.Content>

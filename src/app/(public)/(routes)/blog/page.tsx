@@ -15,7 +15,7 @@ export default function Blog() {
   return (
     <>
       <Container.Root className="pt-16 bg-primary-gradient">
-        <Container.Content className="pt-24 flex flex-col items-center gap-6">
+        <Container.Content className="pt-24 flex flex-col text-left md:text-center items-start md:items-center gap-6">
           <h2 className="text-white font-bold text-5xl">Blog</h2>
           <span className="text-gray-200 text-xl">
             Veja nossa qualidade atraves dos nossos clientes

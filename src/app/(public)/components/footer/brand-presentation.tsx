@@ -1,15 +1,17 @@
 import Image from 'next/image'
 import logo from '@/assets/images/logo.png'
-import { ArrowUpRight, AtSign, Building, Phone } from 'lucide-react'
+import { ArrowUpRight, AtSign, Building, Clock8, Phone } from 'lucide-react'
 import Link from 'next/link'
 
 export function BrandPresentation() {
   return (
     <div className="flex flex-col">
-      <Image src={logo} alt="Logo" className="w-24 mb-2" />
-      <h2 className="font-bold text-2xl mb-4 lg:mb-6">
-        Consulmagno & Assis Advocacia
-      </h2>
+      <div className="flex gap-3 pb-3 flex-col md:flex-row ">
+        <Image src={logo} alt="Logo" className="w-24 mb-2 " />
+        <h2 className="font-bold text-2xl mb-4 lg:mb-6 ">
+          Consulmagno & Assis Advocacia
+        </h2>
+      </div>
 
       <div className="flex flex-col gap-3 text-gray-400">
         {/* Address */}
@@ -39,6 +41,12 @@ export function BrandPresentation() {
         <div className="flex items-center gap-2">
           <Phone className="h-4 w-4" />
           <small className="text-sm font-medium">(32) 988344973</small>
+        </div>
+
+        {/* Time */}
+        <div className="flex items-center gap-2">
+          <Clock8 className="h-4 w-4"></Clock8>
+          <small className="text-sm font-medium">08:00 - 18:00</small>
         </div>
       </div>
     </div>
