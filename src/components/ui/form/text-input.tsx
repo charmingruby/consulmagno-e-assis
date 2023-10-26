@@ -17,10 +17,10 @@ const TextInput = forwardRef<HTMLInputElement, InputProps>(
           id={inputId}
           name={name}
           className={`
-          w-full bg-white h-[52px] px-3 outline-none box-border placeholder-shown:pt-0 pt-4 peer transition-all border rounded-lg focus:border-2 focus:border-primary-light
+          w-full bg-white h-[52px] px-3 outline-none box-border placeholder:text-red-800 placeholder-shown:pt-0 pt-4 peer transition-all border rounded-lg focus:border-2
           ${
             hasError
-              ? 'border-danger-300 placeholder-danger-300'
+              ? 'border-red-500 placeholder:text-red-500 text-red-500'
               : 'border-gray-100 placeholder-gray-200 focus:border-primary-300 '
           }
       `}

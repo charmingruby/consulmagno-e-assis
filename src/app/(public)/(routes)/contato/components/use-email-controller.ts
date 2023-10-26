@@ -10,15 +10,20 @@ const sendEmailFormSchema = z.object({
     .min(6, {
       message: 'O nome precisa ter pelo menos 6 caracteres.',
     })
-    .max(20, {
-      message: 'O nome pode ter no máximo 20 caracteres.',
+    .max(80, {
+      message: 'O nome pode ter no máximo 80 caracteres.',
     }),
 
-  email: z.string().regex(/^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i, {
-    message: 'O email precisa ter um formato válido de e-mail.',
+  email: z.string().email({
+    message: 'O email precisa ter um formato válido.',
   }),
 
-  phoneNumber: z.string(),
+  phoneNumber: z
+    .string()
+    .regex(
+      /^(?:(?!00)[1-9][0-9]) ?(?:[2-8]|9[0-9])[0-9]{3}-?[0-9]{4}$/,
+      'O número precisa ter um formato válido.',
+    ),
   subject: z
     .string()
     .min(10, 'O assunto precisa ter pelo menos 10 caracteres.')

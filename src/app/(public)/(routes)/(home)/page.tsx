@@ -19,6 +19,7 @@ import { PageTitle } from '@/components/page-title'
 import map from '@/assets/images/map.png'
 import Image from 'next/image'
 import { MapAnnotations } from './components/map-annotations'
+import { PostCard } from '@/components/post-card'
 
 export default function Home() {
   return (
@@ -164,7 +165,6 @@ export default function Home() {
               <span>Últimas</span> <strong>publicações</strong>
             </div>
           </div>
-
           <div className="mb-8 grid-cols-3 ">
             <InsightCard
               imageUrl=""
@@ -174,7 +174,6 @@ export default function Home() {
               horizontal
             />
           </div>
-
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <InsightCard
               imageUrl=""
@@ -193,6 +192,16 @@ export default function Home() {
               title="Novo direito civil"
               description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, laboriosam sequi ipsam eligendi labore animi est, aut asperiores nesciunt ducimus alias illo ut aliquam minus, numquam exercitationem velit natus nostrum."
               url="test"
+            />
+          </div>
+          <div className="grid grid-cols-3">
+            <PostCard
+              authorName="Paulo Renato"
+              categories={['Direito Civil', 'Direito do Trabalho']}
+              dataPublished={new Date()}
+              excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut similique nostrum a! Eveniet nihil ipsa libero, quas repellat iusto labore ipsum sint architecto vel necessitatibus, ad earum quis sunt."
+              slug="roubo-de-identidade"
+              title="Roubo de identidade"
             />
           </div>
           <div className="w-full flex justify-center mt-6">

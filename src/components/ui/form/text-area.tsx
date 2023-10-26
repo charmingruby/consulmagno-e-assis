@@ -20,7 +20,7 @@ const TextAreaInput = forwardRef<HTMLTextAreaElement, TextAreaInputProps>(
           className={`
           w-full bg-white min-h-[8rem] px-3 outline-none box-border placeholder-shown:pt-4 pt-6 peer transition-colors border rounded-lg focus:border-2 focus:border-primary-light
           ${hasError
-              ? 'border-danger-300 placeholder-danger-300'
+              ? 'border-red-500 placeholder-red-500'
               : 'border-gray-100 placeholder-gray-200 focus:border-primary-300 '
             }
       `}

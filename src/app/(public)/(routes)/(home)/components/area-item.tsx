@@ -19,8 +19,8 @@ export function AreaItem({
 }: AreaItemProps) {
   return (
     <Box>
-      <div className="flex flex-col gap-8">
-        <div className="flex flex-col items-center gap-4">
+      <div className="flex flex-col h-full gap-8">
+        <div className="flex flex-col items-center gap-4 h-full">
           {/* Icon */}
           <div className="mb-4">
             <IconBadge icon={Icon} />

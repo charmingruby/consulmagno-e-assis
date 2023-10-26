@@ -16,3 +16,19 @@
   - [ ] Blog
   - [ ] Post especifico
   - [ ] Post por categoria
+
+# Hygraph Schema:
+  ## POST:
+    - Title
+    - Slug
+    - Excerpt
+    - CoverPhoto
+    - Content
+    - Data_published
+
+  ## CATEGORY:
+    - Name
+
+  ## AUTHOR:
+    - Name
+    - Avatar
