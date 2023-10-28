@@ -91,14 +91,14 @@ export default function AreaPage({ params: { slug } }: AreaPageProps) {
                 </p>
               </div>
 
-              <div className="mt-auto border-t border-gray-100 pt-4 gap-2 flex items-center">
+              <div className="mt-auto border-t border-gray-100 pt-4 gap-2 flex items-center ">
                 <span className="font-bold text-lg">
                   É o que você está procurando?
                 </span>{' '}
                 <Link
                   prefetch={false}
                   href="/contato"
-                  className="hover:text-primary-main hover:font-medium transition-all flex gap-1"
+                  className="hover:text-primary-main font-medium hover:font-semibold transition-all flex gap-1"
                 >
                   <span>Entre em contato</span>
                   <ArrowUpRight className="w-5 h-5"></ArrowUpRight>
