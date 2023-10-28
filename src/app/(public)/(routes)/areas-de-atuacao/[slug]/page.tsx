@@ -1,13 +1,13 @@
 import { PageTitle } from '@/components/page-title'
 import { Button } from '@/components/ui/button'
 import * as Container from '@/components/ui/container'
-import { ArrowRight, ArrowUpRight, HelpCircle, Target } from 'lucide-react'
+import { ArrowRight, HelpCircle, Target } from 'lucide-react'
 import { slugTransformer } from '@/utils/slug-transformer'
-import { ReturnLink } from './componets/return-link'
+import { ReturnLink } from './components/return-link'
 import Image from 'next/image'
 import brandLogo from '@/app/icon.png'
-import { AreaAccordion } from './componets/area-accordion'
-import { ExplanationTopicTitle } from './componets/explanation-topic-title'
+import { AreaAccordion } from './components/area-accordion'
+import { ExplanationTopicTitle } from './components/explanation-topic-title'
 import { Text } from '@/components/ui/text'
 import Link from 'next/link'
 
@@ -81,7 +81,7 @@ export default function AreaPage({ params: { slug } }: AreaPageProps) {
               <ExplanationTopicTitle icon={Target} title="Como agimos" />
 
               {/* Action content */}
-              <div>
+              <div className="pb-4">
                 <p className="text-lg  flex ">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Pariatur id suscipit voluptate libero est inventore
@@ -91,17 +91,19 @@ export default function AreaPage({ params: { slug } }: AreaPageProps) {
                 </p>
               </div>
 
-              <div className="mt-auto border-t border-gray-100 pt-4 gap-2 flex items-center ">
-                <span className="font-bold text-lg">
+              <div className="mt-auto border-t border-gray-100 pt-4 gap-2 flex items-center">
+                <span className="font-semibold text-lg">
                   É o que você está procurando?
-                </span>{' '}
+                </span>
                 <Link
-                  prefetch={false}
                   href="/contato"
-                  className="hover:text-primary-main font-medium hover:font-semibold transition-all flex gap-1"
+                  prefetch={false}
+                  className="flex items-center gap-1 group"
                 >
-                  <span>Entre em contato</span>
-                  <ArrowUpRight className="w-5 h-5"></ArrowUpRight>
+                  <span className="text-lg text-gray-400 group-hover:text-primary-main group-hover:underline transition-all">
+                    Entre em contato
+                  </span>
+                  <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-secondary-main transition-colors" />
                 </Link>
               </div>
             </div>

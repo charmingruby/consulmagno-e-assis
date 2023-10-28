@@ -123,7 +123,7 @@ export default function Home() {
       </Container.Root>
 
       {/* Areas */}
-      <Container.Root border="borderY">
+      <Container.Root backgroundColor="white">
         <Container.Content>
           <div className="mb-10 flex flex-col items-center max-w-2xl mx-auto">
             <div className="flex flex-col gap-2 mb-4">
@@ -154,6 +154,8 @@ export default function Home() {
           </div>
         </Container.Content>
       </Container.Root>
+
+      {/* Depoitions}
 
       {/* Insights */}
       <Container.Root className="bg-white">

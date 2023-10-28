@@ -38,16 +38,18 @@ export function AreaItem({
         </div>
 
         {/* Link */}
-        <Link
-          href={url}
-          prefetch={false}
-          className="flex items-center justify-center gap-1 group"
-        >
-          <span className="text-primary-main font-semibold group-hover:underline transition-transform">
-            Ver detalhes
-          </span>
-          <ArrowRight className="text-secondary-main mb-0.5" size={20} />
-        </Link>
+        <div className="flex justify-center">
+          <Link
+            href={url}
+            prefetch={false}
+            className="flex items-center justify-center gap-1 group w-fit"
+          >
+            <span className="text-primary-main font-semibold group-hover:underline transition-transform">
+              Ver detalhes
+            </span>
+            <ArrowRight className="text-secondary-main mb-0.5" size={20} />
+          </Link>
+        </div>
       </div>
     </Box>
   )
