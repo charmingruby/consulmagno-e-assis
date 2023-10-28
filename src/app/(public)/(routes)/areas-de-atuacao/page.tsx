@@ -40,13 +40,6 @@ export default function AreasDeAtuaçao() {
         </Container.Content>
       </Container.Root>
 
-      {/* Veja tambem */}
-      <Container.Root backgroundColor="white" border="borderTop">
-        <Container.Content className="text-center">
-          <PageTitle title="Veja tambem" />
-        </Container.Content>
-      </Container.Root>
-
       {/* CTA */}
       <Container.Root backgroundColor="default" border="borderTop">
         <Container.Content className="flex flex-col items-center gap-8">
