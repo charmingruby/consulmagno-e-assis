@@ -1,7 +1,7 @@
 import { PageTitle } from '@/components/page-title'
 import { Button } from '@/components/ui/button'
 import * as Container from '@/components/ui/container'
-import { ArrowRight, HelpCircle, Target } from 'lucide-react'
+import { ArrowRight, ArrowUpRight, HelpCircle, Target } from 'lucide-react'
 import { slugTransformer } from '@/utils/slug-transformer'
 import { ReturnLink } from './componets/return-link'
 import Image from 'next/image'
@@ -82,22 +82,26 @@ export default function AreaPage({ params: { slug } }: AreaPageProps) {
 
               {/* Action content */}
               <div>
-                <p className="font-medium text-2xl md:text-3xl flex ">
+                <p className="text-lg  flex ">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur id suscipit voluptate libero est inventore laboriosam
+                  Pariatur id suscipit voluptate libero est inventore
+                  laboriosamLorem ipsum dolor sit amet consectetur adipisicing
+                  elit. Temporibus fuga dolorum optio officiis a, maxime illum,
+                  magnam accusantium minima nobis recusandae incidunt.
                 </p>
               </div>
 
-              <div className="mt-auto border-t border-gray-100 pt-4">
-                <span className="font-medium">
+              <div className="mt-auto border-t border-gray-100 pt-4 gap-2 flex items-center">
+                <span className="font-bold text-lg">
                   É o que você está procurando?
                 </span>{' '}
                 <Link
                   prefetch={false}
                   href="/contato"
-                  className="hover:text-primary-main hover:font-medium transition-all"
+                  className="hover:text-primary-main hover:font-medium transition-all flex gap-1"
                 >
                   <span>Entre em contato</span>
+                  <ArrowUpRight className="w-5 h-5"></ArrowUpRight>
                 </Link>
               </div>
             </div>

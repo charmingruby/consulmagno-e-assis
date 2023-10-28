@@ -7,22 +7,22 @@
   - [ ] Pagina de post inspirada Thomsom.
   - [ ] Posts recentes na tela inicial.
   - [ ] Otimizar pagina de todas areas de atuaçao.
-  - [ ] Numa area especifica, padronizar o texto de como agimos
-  - [ ] Numa area especifica, melhorar o link de contato
+  - [x] Numa area especifica, padronizar o texto de como agimos
+  - [x] Numa area especifica, melhorar o link de contato
   - [ ] Numa area especifica, checklist de serviços
   - [ ] Padronizar CTA, com a co primaria e link do wpp
   - [ ] Mostrar apenas a categoria principal no componente de post post
-  - [ ] Remover parcerias de relatos
-  - [ ] No card de relato, botar problema no lugar do ramo da loja
+  - [x] Remover parcerias de relatos
+  - [x] No card de relato, botar problema no lugar do ramo da loja
   - [ ] Copiar relatos da home da apperize
-  - [ ] Trocar equipe por advogados na navbar
-  - [ ] Hero da pagina de advogados vai ter so uma frase de efeito
+  - [x] Trocar equipe por advogados na navbar
+  - [x] Hero da pagina de advogados vai ter so uma frase de efeito
 
 
 
 # Paginas
   - [ ] Blog
-  - [ ] Post especifico
+  - [ ] Post especifico 
   - [ ] Post por categoria
 
 # Hygraph Schema:

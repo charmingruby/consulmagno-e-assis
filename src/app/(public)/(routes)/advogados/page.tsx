@@ -16,15 +16,8 @@ export default function Team() {
         <Container.Content>
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center">
             <h1 className="text-gray-50 font-semibold m-0 text-3xl md:text-4xl mb-6 break-words">
-              Conheça nosso time
+              Experiência, Excelência e Empenho: Nossa Equipe ao Seu Lado
             </h1>
-            <h2 className="text-gray-50">
-              {' '}
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-              excepturi sint expedita voluptas quidem adipisci modi deleniti at
-              odit, laborum cumque sit voluptatem nam placeat similique aut
-              soluta itaque facilis.
-            </h2>
           </div>
         </Container.Content>
       </Container.Root>

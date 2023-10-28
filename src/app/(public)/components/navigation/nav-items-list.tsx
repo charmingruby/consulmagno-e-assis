@@ -16,5 +16,5 @@ export const navItemsList: NavItemProps[] = [
   { icon: Briefcase, label: 'Áreas de atuação', url: '/areas-de-atuacao' },
   { icon: Library, label: 'Blog', url: '/blog' },
   { icon: Star, label: 'Relatos', url: '/relatos' },
-  { icon: Users, label: 'Equipe', url: '/nossa-equipe' },
+  { icon: Users, label: 'Advogados', url: '/advogados' },
 ]

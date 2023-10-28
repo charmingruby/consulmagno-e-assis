@@ -22,22 +22,6 @@ export default function Cases() {
 
       {/* Carrosel de clientes */}
 
-      {/* Principais clientes */}
-      <Container.Root backgroundColor="white">
-        <Container.Content>
-          <div className="mb-12">
-            <PageTitle title="Parcerias bem sucedidas" />
-          </div>
-
-          {/* Depoimentos de clientes */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <CustomerCase />
-            <CustomerCase />
-            <CustomerCase />
-          </div>
-        </Container.Content>
-      </Container.Root>
-
       {/* Todos clientes */}
       <Container.Root backgroundColor="white">
         <Container.Content>

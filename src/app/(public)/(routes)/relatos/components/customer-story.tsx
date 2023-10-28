@@ -23,7 +23,7 @@ export function CustomerStory() {
         {/* Nome */}
         <div className="flex flex-col">
           <strong className="text-xl">Ymir</strong>
-          <small className="text-sm">Loja de Software</small>
+          <small className="text-sm">Rescisão de contrato de trabalho</small>
         </div>
       </div>
 

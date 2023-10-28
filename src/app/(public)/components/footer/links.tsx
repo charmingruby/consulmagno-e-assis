@@ -22,8 +22,8 @@ const entepriseSection: LinkSectionProps = {
       url: '/relatos',
     },
     {
-      label: 'Equipe',
-      url: '/nossa-equipe',
+      label: 'Advogados',
+      url: '/advogados',
     },
     {
       label: 'Contato',
