@@ -21,6 +21,8 @@ import Image from 'next/image'
 import { MapAnnotations } from './components/map-annotations'
 import { PostCard } from '@/components/post-card'
 import * as CTA from '@/components/cta'
+import { DepositionItem } from './components/deposition-item'
+import { Separator } from './components/separator'
 
 export default function Home() {
   return (
@@ -130,7 +132,7 @@ export default function Home() {
             <div className="flex flex-col gap-2 mb-4">
               <PageTitle title="Áreas de atuação" />
             </div>
-            <Text align="center">
+            <Text align="center" opacity="low">
               Nossa equipe de advogados comprometidos entende a importância do
               seu caso. Com experiência em várias áreas de atuação, o(a) Brand
               lidará com seus problemas legais com cuidado e profissionalismo.
@@ -156,7 +158,34 @@ export default function Home() {
         </Container.Content>
       </Container.Root>
 
-      {/* Depoitions}
+      {/* Depositions */}
+      <Container.Root border="borderY">
+        <Container.Content>
+          {/* Heading */}
+          <div className="lg:w-1/2">
+            <PageTitle title="Relatos de clientes" />
+          </div>
+
+          {/* Depositions */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 w-full">
+            <div className="mt-12 space-y-6">
+              <DepositionItem />
+              <Separator />
+              <DepositionItem />
+            </div>
+
+            <div className="block lg:hidden my-6">
+              <Separator />
+            </div>
+
+            <div className="space-y-6">
+              <DepositionItem />
+              <Separator />
+              <DepositionItem />
+            </div>
+          </div>
+        </Container.Content>
+      </Container.Root>
 
       {/* Insights */}
       <Container.Root className="bg-white">

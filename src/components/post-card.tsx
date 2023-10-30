@@ -36,7 +36,11 @@ export function PostCard({
     <div>
       <Image src={exampleCoverImg} alt={excerpt} />
       <div>
-        <Image src={exampleAvatarImg} alt={`${authorName} avatar`} />
+        <Image
+          src={exampleAvatarImg}
+          alt={`${authorName} avatar`}
+          className="w-12 h-12 rounded-full"
+        />
       </div>
     </div>
   )

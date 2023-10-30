@@ -8,8 +8,8 @@ interface MapAnnotationsProps {
 export function MapAnnotations({ title, description }: MapAnnotationsProps) {
   return (
     <div className="flex flex-col gap-4">
-      <strong className="text-xl">{title}</strong>
-      <Text size="md" opacity="low">
+      <strong className="text-2xl text-primary-main">{title}</strong>
+      <Text size="default" opacity="low">
         {description}
       </Text>
     </div>
