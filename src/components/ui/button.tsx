@@ -13,9 +13,9 @@ const button = tv({
       primary:
         'bg-primary-main text-gray-50 hover:bg-primary-main/90 transition-colors',
       secondary:
-        'bg-secondary-main hover:bg-secondary-main/90 transition-colors',
+        'bg-secondary-main hover:bg-secondary-main/90 text-primary-main transition-colors',
       uncolored:
-        'border border-primary-main bg-white text-primary-main hover:text-white hover:bg-secondary-main transition-colors',
+        'border border-primary-main bg-white text-primary-main hover:bg-gray-100 transition-colors',
       outline:
         'border border-primary-main text-primary-main hover:bg-primary-main transition-colors hover:text-gray-50',
     },
