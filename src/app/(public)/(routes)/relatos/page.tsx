@@ -1,11 +1,14 @@
 import * as Container from '@/components/ui/container'
-import { CustomerCase } from './components/customer-case'
 import { PageTitle } from '@/components/page-title'
 import { Text } from '@/components/ui/text'
-import { Button } from '@/components/ui/button'
 import { CustomerStory } from './components/customer-story'
-import { ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import * as CTA from '@/components/cta'
+import { generateStaticSeo } from '@/components/seo/static'
+
+export const metadata = generateStaticSeo({
+  title: 'Relatos',
+  description: '',
+})
 
 export default function Cases() {
   return (
@@ -63,25 +66,24 @@ export default function Cases() {
       </Container.Root>
 
       {/* CTA */}
-      <Container.Root backgroundColor="default" border="borderTop">
-        <Container.Content className="flex flex-col items-center gap-8">
-          <div className="max-w-2xl mx-auto text-center flex flex-col gap-8 items-center">
-            <PageTitle title="Venha ser nosso próximo cliente" />
-            <Text>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Explicabo eius enim illum, dolorem nulla nesciunt quaerat ab. Quod
-              natus exercitationem quis, consequatur eaque sint earum quia
-              incidunt labore ea eos.
-            </Text>
-          </div>
-          <Link href="/areas-de-atuacao" prefetch={false}>
-            <Button className="w-fit flex items-center justify-center gap-2">
-              <span>Conheça no que atuamos</span>
-              <ArrowRight className="text-secondary-main h-4 w-4" />
-            </Button>
-          </Link>
-        </Container.Content>
-      </Container.Root>
+      <CTA.Root>
+        <div className="text-center">
+          <strong className="text-3xl md:text-4xl text-white">
+            Nos diga como podemos te ajudar
+          </strong>
+        </div>
+
+        <div>
+          <Text size="md" align="center" className="text-gray-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
+            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
+            libero, cupiditate doloribus perferendis cumque?
+          </Text>
+        </div>
+
+        <CTA.ContactButtonGroup />
+      </CTA.Root>
     </>
   )
 }

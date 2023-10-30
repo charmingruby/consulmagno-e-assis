@@ -1,33 +1,33 @@
-# TASKS
-  - [x] Trocar descriçao do footer por informaçoes do escritorio.
-  - [x] Descentralizar heros no mobile.
-  - [x] Destaque que eles trabalham remoto tambem.
-  - [x] Remover parcerias de relatos
-  - [x] Numa area especifica, padronizar o texto de como agimos
-  - [x] Numa area especifica, melhorar o link de contato
-  - [ ] Pagina de post inspirada Thomsom.
-  - [ ] Posts recentes na tela inicial.
-  - [ ] Otimizar pagina de todas areas de atuaçao.
-  - [ ] Numa area especifica, checklist de serviços
-  - [ ] Padronizar CTA, com a cor primaria e link do wpp
-  - [ ] Mostrar apenas a categoria principal no componente de post post
-  - [ ] Post mais recentes section.
-  - [ ] Envio de email.
+# Tasks
+- [X] Trocar descriçao do footer por informaçoes do escritorio.
+- [X] Descentralizar heros no mobile.
+- [X] Destaque que eles trabalham remoto tambem.
+- [X] Remover parcerias de relatos
+- [X] Numa area especifica, padronizar o texto de como agimos
+- [X] Numa area especifica, melhorar o link de contato
+- [x] Padronizar CTA, com a cor primaria e link do wpp
+- [X] No card de relato, botar problema no lugar do ramo da loja
+- [X] Copiar relatos da home da apperize
+- [X] Trocar equipe por advogados na navbar
+- [X] Hero da pagina de advogados vai ter so uma frase de efeito
+- [ ] Arrumar conteudo de cada CTA
+- [ ] Pagina de post inspirada Thomsom.
+- [ ] Posts recentes na tela inicial.
+- [ ] Otimizar pagina de todas areas de atuaçao.
+- [ ] Numa area especifica, checklist de serviços
+- [ ] Mostrar apenas a categoria principal no componente de post post
+- [ ] Post mais recentes section.
+- [ ] Envio de email.
+- [ ] Arrumar SEO de cada pagina
 
-  - [x] No card de relato, botar problema no lugar do ramo da loja
-  - [x] Copiar relatos da home da apperize
-  - [x] Trocar equipe por advogados na navbar
-  - [x] Hero da pagina de advogados vai ter so uma frase de efeito
-
-
-
-# Paginas
-  - [ ] Blog
-  - [ ] Post especifico
-  - [ ] Post por categoria
+## Paginas
+- [ ] Blog
+- [ ] Post especifico
+- [ ] Post por categoria
 
 # Hygraph Schema:
-  ## POST:
+
+## POST:
     - Title
     - Slug
     - Excerpt
@@ -36,9 +36,9 @@
     - Content
     - Data_published
 
-  ## CATEGORY:
+## CATEGORY:
     - Name
 
-  ## AUTHOR:
+## AUTHOR:
     - Name
     - Avatar

@@ -1,4 +1,5 @@
 import * as Container from '@/components/ui/container'
+import * as CTA from '@/components/cta'
 import exampleImage from '@/assets/images/lawyers.png'
 import { Box } from '@/components/ui/box'
 import Image from 'next/image'
@@ -8,6 +9,12 @@ import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { PageTitle } from '@/components/page-title'
 import { Text } from '@/components/ui/text'
+import { generateStaticSeo } from '@/components/seo/static'
+
+export const metadata = generateStaticSeo({
+  title: 'Blog',
+  description: '',
+})
 
 export default function Blog() {
   const exampleDate = new Date().toDateString()
@@ -392,6 +399,26 @@ export default function Blog() {
       <Container.Root>
         <Container.Content>Carregar mais</Container.Content>
       </Container.Root>
+
+      {/* CTA */}
+      <CTA.Root>
+        <div className="text-center">
+          <strong className="text-3xl md:text-4xl text-white">
+            Nos diga como podemos te ajudar
+          </strong>
+        </div>
+
+        <div>
+          <Text size="md" align="center" className="text-gray-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
+            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
+            libero, cupiditate doloribus perferendis cumque?
+          </Text>
+        </div>
+
+        <CTA.ContactButtonGroup />
+      </CTA.Root>
     </>
   )
 }

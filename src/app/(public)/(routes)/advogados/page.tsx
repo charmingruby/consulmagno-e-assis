@@ -1,12 +1,20 @@
+/**
+ * Internal
+ */
 import { PageTitle } from '@/components/page-title'
 import * as Container from '@/components/ui/container'
 import { LayerCard } from './components/lawyer-card'
 import lawyer from '@/assets/images/lawyer.jpg'
 import { Text } from '@/components/ui/text'
-import { ArrowRight, Eye, Users } from 'lucide-react'
-import Link from 'next/link'
+import { Eye, Users } from 'lucide-react'
 import { AreaCard } from './components/area-card'
-import { Button } from '@/components/ui/button'
+import * as CTA from '@/components/cta'
+import { generateStaticSeo } from '@/components/seo/static'
+
+export const metadata = generateStaticSeo({
+  title: 'Advogados',
+  description: '',
+})
 
 export default function Team() {
   return (
@@ -143,35 +151,24 @@ export default function Team() {
         </Container.Content>
       </Container.Root>
 
-      <Container.Root backgroundColor="default" border="borderTop">
-        <Container.Content>
-          <div className="max-w-2xl mx-auto space-y-8">
-            <div className="text-center">
-              <PageTitle title="Trabalhe conosco" />
-            </div>
+      <CTA.Root>
+        <div className="text-center">
+          <strong className="text-3xl md:text-4xl text-white">
+            Nos diga como podemos te ajudar
+          </strong>
+        </div>
 
-            <div>
-              <Text align="center">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-                odio veniam ad exercitationem fugit dolorum enim eveniet
-                voluptatum laboriosam soluta repellendus fugiat reprehenderit
-                velit, ullam libero, cupiditate doloribus perferendis cumque?
-              </Text>
-            </div>
+        <div>
+          <Text size="md" align="center" className="text-gray-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
+            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
+            libero, cupiditate doloribus perferendis cumque?
+          </Text>
+        </div>
 
-            <Link
-              href="/contato"
-              prefetch={false}
-              className="flex justify-center w-full"
-            >
-              <Button className="flex justify-center items-center gap-2 w-full md:w-fit">
-                <span>Entre em contato</span>
-                <ArrowRight className="h-4 w-4 text-secondary-main" />
-              </Button>
-            </Link>
-          </div>
-        </Container.Content>
-      </Container.Root>
+        <CTA.ContactButtonGroup />
+      </CTA.Root>
     </>
   )
 }

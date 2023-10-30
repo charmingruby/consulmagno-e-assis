@@ -23,6 +23,9 @@ import { PostCard } from '@/components/post-card'
 import * as CTA from '@/components/cta'
 import { DepositionItem } from './components/deposition-item'
 import { Separator } from './components/separator'
+import { generateStaticSeo } from '@/components/seo/static'
+
+export const metadata = generateStaticSeo({ title: 'Início', description: '' })
 
 export default function Home() {
   return (
@@ -254,51 +257,49 @@ export default function Home() {
 
       {/* CTA */}
       <CTA.Root>
-        <div className="max-w-2xl mx-auto space-y-8">
-          <div className="text-center">
-            <strong className="text-3xl md:text-4xl text-white">
-              Nos diga como podemos te ajudar
-            </strong>
-          </div>
-
-          <div>
-            <Text size="md" align="center" className="text-gray-50">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-              odio veniam ad exercitationem fugit dolorum enim eveniet
-              voluptatum laboriosam soluta repellendus fugiat reprehenderit
-              velit, ullam libero, cupiditate doloribus perferendis cumque?
-            </Text>
-          </div>
-
-          <div className="flex justify-center gap-4">
-            <Link
-              href="https://www.linkedin.com/company/consulmagnoeassis/"
-              target="_blank"
-              prefetch={false}
-              className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
-            >
-              <Linkedin className=" text-secondary-main h-8 w-8 " />
-            </Link>
-            <Link
-              href="https://www.facebook.com/ConsulmagnoAssis"
-              target="_blank"
-              prefetch={false}
-              className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
-            >
-              <Facebook className=" text-secondary-main h-8 w-8 " />
-            </Link>
-            <Link
-              href="https://www.instagram.com/consulmagnoassisadv/"
-              target="_blank"
-              prefetch={false}
-              className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
-            >
-              <Instagram className=" text-secondary-main h-8 w-8 " />
-            </Link>
-          </div>
-
-          <CTA.ContactButtonGroup />
+        <div className="text-center">
+          <strong className="text-3xl md:text-4xl text-white">
+            Nos diga como podemos te ajudar
+          </strong>
         </div>
+
+        <div>
+          <Text size="md" align="center" className="text-gray-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
+            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
+            libero, cupiditate doloribus perferendis cumque?
+          </Text>
+        </div>
+
+        <div className="flex justify-center gap-4">
+          <Link
+            href="https://www.linkedin.com/company/consulmagnoeassis/"
+            target="_blank"
+            prefetch={false}
+            className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
+          >
+            <Linkedin className=" text-secondary-main h-8 w-8 " />
+          </Link>
+          <Link
+            href="https://www.facebook.com/ConsulmagnoAssis"
+            target="_blank"
+            prefetch={false}
+            className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
+          >
+            <Facebook className=" text-secondary-main h-8 w-8 " />
+          </Link>
+          <Link
+            href="https://www.instagram.com/consulmagnoassisadv/"
+            target="_blank"
+            prefetch={false}
+            className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
+          >
+            <Instagram className=" text-secondary-main h-8 w-8 " />
+          </Link>
+        </div>
+
+        <CTA.ContactButtonGroup />
       </CTA.Root>
     </>
   )

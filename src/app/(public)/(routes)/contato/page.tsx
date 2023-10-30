@@ -1,20 +1,19 @@
 import * as Container from '@/components/ui/container'
+import * as CTA from '@/components/cta'
 import { Text } from '@/components/ui/text'
 import { EmailForm } from './components/email-form'
 import { MeanItem } from './components/mean-item'
-import {
-  ArrowRight,
-  AtSign,
-  Building,
-  Globe2,
-  Instagram,
-  Mails,
-  Phone,
-} from 'lucide-react'
+import { AtSign, Building, Globe2, Instagram, Mails, Phone } from 'lucide-react'
 import { PageTitle } from '@/components/page-title'
 import { Box } from '@/components/ui/box'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { generateStaticSeo } from '@/components/seo/static'
+
+export const metadata = generateStaticSeo({
+  title: 'Áreas de Atuação',
+  description: '',
+})
 
 export default function Contact() {
   return (
@@ -121,25 +120,24 @@ export default function Contact() {
         </Container.Content>
       </Container.Root>
 
-      <Container.Root backgroundColor="white">
-        <Container.Content>
-          <div className="max-w-2xl mx-auto flex flex-col md:items-center gap-12">
-            <PageTitle title="Conheça nossos serviços" />
-            <Text className="md:text-center">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae,
-              cum! Ut dolores mollitia odit ea culpa harum eveniet voluptate,
-              cum et repellendus eaque expedita deleniti vel ipsum autem
-              blanditiis illum.
-            </Text>
-            <Link href="/areas-de-atuacao" prefetch={false}>
-              <Button className="flex gap-2 items-center justify-center w-full md:w-fit">
-                <span>Ver tudo</span>
-                <ArrowRight className="h-4 w-4 text-secondary-main" />
-              </Button>
-            </Link>
-          </div>
-        </Container.Content>
-      </Container.Root>
+      <CTA.Root>
+        <div className="text-center">
+          <strong className="text-3xl md:text-4xl text-white">
+            Nos diga como podemos te ajudar
+          </strong>
+        </div>
+
+        <div>
+          <Text size="md" align="center" className="text-gray-50">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
+            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
+            libero, cupiditate doloribus perferendis cumque?
+          </Text>
+        </div>
+
+        <div className="text-secondary-main">Social medias</div>
+      </CTA.Root>
     </>
   )
 }
