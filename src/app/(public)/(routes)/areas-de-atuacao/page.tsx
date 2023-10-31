@@ -10,7 +10,7 @@ import { Text } from '@/components/ui/text'
 import { generateStaticSeo } from '@/components/seo/static'
 
 export const metadata = generateStaticSeo({
-  title: 'Áreas de Atuação',
+  rawTitle: 'Áreas de Atuação',
   description: '',
 })
 
@@ -52,16 +52,15 @@ export default function ActionAreasPage() {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Nos diga como podemos te ajudar
+            Receba Assistência Especializada
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
-            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
-            libero, cupiditate doloribus perferendis cumque?
+            Estamos aqui para ajudar. Entre em contato conosco para obter
+            orientações personalizadas e soluções eficazes para suas
+            necessidades.
           </Text>
         </div>
 

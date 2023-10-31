@@ -1,14 +1,20 @@
 import { Metadata } from 'next'
 
 interface GenerateStaticSeoProps {
-  title: string
+  rawTitle: string
   description: string
+  hasPrefix?: boolean
 }
 
+const prefix = 'ConsulMagno e Assis Advocacia |'
+
 export function generateStaticSeo({
-  title,
+  rawTitle,
   description,
+  hasPrefix = true,
 }: GenerateStaticSeoProps) {
+  const title = hasPrefix ? `${prefix} ${rawTitle}` : rawTitle
+
   const metadata: Metadata = { title, description }
   return metadata
 }

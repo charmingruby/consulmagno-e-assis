@@ -6,7 +6,7 @@ import * as CTA from '@/components/cta'
 import { generateStaticSeo } from '@/components/seo/static'
 
 export const metadata = generateStaticSeo({
-  title: 'Relatos',
+  rawTitle: 'Relatos',
   description: '',
 })
 
@@ -75,10 +75,9 @@ export default function Cases() {
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
-            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
-            libero, cupiditate doloribus perferendis cumque?
+            Compreendemos que cada caso é único. Nossa equipe está pronta para
+            ouvir você e fornecer soluções legais eficazes e sob medida para sua
+            situação.
           </Text>
         </div>
 

@@ -9,9 +9,10 @@ import { Box } from '@/components/ui/box'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { generateStaticSeo } from '@/components/seo/static'
+import { Socials } from '@/components/cta/socials'
 
 export const metadata = generateStaticSeo({
-  title: 'Áreas de Atuação',
+  rawTitle: 'Áreas de Atuação',
   description: '',
 })
 
@@ -136,7 +137,7 @@ export default function Contact() {
           </Text>
         </div>
 
-        <div className="text-secondary-main">Social medias</div>
+        <Socials></Socials>
       </CTA.Root>
     </>
   )

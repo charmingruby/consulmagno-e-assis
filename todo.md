@@ -10,7 +10,7 @@
 - [X] Copiar relatos da home da apperize
 - [X] Trocar equipe por advogados na navbar
 - [X] Hero da pagina de advogados vai ter so uma frase de efeito
-- [ ] Arrumar conteudo de cada CTA
+- [x] Arrumar conteudo de cada CTA
 - [ ] Pagina de post inspirada Thomsom.
 - [ ] Posts recentes na tela inicial.
 - [ ] Otimizar pagina de todas areas de atuaçao.

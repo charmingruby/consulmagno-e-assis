@@ -12,8 +12,9 @@ import * as CTA from '@/components/cta'
 import { generateStaticSeo } from '@/components/seo/static'
 
 export const metadata = generateStaticSeo({
-  title: 'Advogados',
-  description: '',
+  rawTitle: 'Advogados',
+  description:
+    'Conheça nossa equipe de advogados em Juiz de Fora. Profissionais experientes e dedicados em diversas áreas do direito',
 })
 
 export default function Team() {
@@ -154,16 +155,14 @@ export default function Team() {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Nos diga como podemos te ajudar
+            Explore Nossos Serviços
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
-            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
-            libero, cupiditate doloribus perferendis cumque?
+            Conheça o que oferecemos e encontre soluções personalizadas para
+            atender às suas necessidades.
           </Text>
         </div>
 

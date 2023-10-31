@@ -1,16 +1,7 @@
 import { ReasonCard } from './components/reason-card'
 import { Button } from '@/components/ui/button'
 import * as Container from '@/components/ui/container'
-import {
-  ArrowRight,
-  Eye,
-  Facebook,
-  Gem,
-  Instagram,
-  Lightbulb,
-  Linkedin,
-  Target,
-} from 'lucide-react'
+import { ArrowRight, Eye, Gem, Lightbulb, Target } from 'lucide-react'
 import { Text } from '@/components/ui/text'
 import Link from 'next/link'
 import { AreaList } from './components/area-list'
@@ -24,8 +15,13 @@ import * as CTA from '@/components/cta'
 import { DepositionItem } from './components/deposition-item'
 import { Separator } from './components/separator'
 import { generateStaticSeo } from '@/components/seo/static'
+import { Socials } from '@/components/cta/socials'
 
-export const metadata = generateStaticSeo({ title: 'Início', description: '' })
+export const metadata = generateStaticSeo({
+  rawTitle: 'Início',
+  description:
+    'Escritório de advocacia em juiz de fora. Melhores advogados em Juiz de Fora. Advogados que trabalham remotamente.  ',
+})
 
 export default function Home() {
   return (
@@ -259,45 +255,18 @@ export default function Home() {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Nos diga como podemos te ajudar
+            Fale Conosco
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
-            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
-            libero, cupiditate doloribus perferendis cumque?
+            Estamos aqui para ajudar. Entre em contato conosco para obter
+            assistência personalizada.
           </Text>
         </div>
 
-        <div className="flex justify-center gap-4">
-          <Link
-            href="https://www.linkedin.com/company/consulmagnoeassis/"
-            target="_blank"
-            prefetch={false}
-            className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
-          >
-            <Linkedin className=" text-secondary-main h-8 w-8 " />
-          </Link>
-          <Link
-            href="https://www.facebook.com/ConsulmagnoAssis"
-            target="_blank"
-            prefetch={false}
-            className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
-          >
-            <Facebook className=" text-secondary-main h-8 w-8 " />
-          </Link>
-          <Link
-            href="https://www.instagram.com/consulmagnoassisadv/"
-            target="_blank"
-            prefetch={false}
-            className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
-          >
-            <Instagram className=" text-secondary-main h-8 w-8 " />
-          </Link>
-        </div>
+        <Socials></Socials>
 
         <CTA.ContactButtonGroup />
       </CTA.Root>
