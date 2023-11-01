@@ -5,17 +5,16 @@ import { ArrowRight, Eye, Gem, Lightbulb, Target } from 'lucide-react'
 import { Text } from '@/components/ui/text'
 import Link from 'next/link'
 import { AreaList } from './components/area-list'
-import { InsightCard } from './components/insight-card'
 import { PageTitle } from '@/components/page-title'
 import map from '@/assets/images/map.png'
 import Image from 'next/image'
 import { MapAnnotations } from './components/map-annotations'
-import { PostCard } from '@/components/post-card'
 import * as CTA from '@/components/cta'
 import { DepositionItem } from './components/deposition-item'
 import { Separator } from './components/separator'
 import { generateStaticSeo } from '@/components/seo/static'
 import { Socials } from '@/components/cta/socials'
+import { RecentPosts } from './components/recent-posts'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Início',
@@ -197,64 +196,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mb-8">
-            <PostCard
-              orientation="horizontal"
-              authorName="Paulo Renato"
-              categories={[
-                { name: 'Direito Civil' },
-                { name: 'Direito do Trabalho' },
-              ]}
-              publishedDate={new Date()}
-              excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut similique nostrum a! Eveniet nihil ipsa libero, quas repellat iusto labore ipsum sint architecto vel necessitatibus, ad earum quis sunt."
-              slug="roubo-de-identidade"
-              title="Roubo de identidade"
-              avatarUrl="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              coverPhoto="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <PostCard
-              authorName="Paulo Renato"
-              categories={[
-                { name: 'Direito Civil' },
-                { name: 'Direito do Trabalho' },
-              ]}
-              publishedDate={new Date()}
-              excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut similique nostrum a! Eveniet nihil ipsa libero, quas repellat iusto labore ipsum sint architecto vel necessitatibus, ad earum quis sunt."
-              slug="roubo-de-identidade"
-              title="Roubo de identidade"
-              avatarUrl="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              coverPhoto="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-            <PostCard
-              authorName="Paulo Renato"
-              categories={[
-                { name: 'Direito Civil' },
-                { name: 'Direito do Trabalho' },
-              ]}
-              publishedDate={new Date()}
-              excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut similique nostrum a! Eveniet nihil ipsa libero, quas repellat iusto labore ipsum sint architecto vel necessitatibus, ad earum quis sunt."
-              slug="roubo-de-identidade"
-              title="Roubo de identidade"
-              avatarUrl="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              coverPhoto="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-            <PostCard
-              authorName="Paulo Renato"
-              categories={[
-                { name: 'Direito Civil' },
-                { name: 'Direito do Trabalho' },
-              ]}
-              publishedDate={new Date()}
-              excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut similique nostrum a! Eveniet nihil ipsa libero, quas repellat iusto labore ipsum sint architecto vel necessitatibus, ad earum quis sunt."
-              slug="roubo-de-identidade"
-              title="Roubo de identidade"
-              avatarUrl="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              coverPhoto="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            />
-          </div>
+          <RecentPosts />
 
           <div className="w-full flex justify-center mt-6">
             <Link

@@ -5,40 +5,24 @@
 - [X] Remover parcerias de relatos
 - [X] Numa area especifica, padronizar o texto de como agimos
 - [X] Numa area especifica, melhorar o link de contato
-- [x] Padronizar CTA, com a cor primaria e link do wpp
+- [X] Padronizar CTA, com a cor primaria e link do wpp
 - [X] No card de relato, botar problema no lugar do ramo da loja
 - [X] Copiar relatos da home da apperize
 - [X] Trocar equipe por advogados na navbar
 - [X] Hero da pagina de advogados vai ter so uma frase de efeito
-- [x] Arrumar conteudo de cada CTA
-- [ ] Pagina de post inspirada Thomsom.
-- [ ] Posts recentes na tela inicial.
+- [X] Arrumar conteudo de cada CTA
+- [X] Posts recentes na tela inicial.
+- [X] Melhorar UI da post horizontal
+- [X] Mostrar apenas a categoria principal no componente de post post
 - [ ] Otimizar pagina de todas areas de atuaçao.
 - [ ] Numa area especifica, checklist de serviços
-- [ ] Mostrar apenas a categoria principal no componente de post post
 - [ ] Post mais recentes section.
 - [ ] Envio de email.
 - [ ] Arrumar SEO de cada pagina
 
 ## Paginas
+
 - [ ] Blog
-- [ ] Post especifico
+- [ ] Post especifico (Thomsom)
 - [ ] Post por categoria
 
-# Hygraph Schema:
-
-## POST:
-    - Title
-    - Slug
-    - Excerpt
-    - Categories
-    - CoverPhoto
-    - Content
-    - Data_published
-
-## CATEGORY:
-    - Name
-
-## AUTHOR:
-    - Name
-    - Avatar
