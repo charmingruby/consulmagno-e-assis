@@ -6,7 +6,7 @@ interface GenerateStaticSeoProps {
   hasPrefix?: boolean
 }
 
-const prefix = 'ConsulMagno e Assis Advocacia |'
+const prefix = 'Consulmagno e Assis Advocacia |'
 
 export function generateStaticSeo({
   rawTitle,

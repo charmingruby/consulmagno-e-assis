@@ -196,45 +196,66 @@ export default function Home() {
               <span>Últimas</span> <strong>publicações</strong>
             </div>
           </div>
-          <div className="mb-8 grid-cols-3 ">
-            <InsightCard
-              imageUrl=""
-              title="Novo direito civil"
-              description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, laboriosam sequi ipsam eligendi labore animi est, aut asperiores nesciunt ducimus alias illo ut aliquam minus, numquam exercitationem velit natus nostrum."
-              url="Novo direito civil"
-              horizontal
-            />
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <InsightCard
-              imageUrl=""
-              title="Novo direito civil"
-              description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, laboriosam sequi ipsam eligendi labore animi est, aut asperiores nesciunt ducimus alias illo ut aliquam minus, numquam exercitationem velit natus nostrum."
-              url="Novo direito civil"
-            />
-            <InsightCard
-              imageUrl=""
-              title="Novo direito civil"
-              description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, laboriosam sequi ipsam eligendi labore animi est, aut asperiores nesciunt ducimus alias illo ut aliquam minus, numquam exercitationem velit natus nostrum."
-              url="Novo direito civil"
-            />
-            <InsightCard
-              imageUrl=""
-              title="Novo direito civil"
-              description="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus, laboriosam sequi ipsam eligendi labore animi est, aut asperiores nesciunt ducimus alias illo ut aliquam minus, numquam exercitationem velit natus nostrum."
-              url="test"
-            />
-          </div>
-          <div className="grid grid-cols-3">
+
+          <div className="mb-8">
             <PostCard
+              orientation="horizontal"
               authorName="Paulo Renato"
-              categories={['Direito Civil', 'Direito do Trabalho']}
-              dataPublished={new Date()}
+              categories={[
+                { name: 'Direito Civil' },
+                { name: 'Direito do Trabalho' },
+              ]}
+              publishedDate={new Date()}
               excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut similique nostrum a! Eveniet nihil ipsa libero, quas repellat iusto labore ipsum sint architecto vel necessitatibus, ad earum quis sunt."
               slug="roubo-de-identidade"
               title="Roubo de identidade"
+              avatarUrl="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              coverPhoto="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             />
           </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <PostCard
+              authorName="Paulo Renato"
+              categories={[
+                { name: 'Direito Civil' },
+                { name: 'Direito do Trabalho' },
+              ]}
+              publishedDate={new Date()}
+              excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut similique nostrum a! Eveniet nihil ipsa libero, quas repellat iusto labore ipsum sint architecto vel necessitatibus, ad earum quis sunt."
+              slug="roubo-de-identidade"
+              title="Roubo de identidade"
+              avatarUrl="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              coverPhoto="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <PostCard
+              authorName="Paulo Renato"
+              categories={[
+                { name: 'Direito Civil' },
+                { name: 'Direito do Trabalho' },
+              ]}
+              publishedDate={new Date()}
+              excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut similique nostrum a! Eveniet nihil ipsa libero, quas repellat iusto labore ipsum sint architecto vel necessitatibus, ad earum quis sunt."
+              slug="roubo-de-identidade"
+              title="Roubo de identidade"
+              avatarUrl="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              coverPhoto="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+            <PostCard
+              authorName="Paulo Renato"
+              categories={[
+                { name: 'Direito Civil' },
+                { name: 'Direito do Trabalho' },
+              ]}
+              publishedDate={new Date()}
+              excerpt="Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat aut similique nostrum a! Eveniet nihil ipsa libero, quas repellat iusto labore ipsum sint architecto vel necessitatibus, ad earum quis sunt."
+              slug="roubo-de-identidade"
+              title="Roubo de identidade"
+              avatarUrl="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=1780&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              coverPhoto="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=2071&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            />
+          </div>
+
           <div className="w-full flex justify-center mt-6">
             <Link
               href="/blog"
