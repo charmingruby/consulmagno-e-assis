@@ -2,18 +2,27 @@ import { PostCard } from '@/components/post-card'
 import { getClient } from '@/libs/graphql/client'
 import { FetchRecentPostsReponse } from '@/libs/graphql/queries/fetch-all-posts/types'
 import { FETCH_RECENT_POSTS } from '@/libs/graphql/queries/fetch-all-posts/query'
-import { formatDate } from '@/utils/format-date'
+import { Loader } from '@/components/loader'
 
 export async function RecentPosts() {
-  const { data, loading, error } = await getClient().query({
+  const { data, loading } = await getClient().query({
     query: FETCH_RECENT_POSTS,
+    context: {
+      fetchOptions: {
+        next: { revalidate: 20 },
+      },
+    },
   })
 
   const parsedData = data as FetchRecentPostsReponse
   const [highlightedPost, ...restOfThePosts] = parsedData.posts.slice(0)
 
   if (loading) {
-    return <>carregando...</>
+    return (
+      <div className="flex w-full justify-center mb-12">
+        <Loader />
+      </div>
+    )
   }
 
   return (

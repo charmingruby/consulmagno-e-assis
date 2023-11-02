@@ -1,4 +1,5 @@
 # Tasks
+
 - [X] Trocar descriçao do footer por informaçoes do escritorio.
 - [X] Descentralizar heros no mobile.
 - [X] Destaque que eles trabalham remoto tambem.
@@ -14,15 +15,15 @@
 - [X] Posts recentes na tela inicial.
 - [X] Melhorar UI da post horizontal
 - [X] Mostrar apenas a categoria principal no componente de post post
-- [ ] Otimizar pagina de todas areas de atuaçao.
+- [X] Otimizar pagina de todas areas de atuaçao.
 - [ ] Numa area especifica, checklist de serviços
 - [ ] Post mais recentes section.
 - [ ] Envio de email.
 - [ ] Arrumar SEO de cada pagina
+- [ ] Pagina de equipe
 
 ## Paginas
 
 - [ ] Blog
 - [ ] Post especifico (Thomsom)
 - [ ] Post por categoria
-

@@ -1,13 +1,11 @@
 /**
  * Internal
  */
-import { PageTitle } from '@/components/page-title'
 import * as Container from '@/components/ui/container'
-import { AreaList } from './components/area-list'
-import { SearchBar } from './components/search-bar'
 import * as CTA from '@/components/cta'
 import { Text } from '@/components/ui/text'
 import { generateStaticSeo } from '@/components/seo/static'
+import { AreasList } from './components/areas-list'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Áreas de Atuação',
@@ -33,18 +31,7 @@ export default function ActionAreasPage() {
       {/* Áreas de Atuação */}
       <Container.Root backgroundColor="white">
         <Container.Content className="">
-          <div className="grid grid-row">
-            <div className="grid grid-cols-1 lg:grid-cols-2 w-full gap-8 lg:gap-2 mb-6 lg:mb-12">
-              <div className="flex items-center gap-2">
-                <PageTitle title="Áreas de Atuação" />
-              </div>
-              <div className="flex items-center">
-                <SearchBar />
-              </div>
-            </div>
-
-            <AreaList />
-          </div>
+          <AreasList />
         </Container.Content>
       </Container.Root>
 
