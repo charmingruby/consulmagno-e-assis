@@ -10,9 +10,9 @@ export function ExplanationTopicTitle({
   title,
 }: ExplanationTopicTitleProps) {
   return (
-    <div className="flex items-center gap-2 mb-4">
+    <div className="flex items-center gap-2 mb-8">
       <Icon className="text-secondary-main" />
-      <strong className="text-lg">{title}</strong>
+      <strong className="text-3xl">{title}</strong>
     </div>
   )
 }

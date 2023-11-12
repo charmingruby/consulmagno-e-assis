@@ -1,21 +1,20 @@
-import { PageTitle } from '@/components/page-title'
 import * as Container from '@/components/ui/container'
-import { ArrowRight, HelpCircle, Target } from 'lucide-react'
+import { ArrowRight, Briefcase, HelpCircle, Target } from 'lucide-react'
 import { slugTransformer } from '@/utils/slug-transformer'
 import { ReturnLink } from './components/return-link'
 import Image from 'next/image'
 import brandLogo from '@/app/icon.png'
-import { AreaAccordion } from './components/area-accordion'
 import { ExplanationTopicTitle } from './components/explanation-topic-title'
 import { Text } from '@/components/ui/text'
 import Link from 'next/link'
 import * as CTA from '@/components/cta'
+import { ServicesList } from './components/services-list'
 
-interface AreaPageProps {
+interface PageProps {
   params: { slug: string }
 }
 
-export default function AreaPage({ params: { slug } }: AreaPageProps) {
+export default function AreaPage({ params: { slug } }: PageProps) {
   const slugTransformed = slugTransformer(slug)
 
   return (
@@ -113,14 +112,10 @@ export default function AreaPage({ params: { slug } }: AreaPageProps) {
 
       {/* Serviços */}
       <Container.Root border="borderBottom" backgroundColor="white">
-        <Container.Content>
-          <div className="grid grid-cols-1 md:grid-cols-2">
-            <div>
-              <PageTitle title="Nossos serviços:" />
-            </div>
+        <Container.Content className="flex flex-col items-center">
+          <ExplanationTopicTitle icon={Briefcase} title="Nossos serviços" />
 
-            <AreaAccordion />
-          </div>
+          <ServicesList slug={slug} />
         </Container.Content>
       </Container.Root>
 
