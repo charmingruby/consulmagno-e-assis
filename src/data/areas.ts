@@ -19,6 +19,9 @@ export const areas: Area[] = [
       'Testando um teste testado',
       'Testando um teste testado',
       'Testando um teste testado',
+      'Testando um teste testado',
+      'Testando um teste testado',
+      'Testando um teste testado',
     ],
   },
 ]

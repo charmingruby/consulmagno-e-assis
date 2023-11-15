@@ -1,12 +1,11 @@
 import * as Container from '@/components/ui/container'
 import * as CTA from '@/components/cta'
-import exampleImage from '@/assets/images/lawyers.png'
-import Image from 'next/image'
 import { Button } from '@/components/ui/button'
 import { PageTitle } from '@/components/page-title'
 import { Text } from '@/components/ui/text'
 import { generateStaticSeo } from '@/components/seo/static'
 import { RecentPostsList } from './components/recent-posts-list'
+import { FeaturedCategories } from './components/featured-categories'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Blog',
@@ -16,6 +15,7 @@ export const metadata = generateStaticSeo({
 export default function Blog() {
   return (
     <>
+      {/* Header */}
       <Container.Root className="md:pt-16 bg-primary-gradient">
         <Container.Content className="pt-24 flex flex-col text-left md:text-center items-start md:items-center gap-6">
           <h2 className="text-white font-bold text-5xl">Blog</h2>
@@ -33,6 +33,7 @@ export default function Blog() {
         </Container.Content>
       </Container.Root>
 
+      {/* Categories */}
       <Container.Root backgroundColor="white">
         <Container.Content>
           <div className="space-y-4 mb-12">
@@ -45,14 +46,11 @@ export default function Blog() {
             </Text>
           </div>
 
-          <div className="grid grid-cols-5">
-            <div>
-              <Image src={exampleImage} alt="" className="object-cover h-64" />
-            </div>
-          </div>
+          <FeaturedCategories />
         </Container.Content>
       </Container.Root>
 
+      {/* Tabs navigation */}
       <Container.Root>
         <Container.Content>Carregar mais</Container.Content>
       </Container.Root>

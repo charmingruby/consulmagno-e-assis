@@ -9,6 +9,8 @@ import { Text } from '@/components/ui/text'
 import Link from 'next/link'
 import * as CTA from '@/components/cta'
 import { ServicesList } from './components/services-list'
+import { OtherPosts } from './components/other-posts'
+import { RelatedInsights } from './components/related-insights'
 
 interface PageProps {
   params: { slug: string }
@@ -121,12 +123,27 @@ export default function AreaPage({ params: { slug } }: PageProps) {
 
       {/* Insights */}
       <Container.Root border="borderBottom">
-        <Container.Content>area insights</Container.Content>
+        <Container.Content className="grid grid-cols-3 gap-12">
+          {/* Heading */}
+          <h2 className="col-span-1">
+            <strong className="text-3xl text-primary-main">
+              {`Publicações sobre`}{' '}
+              <span className="text-secondary-main">{slugTransformed}</span>
+            </strong>
+          </h2>
+
+          <RelatedInsights />
+        </Container.Content>
       </Container.Root>
 
       {/* Veja também */}
-      <Container.Root border="borderBottom">
-        <Container.Content>veja tambem</Container.Content>
+      <Container.Root backgroundColor="white">
+        <Container.Content>
+          <div className="text-center w-full mb-8">
+            <strong className="text-3xl">Veja também</strong>
+          </div>
+          <OtherPosts />
+        </Container.Content>
       </Container.Root>
 
       {/* CTA */}

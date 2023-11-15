@@ -3,7 +3,7 @@ import * as CTA from '@/components/cta'
 import { Text } from '@/components/ui/text'
 
 interface PostPageProps {
-  params: { id: string }
+  params: { slug: string }
 }
 
 export default function PostPage({ params }: PostPageProps) {
@@ -11,7 +11,7 @@ export default function PostPage({ params }: PostPageProps) {
     <>
       <Container.Root border="borderBottom">
         <Container.Content className="pt-24">
-          hero com foto do post e suas informaçoes - {params.id}
+          hero com foto do post e suas informaçoes - {params.slug}
         </Container.Content>
       </Container.Root>
 
