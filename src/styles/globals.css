@@ -7,6 +7,11 @@
     url("../assets/images/lawyers.png");
 }
 
+.team-hero-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../assets/team/hero.png");
+}
+
 @layer components {
   .bg-primary-gradient {
     @apply bg-gradient-to-r from-primary-dark via-primary-main to-primary-dark;
