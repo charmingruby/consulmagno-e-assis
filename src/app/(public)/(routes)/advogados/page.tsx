@@ -33,8 +33,6 @@ export default function Team() {
           quality={100}
         />
 
-        <div className="absolute h-full w-full bg-black z-20 opacity-60" />
-
         <Container.Content className="z-30">
           <div className="z-10 mt-16 sm:mt-0 w-full flex flex-col justify-center">
             <h1 className="text-gray-50 font-semibold m-0 text-3xl md:text-5xl mb-6 break-words">
@@ -50,30 +48,15 @@ export default function Team() {
           <div className="max-w-2xl mx-auto text-center flex flex-col items-center">
             <Users className="text-secondary-main h-8 w-8 mb-4" />
             <PageTitle title="Conheça nossa equipe" />
+            <Text className="mt-4">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea eos
+              accusantium ducimus aspernatur totam possimus asperiores!
+              Exercitationem nemo eveniet, ea similique autem, quisquam
+              doloremque mollitia, beatae tempore ipsa totam officiis!
+            </Text>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
-            <LayerCard
-              avatarUrl={lawyer}
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere, dolore sint fugit laborum suscipit officiis harum placeat esse eum libero ad debitis eaque. Quia incidunt asperiores distinctio sequi amet!"
-              emailUrl=" contato@consulmagnoassis.com"
-              instagramUrl="https://www.instagram.com/consulmagnoassisadv/"
-              linkedinUrl="https://www.linkedin.com/company/consulmagnoeassis/about/?viewAsMember=true"
-              name="John Doe"
-              role="Estagiário"
-              phoneNumber="(32) 98834-4973"
-              areas={[
-                {
-                  label: 'Direito civil',
-                  url: '/areas-de-atuacao/direito-civil',
-                },
-                {
-                  label: 'Direito imobiliario',
-                  url: '/areas-de-atuacao/direito-imobiliario',
-                },
-              ]}
-            />
-
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
             <LayerCard
               avatarUrl={lawyer}
               description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere, dolore sint fugit laborum suscipit officiis harum placeat esse eum libero ad debitis eaque. Quia incidunt asperiores distinctio sequi amet!"
@@ -142,22 +125,22 @@ export default function Team() {
 
       {/* Algumas areas de atuaçao imprescindiveis para novos trabalhadores */}
       <Container.Root backgroundColor="white">
-        <Container.Content className="grid grid-cols-3 gap-12">
+        <Container.Content className="grid grid-cols-1 gap-12">
           <div className="flex flex-col gap-4 max-w-2xl">
             <div className="flex flex-col md:flex-row gap-1 md:gap-2">
-              <PageTitle title="Valores imprescindíveis" />
+              <Eye className="text-secondary-main h-8 w-8"></Eye>
+              <PageTitle title="Valores imprescindíveis"></PageTitle>
             </div>
-
-            <Text>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
-              incidunt iure minus eaque provident recusandae voluptatum dolorem
-              aliquam necessitatibus vero repellat voluptatem doloremque vitae
-              ea, odio labore maiores quas? Nulla?
-            </Text>
-
-            <Button>lllll</Button>
+            <div className="flex flex-col gap-2">
+              <Text>
+                No nosso escritório, entendemos que cada caso é único e merece a
+                atenção dedicada e especializada que ele exige. É por isso que
+                oferecemos expertise em diversas áreas do direito para atender
+                às necessidades variadas dos nossos clientes.
+              </Text>
+            </div>
           </div>
-          <div className=" flex flex-col col-span-2">
+          <div className=" flex flex-col">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <AreaCard
                 name="Respeito"
