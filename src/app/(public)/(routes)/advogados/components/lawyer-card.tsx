@@ -26,28 +26,26 @@ interface LawyerCardProps {
 export function LayerCard(props: LawyerCardProps) {
   return (
     <Box>
-      <div className="flex flex-col">
+      <div className="flex flex-col items-center">
         {/* Foto  */}
-        <div className="grid grid-cols-2">
-          <div className="p-1 border-2 border-primary-main rounded-full w-fit">
-            <Image
-              alt="foto do John"
-              src={props.avatarUrl}
-              className="rounded-full h-20 w-20"
-            />
-          </div>
+        <div className="p-2 border border-gray-100 rounded-full w-fit">
+          <Image
+            alt="foto do John"
+            src={props.avatarUrl}
+            className="rounded-full h-40 w-40"
+          />
+        </div>
 
-          {/* Nome, Função e descrição  */}
-          <div className="flex flex-col justify-center mt-4">
-            <strong className="text-lg">{props.name}</strong>
-            <small className="text-sm font-medium text-gray-400">
-              {props.role}
-            </small>
-          </div>
+        {/* Nome, Função e descrição  */}
+        <div className="flex flex-col text-center mt-4">
+          <strong className="text-lg">{props.name}</strong>
+          <small className="text-sm font-medium text-gray-400">
+            {props.role}
+          </small>
         </div>
 
         <div className="mt-6">
-          <p className="text-sm ">{props.description}</p>
+          <p className="text-sm">{props.description}</p>
         </div>
 
         {/* Áreas */}
@@ -57,9 +55,7 @@ export function LayerCard(props: LawyerCardProps) {
           ))}
         </div>
 
-        <div className="h-px w-full bg-gray-200 my-4" />
-
-        <div className="flex flex-col  w-full gap-2 ">
+        <div className="flex flex-col w-full mt-8 gap-2 ">
           <div className="flex items-center gap-1">
             <AtSign strokeWidth={1.5} className="w-4 h-4" />
             <small>{props.emailUrl}</small>
@@ -71,7 +67,7 @@ export function LayerCard(props: LawyerCardProps) {
         </div>
 
         {/* redes sociais  */}
-        <div className="flex justify-center gap-4 text-primary-main mt-4">
+        <div className="flex justify-evenly gap-4 text-primary-main mt-4">
           <SocialMedia url={props.instagramUrl} icon={Instagram} />
           <SocialMedia url={props.linkedinUrl} icon={Linkedin} />
         </div>

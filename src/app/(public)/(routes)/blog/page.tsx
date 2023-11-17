@@ -6,6 +6,8 @@ import { Text } from '@/components/ui/text'
 import { generateStaticSeo } from '@/components/seo/static'
 import { RecentPostsList } from './components/recent-posts-list'
 import { FeaturedCategories } from './components/featured-categories'
+import { SocialsHeader } from './components/socials-header'
+import { PostsWithTabs } from './components/posts-with-tabs'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Blog',
@@ -28,9 +30,16 @@ export default function Blog() {
       {/* Most recents */}
       <Container.Root backgroundColor="white">
         <Container.Content className="flex flex-col items-center gap-8">
+          <SocialsHeader />
+
           <RecentPostsList />
           <Button color="outline">Carregar mais</Button>
         </Container.Content>
+      </Container.Root>
+
+      {/* Cover */}
+      <Container.Root backgroundColor="white">
+        <Container.Content>cover image</Container.Content>
       </Container.Root>
 
       {/* Categories */}
@@ -38,12 +47,6 @@ export default function Blog() {
         <Container.Content>
           <div className="space-y-4 mb-12">
             <PageTitle title="Áreas em destaque" />
-            <Text opacity="low" size="md">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
-              ipsam incidunt, velit iusto ea repellat veritatis dolore magni
-              consectetur dignissimos obcaecati architecto vero deserunt, et
-              laudantium doloremque? Culpa, delectus magnam.
-            </Text>
           </div>
 
           <FeaturedCategories />
@@ -51,9 +54,10 @@ export default function Blog() {
       </Container.Root>
 
       {/* Tabs navigation */}
-      <Container.Root>
-        <Container.Content>Carregar mais</Container.Content>
-      </Container.Root>
+
+      <Container.Content>
+        <PostsWithTabs />
+      </Container.Content>
 
       {/* CTA */}
       <CTA.Root>

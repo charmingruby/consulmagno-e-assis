@@ -14,7 +14,18 @@ export function FeaturedCategoryItem({
 }: FeaturedCategoryItemProps) {
   return (
     <Link href={`/blog/${slug}`}>
-      <Image src={image} alt={name} className="object-cover h-64" />
+      <div className="h-64 relative rounded-sm shadow-sm">
+        <Image
+          src={image}
+          alt={name}
+          className="object-cover h-64 rounded-sm shadow-sm"
+        />
+        <div className="absolute h-full w-full bg-black right-0 top-0 opacity-60 rounded-sm shadow-sm" />
+
+        <span className="font-medium text-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 text-gray-50 w-full text-center">
+          {name}
+        </span>
+      </div>
     </Link>
   )
 }

@@ -7,11 +7,11 @@ import { Header } from './components/navigation/header'
 
 export default function PublicLayout({ children }: PropsWithChildren) {
   return (
-    <main>
+    <main className="overflow-x-auto">
       <Drawer />
       <Header />
       <ContactWidget />
-      {children}
+      <div className="max-w-[100vw]">{children}</div>
       <Footer />
     </main>
   )
