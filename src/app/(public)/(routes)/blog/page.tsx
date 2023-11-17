@@ -63,18 +63,23 @@ export default function Blog() {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Enfrente Desafios Legais
+            Conheça as áreas que trabalhamos
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Estamos aqui para enfrentar os desafios legais ao seu lado. Conte
-            com nossa experiência e dedicação.
+            Do direito empresarial à resolução de conflitos, abrangemos uma
+            variedade de áreas jurídicas para atender às suas necessidades.
+            Descubra como nossa expertise pode ser a chave para o sucesso dos
+            seus casos. Clique para explorar nossas principais áreas de atuação.
           </Text>
         </div>
 
-        <CTA.ContactButtonGroup />
+        <CTA.ContactButtonGroup
+          title="Conheça nossa área de trablalho"
+          url="/areas-de-atuacao"
+        />
       </CTA.Root>
     </>
   )

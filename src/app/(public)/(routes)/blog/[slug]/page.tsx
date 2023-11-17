@@ -31,18 +31,18 @@ export default function PostPage({ params }: PostPageProps) {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Proteja Seus Direitos
+            Converse Conosco Agora
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Nossa equipe está comprometida em proteger seus interesses e
-            direitos legais. Descubra como podemos ajudar.
+            Pronto para resolver suas questões legais? Clique aqui para iniciar
+            uma conversa e contar com a nossa experiência e comprometimento.
           </Text>
         </div>
 
-        <CTA.ContactButtonGroup />
+        <CTA.ContactButtonGroup title="Entre em contato" url="/contato" />
       </CTA.Root>
     </>
   )

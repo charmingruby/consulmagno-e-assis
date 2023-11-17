@@ -182,18 +182,20 @@ export default function Team() {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Explore Nossos Serviços
+            Destaques Exclusivos em Nosso Blog!
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Conheça o que oferecemos e encontre soluções personalizadas para
-            atender às suas necessidades.
+            De histórias inspiradoras a dicas práticas, nosso blog é o seu
+            destino para uma dose diária de motivação e conhecimento. Não perca
+            os melhores conteúdos! Clique para explorar e elevar sua rotina com
+            insights valiosos
           </Text>
         </div>
 
-        <CTA.ContactButtonGroup />
+        <CTA.ContactButtonGroup title="Veja nossos conteúdos" url="/blog" />
       </CTA.Root>
     </>
   )

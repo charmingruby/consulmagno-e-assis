@@ -231,7 +231,7 @@ export default function Home() {
 
         <Socials></Socials>
 
-        <CTA.ContactButtonGroup />
+        <CTA.ContactButtonGroup title="Entre em contato" url="/contato" />
       </CTA.Root>
     </>
   )

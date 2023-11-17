@@ -39,19 +39,20 @@ export default function ActionAreasPage() {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Receba Assistência Especializada
+            Casos de Sucesso: Descubra Como Resolvemos Desafios Jurídicos!
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Estamos aqui para ajudar. Entre em contato conosco para obter
-            orientações personalizadas e soluções eficazes para suas
-            necessidades.
+            Explore casos reais e descubra como nossa equipe de advogados
+            superou desafios legais para alcançar resultados positivos. Conheça
+            as histórias de sucesso que moldaram nosso compromisso com a
+            excelência jurídica. Clique agora para aprender e se inspirar!
           </Text>
         </div>
 
-        <CTA.ContactButtonGroup />
+        <CTA.ContactButtonGroup title="Veja os relatos" url="/relatos" />
       </CTA.Root>
     </>
   )

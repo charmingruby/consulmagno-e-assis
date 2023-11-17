@@ -150,18 +150,25 @@ export default function AreaPage({ params: { slug } }: PageProps) {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Defesa Legal Personalizada
+            Conheça Nossa Equipe Jurídica: Especialistas Comprometidos com Seu
+            Sucesso!
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Oferecemos soluções jurídicas sob medida para atender às suas
-            necessidades. Saiba como podemos ajudar.
+            Nosso time de advogados está aqui para guiá-lo através de desafios
+            legais. Descubra as habilidades, experiências e o compromisso que
+            tornam nossa equipe a escolha certa para suas necessidades
+            jurídicas. Clique para conhecer cada membro e a força coletiva que
+            trabalha para o seu sucesso.
           </Text>
         </div>
 
-        <CTA.ContactButtonGroup />
+        <CTA.ContactButtonGroup
+          title="Conheça nossos advogados"
+          url="/advogados"
+        />
       </CTA.Root>
     </>
   )

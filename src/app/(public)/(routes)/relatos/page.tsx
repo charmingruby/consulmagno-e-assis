@@ -81,7 +81,7 @@ export default function Cases() {
           </Text>
         </div>
 
-        <CTA.ContactButtonGroup />
+        <CTA.ContactButtonGroup title="Nos mande uma mensagem" url="/contato" />
       </CTA.Root>
     </>
   )
