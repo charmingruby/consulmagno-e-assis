@@ -22,7 +22,7 @@ export function FeaturedCategoryItem({
         />
         <div className="absolute h-full w-full bg-black right-0 top-0 opacity-60 rounded-sm shadow-sm" />
 
-        <span className="font-medium text-lg absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 text-gray-50 w-full text-center">
+        <span className="font-semibold text-xl absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 text-gray-50 w-full text-center">
           {name}
         </span>
       </div>
