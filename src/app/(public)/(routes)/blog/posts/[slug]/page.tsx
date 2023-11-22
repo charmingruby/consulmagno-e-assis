@@ -1,9 +1,12 @@
 import * as Container from '@/components/ui/container'
 import * as CTA from '@/components/cta'
 import { Text } from '@/components/ui/text'
-import { Socials } from '@/components/cta/socials'
 import { OtherPosts } from '@/app/(public)/(routes)/areas-de-atuacao/[slug]/components/other-posts'
 import CardItem from './components/card-item'
+import { CardMedias } from './components/card-medias'
+import Link from 'next/link'
+import { mapLink } from '@/site'
+import { MapPin } from 'lucide-react'
 
 interface PostPageProps {
   params: { slug: string }
@@ -33,8 +36,8 @@ export default function PostPage({ params }: PostPageProps) {
       {/* Conteúdo */}
       <Container.Root border="borderBottom">
         <Container.Content>
-          <div className="flex pt-4 gap-8">
-            <div>
+          <div className="flex pt-4 gap-8 ">
+            <div className="flex text-lg flex-1">
               Structured gripped tape invisible moulded cups for sauppor firm
               hold strong powermesh front liner sport detail. Warmth comfort
               hangs loosely from the body large pocket at the front full button
@@ -52,10 +55,25 @@ export default function PostPage({ params }: PostPageProps) {
               Flats elegant pointed toe design cut-out sides luxe leather lining
               versatile shoe must-have new season glamorous.
             </div>
-            <div className="flex flex-col gap-2 items-center">
-              <p>Redes sociais</p>
-              <div>
-                <Socials flexColumn size></Socials>
+            <div className="flex flex-col justify-start gap-6">
+              <div className="flex flex-col  items-center">
+                <p className="font-bold pb-3 ">Nos siga nas redes sociais</p>
+                <div>
+                  <CardMedias></CardMedias>
+                </div>
+              </div>
+              <div className="flex flex-col items-center ">
+                <p className="font-bold pb-3 ">Venha nos visitar</p>
+                <div>
+                  <Link
+                    href={mapLink}
+                    prefetch={false}
+                    target="blank"
+                    className="text-gray-300 cursor-pointer w-fit rounded-md hover:text-secondary-main transition-colors"
+                  >
+                    <MapPin className="h-6 w-6"></MapPin>
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
@@ -66,7 +84,9 @@ export default function PostPage({ params }: PostPageProps) {
       <Container.Root border="borderBottom">
         <Container.Content>
           <div className="text-center w-full mb-8">
-            <strong className="text-3xl">Categorias do post</strong>
+            <strong className="text-3xl">
+              Venha ver mais posts relacionados
+            </strong>
           </div>
           <div className="flex gap-4 justify-center">
             <CardItem
