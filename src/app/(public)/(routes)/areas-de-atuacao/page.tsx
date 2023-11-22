@@ -45,14 +45,13 @@ export default function ActionAreasPage() {
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Explore casos reais e descubra como nossa equipe de advogados
-            superou desafios legais para alcançar resultados positivos. Conheça
-            as histórias de sucesso que moldaram nosso compromisso com a
-            excelência jurídica. Clique agora para aprender e se inspirar!
+            Descubra como nossa equipe superou desafios legais para alcançar
+            resultados positivos. Conheça histórias de sucesso que moldaram
+            nosso compromisso com a excelência jurídica.
           </Text>
         </div>
 
-        <CTA.ContactButtonGroup title="Veja os relatos" url="/relatos" />
+        <CTA.ContactButtonGroup title="relatos" url="/relatos" />
       </CTA.Root>
     </>
   )

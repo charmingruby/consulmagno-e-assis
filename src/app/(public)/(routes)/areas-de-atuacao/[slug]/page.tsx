@@ -157,18 +157,14 @@ export default function AreaPage({ params: { slug } }: PageProps) {
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Nosso time de advogados está aqui para guiá-lo através de desafios
-            legais. Descubra as habilidades, experiências e o compromisso que
-            tornam nossa equipe a escolha certa para suas necessidades
-            jurídicas. Clique para conhecer cada membro e a força coletiva que
-            trabalha para o seu sucesso.
+            Conheça nossa equipe jurídica especializada. Conheça nossa equipe
+            jurídica especializada. Descubra as habilidades e compromisso que
+            fazem de nossa equipe a escolha certa para suas necessidades
+            jurídicas.
           </Text>
         </div>
 
-        <CTA.ContactButtonGroup
-          title="Conheça nossos advogados"
-          url="/advogados"
-        />
+        <CTA.ContactButtonGroup title="advogados" url="/advogados" />
       </CTA.Root>
     </>
   )

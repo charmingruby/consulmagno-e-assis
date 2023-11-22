@@ -9,6 +9,7 @@ import { SocialsHeader } from './components/socials-header'
 import Image from 'next/image'
 import coverImg from '@/assets/images/lawyers.png'
 import { TabsParent } from './components/posts-navigation/tabs-parent'
+import * as CTA from '@/components/cta'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Blog',
@@ -78,12 +79,28 @@ export default function Blog() {
         </Container.Content>
       </Container.Root>
 
-      {/* Tabs navigation */}
-      <Container.Root backgroundColor="white">
-        <Container.Content>
-          <TabsParent />
-        </Container.Content>
-      </Container.Root>
+      {/* CTA */}
+      <CTA.Root>
+        <div className="text-center">
+          <strong className="text-3xl md:text-4xl text-white">
+            Nossas Áreas de Atuação
+          </strong>
+        </div>
+
+        <div>
+          <Text size="md" align="center" className="text-gray-50">
+            Abordamos diversas áreas, do direito empresarial à resolução de
+            conflitos, para atender suas necessidades. Descubra como nossa
+            expertise pode impulsionar o sucesso dos seus casos. Clique para
+            explorar.
+          </Text>
+        </div>
+
+        <CTA.ContactButtonGroup
+          title="Áreas de atuaçao"
+          url="/areas-de-atuacao"
+        />
+      </CTA.Root>
     </>
   )
 }

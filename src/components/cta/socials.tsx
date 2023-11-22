@@ -1,16 +1,19 @@
 import Link from 'next/link'
 import { Facebook, Instagram, Linkedin } from 'lucide-react'
 
-export function Socials() {
+export function Socials({ flexColumn = false, size = false }) {
+  const flexCol = `flex ${flexColumn ? 'flex-col' : 'flex'}`
+  const iconSize = `${size ? 'h-4 w-4' : 'h-8 w-8'}`
+
   return (
-    <div className="flex justify-center gap-4">
+    <div className={`${flexCol}  justify-center gap-4`}>
       <Link
         href="https://www.linkedin.com/company/consulmagnoeassis/"
         target="_blank"
         prefetch={false}
         className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
       >
-        <Linkedin className=" text-secondary-main h-8 w-8 " />
+        <Linkedin className={`${iconSize}  text-secondary-main`} />
       </Link>
       <Link
         href="https://www.facebook.com/ConsulmagnoAssis"
@@ -18,7 +21,7 @@ export function Socials() {
         prefetch={false}
         className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
       >
-        <Facebook className=" text-secondary-main h-8 w-8 " />
+        <Facebook className={`${iconSize}  text-secondary-main`} />
       </Link>
       <Link
         href="https://www.instagram.com/consulmagnoassisadv/"
@@ -26,7 +29,7 @@ export function Socials() {
         prefetch={false}
         className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
       >
-        <Instagram className=" text-secondary-main h-8 w-8 " />
+        <Instagram className={`${iconSize}  text-secondary-main`} />
       </Link>
     </div>
   )

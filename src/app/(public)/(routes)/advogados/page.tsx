@@ -188,14 +188,13 @@ export default function Team() {
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            De histórias inspiradoras a dicas práticas, nosso blog é o seu
-            destino para uma dose diária de motivação e conhecimento. Não perca
-            os melhores conteúdos! Clique para explorar e elevar sua rotina com
-            insights valiosos
+            Explore nosso blog para inspiração e dicas diárias. Não perca os
+            melhores conteúdos para elevar sua rotina com insights valiosos.
+            Clique para explorar!
           </Text>
         </div>
 
-        <CTA.ContactButtonGroup title="Veja nossos conteúdos" url="/blog" />
+        <CTA.ContactButtonGroup title="blog" url="/blog" />
       </CTA.Root>
     </>
   )
