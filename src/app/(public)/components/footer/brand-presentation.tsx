@@ -2,6 +2,7 @@ import Image from 'next/image'
 import logo from '@/assets/images/logo.png'
 import { ArrowUpRight, AtSign, Building, Clock8, Phone } from 'lucide-react'
 import Link from 'next/link'
+import { email, mapLink } from '@/site'
 
 export function BrandPresentation() {
   return (
@@ -14,7 +15,7 @@ export function BrandPresentation() {
       <div className="flex flex-col gap-3 text-gray-400">
         {/* Address */}
         <Link
-          href=" https://www.google.com.br/maps/place/Av.+Bar%C3%A3o+do+Rio+Branco,+1871+-+Sala+613+-+Centro,+Juiz+de+Fora+-+MG,+41615-001/@-21.7583338,-43.3528323,17z/data=!3m1!4b1!4m6!3m5!1s0x989c9f39f31b85:0xfe746fb5fc325d6c!8m2!3d-21.7583388!4d-43.3502574!16s%2Fg%2F11s4g2t3vk?entry=ttu"
+          href={mapLink}
           target="_blank"
           prefetch={false}
           className="flex items-center gap-2 hover:text-primary-main hover:underline transition-all"
@@ -30,9 +31,7 @@ export function BrandPresentation() {
         {/* Email */}
         <div className="flex items-center gap-2">
           <AtSign className="h-4 w-4" />
-          <small className="text-sm font-medium">
-            contato@consulmagnoassis.com
-          </small>
+          <small className="text-sm font-medium">{email}</small>
         </div>
 
         {/* Phone */}

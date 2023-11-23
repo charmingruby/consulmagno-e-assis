@@ -1,4 +1,5 @@
 import { LinkSection, LinkSectionProps } from './link-section'
+import { facebookLink, instagramLink, linkedinLink } from '@/site'
 
 const productSection: LinkSectionProps = {
   title: 'Produto',
@@ -37,15 +38,15 @@ const socialSection: LinkSectionProps = {
   links: [
     {
       label: 'Linkedin',
-      url: 'https://www.linkedin.com/company/consulmagnoeassis/',
+      url: linkedinLink,
     },
     {
       label: 'Instagram',
-      url: 'https://www.instagram.com/consulmagnoassisadv/',
+      url: instagramLink,
     },
     {
       label: 'Facebook',
-      url: 'https://www.facebook.com/ConsulmagnoAssis',
+      url: facebookLink,
     },
   ],
 }

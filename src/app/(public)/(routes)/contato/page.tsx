@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { generateStaticSeo } from '@/components/seo/static'
 import { Socials } from '@/components/cta/socials'
+import { email, mapLink, whatsappLink } from '@/site'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Áreas de Atuação',
@@ -33,15 +34,11 @@ export default function Contact() {
             </Text>
 
             <div className="mt-12 flex flex-col gap-4">
-              <MeanItem
-                content="contato@consulmagnoassis.com"
-                icon={AtSign}
-                url="mailto:contato@consulmagnoassis.com"
-              />
+              <MeanItem content={email} icon={AtSign} url={`mailto:${email}`} />
               <MeanItem
                 content="(32) 98834-4973"
                 icon={Phone}
-                url="https://wa.me/5532988344973?text=Ol%C3%A1%2C%20estou%20interessado%20nos%20seus%20servi%C3%A7os"
+                url={whatsappLink}
               />
               <MeanItem
                 content="@  consulmagnoassisadv"
@@ -84,11 +81,7 @@ export default function Contact() {
                 exercitationem omnis nam expedita repellendus mollitia quasi est
                 suscipit quam dicta corporis error?
               </Text>
-              <Link
-                target="_blank"
-                prefetch={false}
-                href="https://www.google.com.br/maps/place/Av.+Bar%C3%A3o+do+Rio+Branco,+1871+-+Sala+613+-+Centro,+Juiz+de+Fora+-+MG,+41615-001/@-21.7583388,-43.3502574,17z/data=!3m1!4b1!4m6!3m5!1s0x989c9f39f31b85:0xfe746fb5fc325d6c!8m2!3d-21.7583388!4d-43.3502574!16s%2Fg%2F11s4g2t3vk?entry=ttu"
-              >
+              <Link target="_blank" prefetch={false} href={mapLink}>
                 <Button className="w-full">Localização</Button>
               </Link>
             </Box>
@@ -107,11 +100,7 @@ export default function Contact() {
                 exercitationem omnis nam expedita repellendus mollitia quasi est
                 suscipit quam dicta corporis error?
               </Text>
-              <Link
-                target="_blank"
-                href="https://wa.me/5532988344973?text=Ol%C3%A1%2C%20estou%20interessado%20nos%20seus%20servi%C3%A7os"
-                prefetch={false}
-              >
+              <Link target="_blank" href={whatsappLink} prefetch={false}>
                 <Button color="secondary" className="w-full">
                   Contato
                 </Button>

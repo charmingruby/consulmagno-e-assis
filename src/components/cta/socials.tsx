@@ -1,11 +1,12 @@
 import Link from 'next/link'
 import { Facebook, Instagram, Linkedin } from 'lucide-react'
+import { facebookLink, linkedinLink, instagramLink } from '@/site'
 
 export function Socials() {
   return (
     <div className="flex justify-center gap-4">
       <Link
-        href="https://www.linkedin.com/company/consulmagnoeassis/"
+        href={linkedinLink}
         target="_blank"
         prefetch={false}
         className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
@@ -13,7 +14,7 @@ export function Socials() {
         <Linkedin className="h-8 w-8 text-secondary-main" />
       </Link>
       <Link
-        href="https://www.facebook.com/ConsulmagnoAssis"
+        href={facebookLink}
         target="_blank"
         prefetch={false}
         className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"
@@ -21,7 +22,7 @@ export function Socials() {
         <Facebook className="text-secondary-main h-8 w-8" />
       </Link>
       <Link
-        href="https://www.instagram.com/consulmagnoassisadv/"
+        href={instagramLink}
         target="_blank"
         prefetch={false}
         className="bg-primary-main cursor-pointer w-fit p-3 rounded-md hover:bg-primary-dark transition-colors"

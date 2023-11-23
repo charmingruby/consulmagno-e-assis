@@ -12,6 +12,13 @@ interface PostPageProps {
   params: { slug: string }
 }
 
+const categorias = [
+  { name: 'Direito Civil', url: '/blog/categorias/direito-civil' },
+  { name: 'Direito do trabalho', url: '/blog/categorias/direito-civil' },
+  { name: 'Direito do consumidor', url: '/blog/categorias/direito-civil' },
+  { name: 'Direito Civil', url: '/blog/categorias/direito-civil' },
+]
+
 export default function PostPage({ params }: PostPageProps) {
   return (
     <>
@@ -37,7 +44,7 @@ export default function PostPage({ params }: PostPageProps) {
       <Container.Root border="borderBottom">
         <Container.Content>
           <div className="flex pt-4 gap-8 ">
-            <div className="flex text-lg flex-1">
+            <div className="flex text-lg text-left flex-1">
               Structured gripped tape invisible moulded cups for sauppor firm
               hold strong powermesh front liner sport detail. Warmth comfort
               hangs loosely from the body large pocket at the front full button
@@ -56,13 +63,13 @@ export default function PostPage({ params }: PostPageProps) {
               versatile shoe must-have new season glamorous.
             </div>
             <div className="flex flex-col justify-start gap-6">
-              <div className="flex flex-col  items-center">
+              <div className="flex flex-col  items-start">
                 <p className="font-bold pb-3 ">Nos siga nas redes sociais</p>
                 <div>
                   <CardMedias></CardMedias>
                 </div>
               </div>
-              <div className="flex flex-col items-center ">
+              <div className="flex flex-col items-start ">
                 <p className="font-bold pb-3 ">Venha nos visitar</p>
                 <div>
                   <Link
@@ -83,28 +90,16 @@ export default function PostPage({ params }: PostPageProps) {
       {/* Categorias */}
       <Container.Root border="borderBottom">
         <Container.Content>
-          <div className="text-center w-full mb-8">
+          <div className="text-left w-full mb-8">
             <strong className="text-3xl">
               Venha ver mais posts relacionados
             </strong>
           </div>
-          <div className="flex gap-4 justify-center">
-            <CardItem
-              name="Direito Civil"
-              url="/blog/categorias/direito-civil"
-            ></CardItem>
-            <CardItem
-              name="Direito Civil"
-              url="/blog/categorias/direito-civil"
-            ></CardItem>
-            <CardItem
-              name="Direito Civil"
-              url="/blog/categorias/direito-civil"
-            ></CardItem>
-            <CardItem
-              name="Direito Civil"
-              url="/blog/categorias/direito-civil"
-            ></CardItem>
+
+          <div className="flex gap-4 justify-start">
+            {categorias.map((item, index) => (
+              <CardItem key={index} name={item.name} url={item.url} />
+            ))}
           </div>
         </Container.Content>
       </Container.Root>
