@@ -1,12 +1,12 @@
 import { PostCard } from '@/components/post-card'
 import { getClient } from '@/libs/graphql/client'
-import { FetchRecentPostsReponse } from '@/libs/graphql/queries/fetch-all-posts/types'
-import { FETCH_RECENT_POSTS } from '@/libs/graphql/queries/fetch-all-posts/query'
+import { FetchHomePostsResponse } from '@/libs/graphql/queries/fetch-home-posts/types'
 import { Loader } from '@/components/loader'
+import { FETCH_HOME_POSTS } from '@/libs/graphql/queries/fetch-home-posts/query'
 
 export async function RecentPosts() {
   const { data, loading } = await getClient().query({
-    query: FETCH_RECENT_POSTS,
+    query: FETCH_HOME_POSTS,
     context: {
       fetchOptions: {
         next: { revalidate: 20 },
@@ -14,7 +14,7 @@ export async function RecentPosts() {
     },
   })
 
-  const parsedData = data as FetchRecentPostsReponse
+  const parsedData = data as FetchHomePostsResponse
   const [highlightedPost, ...restOfThePosts] = parsedData.posts.slice(0)
 
   if (loading) {

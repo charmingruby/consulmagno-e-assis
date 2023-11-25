@@ -2,7 +2,7 @@ import { Loader } from '@/components/loader'
 import { PostCard } from '@/components/post-card'
 import { getClient } from '@/libs/graphql/client'
 import { FETCH_RECENT_POSTS } from '@/libs/graphql/queries/fetch-all-posts/query'
-import { FetchRecentPostsReponse } from '@/libs/graphql/queries/fetch-all-posts/types'
+import { FetchRecentPostsReponse } from '@/libs/graphql/queries/fetch-home-posts/types'
 
 interface RelatedPostsProps {
   slug: string

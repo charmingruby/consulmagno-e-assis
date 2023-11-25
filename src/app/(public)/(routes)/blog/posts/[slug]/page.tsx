@@ -41,7 +41,7 @@ export default function PostPage({ params }: PostPageProps) {
       </Container.Root>
 
       {/* Conteúdo */}
-      <Container.Root border="borderBottom">
+      <Container.Root border="borderBottom" backgroundColor="white">
         <Container.Content>
           <div className="flex pt-4 gap-8 ">
             <div className="flex text-lg text-left flex-1">

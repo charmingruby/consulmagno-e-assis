@@ -2,9 +2,9 @@
 
 import { PageTitle } from '@/components/page-title'
 import { SearchBarRoot } from './search-bar-root'
-import { areaItems } from '../../../../../constants/areas'
 import { AreaItem } from './area-item'
 import { ChangeEvent, useState } from 'react'
+import { areas } from '@/data/areas'
 
 export function AreasList() {
   const [searchTerm, setSearchTerm] = useState<string>('')
@@ -13,7 +13,7 @@ export function AreasList() {
     setSearchTerm(evt?.target.value)
   }
 
-  const filteredItems = areaItems.filter(({ name }) =>
+  const filteredItems = areas.filter(({ name }) =>
     name.toLowerCase().includes(searchTerm.toLowerCase()),
   )
 
@@ -35,8 +35,8 @@ export function AreasList() {
       </div>
 
       <div className="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
-        {filteredItems.map(({ name, url, icon }, index) => (
-          <AreaItem name={name} url={url} icon={icon} key={index} />
+        {filteredItems.map(({ name, icon, slug }, index) => (
+          <AreaItem name={name} slug={slug} icon={icon} key={index} />
         ))}
       </div>
     </div>

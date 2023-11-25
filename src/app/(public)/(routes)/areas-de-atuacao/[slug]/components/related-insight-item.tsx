@@ -18,9 +18,7 @@ export function RelatedInsightsItem({
         prefetch={false}
         className="hover:underline"
       >
-        <strong className="text-2xl text-primary-main font-semibold">
-          {title}
-        </strong>
+        <strong className="text-xl font-semibold">{title}</strong>
       </Link>
 
       <div className="space-y-1.5">
@@ -30,9 +28,9 @@ export function RelatedInsightsItem({
           {subjects.map((subject) => (
             <div
               key={subject}
-              className="border border-gray-100 bg-white px-3 py-1.5 shadow-sm rounded-full"
+              className="border border-gray-100 bg-white px-3 py-1 shadow-sm rounded-full"
             >
-              <span className="text-sm">{subject}</span>
+              <span className="text-xs">{subject}</span>
             </div>
           ))}
         </div>

@@ -9,8 +9,8 @@ import { Text } from '@/components/ui/text'
 import Link from 'next/link'
 import * as CTA from '@/components/cta'
 import { ServicesList } from './components/services-list'
-import { OtherPosts } from './components/other-posts'
 import { RelatedInsights } from './components/related-insights'
+import { SeeAlsoPosts } from '@/components/see-also-posts'
 
 interface PageProps {
   params: { slug: string }
@@ -114,8 +114,18 @@ export default function AreaPage({ params: { slug } }: PageProps) {
 
       {/* Serviços */}
       <Container.Root border="borderBottom" backgroundColor="white">
-        <Container.Content className="flex flex-col items-center">
-          <ExplanationTopicTitle icon={Briefcase} title="Nossos serviços" />
+        <Container.Content className="flex flex-col">
+          <div className="flex flex-col gap-4 mb-8">
+            <ExplanationTopicTitle
+              icon={Briefcase}
+              title="Nossos serviços"
+              hasSpacing={false}
+            />
+
+            <small className="text-gray-400 text-sm">
+              Tipos de serviços que executamos nessa area.
+            </small>
+          </div>
 
           <ServicesList slug={slug} />
         </Container.Content>
@@ -123,7 +133,7 @@ export default function AreaPage({ params: { slug } }: PageProps) {
 
       {/* Insights */}
       <Container.Root border="borderBottom">
-        <Container.Content className="grid grid-cols-3 gap-12">
+        <Container.Content className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Heading */}
           <h2 className="col-span-1">
             <strong className="text-3xl text-primary-main">
@@ -142,7 +152,7 @@ export default function AreaPage({ params: { slug } }: PageProps) {
           <div className="text-center w-full mb-8">
             <strong className="text-3xl">Veja também</strong>
           </div>
-          <OtherPosts />
+          <SeeAlsoPosts />
         </Container.Content>
       </Container.Root>
 

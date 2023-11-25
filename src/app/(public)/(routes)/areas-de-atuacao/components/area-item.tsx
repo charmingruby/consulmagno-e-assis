@@ -1,10 +1,16 @@
 import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 import { Box } from '@/components/ui/box'
-import { AreaItemProps } from '../../../../../constants/areas'
+import { ElementType } from 'react'
 
-export function AreaItem({ icon: Icon, name, url }: AreaItemProps) {
-  const fullUrl = '/areas-de-atuacao' + url
+interface AreaItemProps {
+  icon: ElementType
+  name: string
+  slug: string
+}
+
+export function AreaItem({ icon: Icon, name, slug }: AreaItemProps) {
+  const fullUrl = '/areas-de-atuacao/' + slug
 
   const prefix = name.split(' ')[0]
   const restOfTheName = name.slice(prefix.length + 1)

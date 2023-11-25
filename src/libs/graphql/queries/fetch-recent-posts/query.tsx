@@ -2,7 +2,7 @@ import { gql } from '@apollo/client'
 
 export const FETCH_RECENT_POSTS = gql`
   query FetchAllPosts {
-    posts(orderBy: createdAt_DESC, first: 4) {
+    posts(orderBy: createdAt_DESC, first: 3) {
       id
       title
       subtitle

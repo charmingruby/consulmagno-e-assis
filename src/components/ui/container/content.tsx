@@ -5,7 +5,7 @@ const content = tv({
   base: 'sm:max-w-[84rem] px-4 lg:px-6 w-full sm:mx-auto',
   variants: {
     spacing: {
-      default: 'py-10',
+      default: 'py-10 lg:py-20',
       spaceless: 'py-0',
       lg: 'py-24',
     },
