@@ -7,6 +7,14 @@ import { useEmailController } from './use-email-controller'
 import { ControlRoot } from '@/components/ui/form/control-root'
 import { FieldError } from '@/components/ui/form/field-error'
 
+export type FormData = {
+  name: string
+  email: string
+  message: string
+  phoneNumber: string
+  subject: string
+}
+
 export function EmailForm() {
   const { register, handleSubmit, errors } = useEmailController()
 

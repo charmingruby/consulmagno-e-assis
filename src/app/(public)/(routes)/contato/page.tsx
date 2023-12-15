@@ -13,8 +13,9 @@ import { Socials } from '@/components/cta/socials'
 import { email, mapLink, whatsappLink } from '@/site'
 
 export const metadata = generateStaticSeo({
-  rawTitle: 'Áreas de Atuação',
-  description: '',
+  rawTitle: 'Contato',
+  description:
+    'Precisa de assistência jurídica em Juiz de Fora? Entre em contato conosco para uma consultoria personalizada. Nossa equipe especializada está pronta para ajudar. Fale conosco agora!',
 })
 
 export default function Contact() {

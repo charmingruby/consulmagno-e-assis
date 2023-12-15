@@ -9,7 +9,8 @@ import { AreasList } from './components/areas-list'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Áreas de Atuação',
-  description: '',
+  description:
+    '"Explore as diversas áreas de atuação do nosso escritório de advocacia em Juiz de Fora. Contamos com uma equipe especializada em oferecer soluções jurídicas eficientes para questões variadas. Conheça nossas competências agora',
 })
 
 export default function ActionAreasPage() {

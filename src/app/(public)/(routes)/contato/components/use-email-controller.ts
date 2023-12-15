@@ -3,6 +3,7 @@
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
+import { sendEmail } from '@/utils/send-email'
 
 const sendEmailFormSchema = z.object({
   name: z
@@ -48,6 +49,7 @@ export function useEmailController() {
   const handleSubmit = hookFormHandleSubmit(
     ({ name, phoneNumber, email, subject, message }: SendEmailFormData) => {
       console.log({ name, phoneNumber, email, subject, message })
+      sendEmail({ name, phoneNumber, email, subject, message })
     },
   )
 

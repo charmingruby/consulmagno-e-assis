@@ -19,7 +19,7 @@ import { RecentPosts } from './components/recent-posts'
 export const metadata = generateStaticSeo({
   rawTitle: 'Início',
   description:
-    'Escritório de advocacia em juiz de fora. Melhores advogados em Juiz de Fora. Advogados que trabalham remotamente.  ',
+    'Escritório de advocacia em juiz de fora. Melhores advogados em Juiz de Fora. Advogados que trabalham remotamente.',
 })
 
 export default function Home() {
@@ -31,15 +31,13 @@ export default function Home() {
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
             {/* Title */}
             <h1 className="text-gray-50 font-semibold m-0 text-4xl md:text-4xl mb-6 break-words">
-              Defesa Legal em Suas Mãos: Advocacia Especializada e Comprometida
-              com seus Direitos
+              Excelência, Pessoalidade e Modernidade.
             </h1>
 
             <p className="text-gray-100 text-lg mb-16">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Incidunt, sapiente qui asperiores deserunt exercitationem impedit
-              nam quas molestiae eligendi sed neque quae repellat iste quaerat
-              dolorem quo non facilis distinctio.
+              Estes são os pilares do nosso negócio, tratamos cada cliente de
+              forma personalizada, promovendo um atendimento célere, eficiente e
+              humanizado gerando valor para nossos clientes.
             </p>
 
             <div className="flex flex-col md:flex-row gap-6">
@@ -72,12 +70,13 @@ export default function Home() {
           <div className="w-full mb-10">
             <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
               <h2 className="text-4xl font-bold text-primary-main">
-                Por que escolher a Brand?
+                Por que escolher o escritório Consulmagno e Assis Advogados?
               </h2>
               <p className="leading-relaxed text-gray-400">
-                Somos parceiros e protegemos nossos clientes em todo o mundo.
-                Nossos profissionais são especializados em mais de 30 áreas do
-                direito.
+                Entendemos que na advocacia não existe problema maior ou menor,
+                uma vez que toda dor incomoda e precisa ser tratada de modo
+                eficiente e humanizado. Por isso estamos preparados para lhe
+                oferecer a solução jurídica adequada.
               </p>
             </div>
           </div>

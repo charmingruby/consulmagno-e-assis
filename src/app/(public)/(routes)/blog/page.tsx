@@ -14,7 +14,8 @@ import { BookOpen } from 'lucide-react'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Blog',
-  description: '',
+  description:
+    'Descubra a expertise do nosso escritório por meio de nosso blog jurídico. Navegue por artigos envolventes que abrangem diversas áreas do direito e mantenha-se atualizado sobre as tendências legais em Juiz de Fora e além.',
 })
 
 export default function Blog() {
