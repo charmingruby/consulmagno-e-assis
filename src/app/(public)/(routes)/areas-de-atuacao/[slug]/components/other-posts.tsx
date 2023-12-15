@@ -1,8 +1,8 @@
 import { PostCard } from '@/components/post-card'
 import { getClient } from '@/libs/graphql/client'
 import { revalidationCooldownInSeconds } from '@/libs/graphql/configs'
-import { FETCH_RECENT_POSTS } from '@/libs/graphql/queries/fetch-all-posts/query'
-import { FetchRecentPostsReponse } from '@/libs/graphql/queries/fetch-home-posts/types'
+import { FETCH_RECENT_POSTS } from '@/libs/graphql/queries/fetch-recent-posts/query'
+import { FetchRecentPostsReponse } from '@/libs/graphql/queries/fetch-recent-posts/types'
 
 export async function OtherPosts() {
   const { data } = await getClient().query({

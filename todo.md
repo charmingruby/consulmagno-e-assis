@@ -1,4 +1,15 @@
-# Tasks
+# Tasks V2
+
+- [ ] Responsividade heros
+- [ ] Arrumar links de blog
+- [ ] Pagina de posts com uma categoria
+- [ ] Pagina com todos os posts
+- [ ] Pagina de um post
+- [ ] Pagina de blog
+- [ ] Email
+- [ ] Quando tiver tudo pronto, aplicar revalidacao
+
+<!-- # Tasks
 
 - [X] Trocar descriçao do footer por informaçoes do escritorio.
 - [X] Descentralizar heros no mobile.
@@ -26,4 +37,4 @@
 
 - [ ] Blog
 - [ ] Post especifico (Thomsom)
-- [ ] Post por categoria
+- [ ] Post por categoria -->

@@ -8,8 +8,9 @@ import { FeaturedCategories } from './components/featured-categories'
 import { SocialsHeader } from './components/socials-header'
 import Image from 'next/image'
 import coverImg from '@/assets/images/lawyers.png'
-import { TabsParent } from './components/posts-navigation/tabs-parent'
 import * as CTA from '@/components/cta'
+import { ContentHeading } from './components/content-heading'
+import { BookOpen } from 'lucide-react'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Blog',
@@ -31,11 +32,25 @@ export default function Blog() {
 
       {/* Most recents */}
       <Container.Root backgroundColor="white">
-        <Container.Content className="flex flex-col items-center gap-8">
+        <Container.Content className="flex flex-col items-center">
           <SocialsHeader />
 
           <RecentPostsList />
-          <Button color="outline">Carregar mais</Button>
+          <Button color="outline" className="mt-8">
+            Ver todos
+          </Button>
+        </Container.Content>
+      </Container.Root>
+
+      {/* Categories */}
+      <Container.Root backgroundColor="white">
+        <Container.Content className="flex flex-col items-center">
+          <ContentHeading heading="Principais Categorias" />
+
+          <FeaturedCategories />
+          <Button color="outline" className="mt-8">
+            Ver todas
+          </Button>
         </Container.Content>
       </Container.Root>
 
@@ -68,14 +83,18 @@ export default function Blog() {
         </Container.Content>
       </Container.Root>
 
-      {/* Categories */}
       <Container.Root backgroundColor="white">
         <Container.Content>
-          <div className="space-y-4 mb-12">
-            <PageTitle title="Áreas em destaque" />
+          <div className="flex flex-col gap-1 items-center text-center">
+            <BookOpen className="text-secondary-main" />
+            <ContentHeading heading="Assuntos abordados recentemente" />
           </div>
 
-          <FeaturedCategories />
+          <div className="grid grid-cols-4">
+            <div className="border rounded-sm shadow-sm py-2 px-2">
+              <span>Sequestro relampago</span>
+            </div>
+          </div>
         </Container.Content>
       </Container.Root>
 
