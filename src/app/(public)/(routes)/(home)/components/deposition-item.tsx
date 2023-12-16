@@ -12,10 +12,11 @@ export function DepositionItem() {
   return (
     <div className="flex flex-col gap-6">
       <p className="text-base italic text-foreground/70">
-        {`"`}Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus rem
-        soluta deleniti cum, possimus doloribus iste sint sequi cumque beatae
-        molestiae corporis nam error nisi deserunt, perspiciatis officia ex
-        nobis?{`"`}
+        {`"`}Eterna gratidão por vocês. Super indico o serviço, são ótimas
+        pessoas e ótimos profissionais. Com o conhecimento de vocês, meu filho
+        conseguiu vaga no CTI e hoje teve alta. Eu sou imensamente grata por
+        vocês, me faltam palavras para escrever aqui, mas me senti aliviada
+        quando meu problema foi resolvido.{`"`}
       </p>
 
       <div className="flex items-center gap-2">

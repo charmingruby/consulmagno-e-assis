@@ -68,15 +68,17 @@ export default function Home() {
       <Container.Root className="w-full bg-white">
         <Container.Content>
           <div className="w-full mb-10">
-            <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
+            <div className="grid grid-rows-1-1 gap-8 lg:grid-rows-2">
               <h2 className="text-4xl font-bold text-primary-main">
-                Por que escolher o escritório Consulmagno e Assis Advogados?
+                Por que escolher o escritório Consulmagno e Assis advocacia?
               </h2>
               <p className="leading-relaxed text-gray-400">
-                Entendemos que na advocacia não existe problema maior ou menor,
-                uma vez que toda dor incomoda e precisa ser tratada de modo
-                eficiente e humanizado. Por isso estamos preparados para lhe
-                oferecer a solução jurídica adequada.
+                Nós oferecemos um serviço de qualidade, inovador, humanizado,
+                com foco total na pessoalidade do serviço. Acreditamos que cada
+                cliente é único e oferecemos soluções personalizadas para
+                atender às necessidades específicas. Entendemos que as soluções
+                jurídicas estratégicas que oferecemos são essenciais para o
+                crescimento e sucesso dos nosso clientes.
               </p>
             </div>
           </div>
@@ -85,19 +87,19 @@ export default function Home() {
               icon={Target}
               prefixTitle="Nossa"
               sufixTitle="missão"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod"
+              description="Prestar um serviço altamente qualificado, eficiente, moderno, por meio de um atendimento diferenciado, personalíssimo e humano, gerando valor às atividades dos nossos clientes"
             />
             <ReasonCard
               icon={Eye}
               prefixTitle="Nossa"
               sufixTitle="visão"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod"
+              description="Ser reconhecido dentro do mais alto padrão ético e eficiente da advocacia, sendo referência nominal na prestação de serviços jurídico consultivos e contenciosos."
             />
             <ReasonCard
               icon={Gem}
               prefixTitle="Nossos"
               sufixTitle="valores"
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga id molestias quibusdam! Rem commod"
+              description="Ética, Qualidade, Pessoalidade, Disponibilidade e Comprometimento"
             />
           </div>
         </Container.Content>
@@ -108,12 +110,12 @@ export default function Home() {
         <Container.Content className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="flex flex-col justify-center gap-12">
             <MapAnnotations
-              title="Title"
-              description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, nobis dolore. Adipisci porro, nesciunt exercitationem, ab tenetur numquam praesentium tempora fugiat mollitia vero aspernatur, ut eligendi perferendis ad soluta dignissimos!"
+              title="Atendendo Clientes em Todo o Brasil"
+              description="O escritório Consulmagno e Assis atua nacionalmente, oferecendo soluções jurídicas em qualquer localização do país. Atualmente estamos presentes em mais de 100 municípios e em mais de 20 Estados"
             />
             <MapAnnotations
-              title="Title"
-              description="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, nobis dolore. Adipisci porro, nesciunt exercitationem, ab tenetur numquam praesentium tempora fugiat mollitia vero aspernatur, ut eligendi perferendis ad soluta dignissimos!"
+              title="Nossa sede"
+              description="Nossa sede está localizada em Juiz de Fora – MG, na Av. Barão do Rio Branco, 1871, Sala 613"
             />
           </div>
           <div className="order-first md:order-last">
@@ -130,9 +132,12 @@ export default function Home() {
               <PageTitle title="Áreas de atuação" />
             </div>
             <Text align="center" opacity="low">
-              Nossa equipe de advogados comprometidos entende a importância do
-              seu caso. Com experiência em várias áreas de atuação, o(a) Brand
-              lidará com seus problemas legais com cuidado e profissionalismo.
+              Possuímos profissionais especializados nas mais variadas áreas do
+              Direito, e por meio da multidisciplinaridade de cada profissional,
+              somos capazes de entender a complexidade das questões apresentadas
+              pelos clientes e a apresentar soluções adequadas e criativas,
+              garantindo a segurança e o sucesso de suas atividades dos nossos
+              clientes
             </Text>
           </div>
 
