@@ -1,12 +1,12 @@
 # Tasks V2
 
 - [ ] Responsividade heros
-- [ ] Arrumar links de blog
+- [x] Arrumar links de blog
 - [ ] Pagina de posts com uma categoria
-- [ ] Pagina com todos os posts
+- [x] Pagina com todos os posts
 - [ ] Pagina de um post
-- [ ] Pagina de blog
-- [ ] Email
+- [x] Pagina de blog
+- [x] Email
 - [ ] Quando tiver tudo pronto, aplicar revalidacao
 
 <!-- # Tasks

@@ -16,9 +16,7 @@ export default function PostsPage() {
       {/* Hero */}
       <Container.Root className="md:pt-16 bg-primary-gradient">
         <Container.Content className="pt-24 flex flex-col md:text-center text-left lg:text-start items-center gap-6">
-          <h2 className="text-white font-bold text-5xl">
-            Conheça Nossas Publicações
-          </h2>
+          <h2 className="text-white font-bold text-5xl">Nossas Publicações</h2>
           <span className="text-gray-200 text-xl">
             Explorando a Sabedoria Jurídica: Nossas Publicações em Destaque{' '}
           </span>

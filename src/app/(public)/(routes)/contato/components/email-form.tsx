@@ -6,6 +6,7 @@ import { TextInput } from '@/components/ui/form/text-input'
 import { useEmailController } from './use-email-controller'
 import { ControlRoot } from '@/components/ui/form/control-root'
 import { FieldError } from '@/components/ui/form/field-error'
+import { Loader } from '@/components/loader'
 
 export type FormData = {
   name: string
@@ -16,7 +17,10 @@ export type FormData = {
 }
 
 export function EmailForm() {
-  const { register, handleSubmit, errors } = useEmailController()
+  const { register, handleSubmit, errors, isLoading, isSubmitting } =
+    useEmailController()
+
+  const disableSubmit = isLoading || isSubmitting
 
   return (
     <form className="flex flex-col gap-8 w-full" onSubmit={handleSubmit}>
@@ -77,8 +81,13 @@ export function EmailForm() {
         </ControlRoot>
       </div>
 
-      <Button color="primary" type="submit">
-        Enviar
+      <Button
+        color="primary"
+        type={disableSubmit ? 'button' : 'submit'}
+        disabled={disableSubmit}
+        className="disabled:bg-primary-main/light disabled:cursor-not-allowed disabled:hover:bg-primary-main/light"
+      >
+        {disableSubmit ? <Loader /> : <span>Enviar</span>}
       </Button>
     </form>
   )

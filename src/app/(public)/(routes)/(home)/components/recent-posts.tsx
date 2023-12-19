@@ -3,13 +3,14 @@ import { getClient } from '@/libs/graphql/client'
 import { FetchHomePostsResponse } from '@/libs/graphql/queries/fetch-home-posts/types'
 import { Loader } from '@/components/loader'
 import { FETCH_HOME_POSTS } from '@/libs/graphql/queries/fetch-home-posts/query'
+import { revalidationCooldownInSeconds } from '@/libs/graphql/configs'
 
 export async function RecentPosts() {
   const { data, loading } = await getClient().query({
     query: FETCH_HOME_POSTS,
     context: {
       fetchOptions: {
-        next: { revalidate: 20 },
+        next: { revalidate: revalidationCooldownInSeconds },
       },
     },
   })

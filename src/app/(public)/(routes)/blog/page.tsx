@@ -1,16 +1,16 @@
 import * as Container from '@/components/ui/container'
 import { Button } from '@/components/ui/button'
-import { PageTitle } from '@/components/page-title'
 import { Text } from '@/components/ui/text'
 import { generateStaticSeo } from '@/components/seo/static'
 import { RecentPostsList } from './components/recent-posts-list'
-import { FeaturedCategories } from './components/featured-categories'
+import { PostsCategories } from './components/posts-categories'
 import { SocialsHeader } from './components/socials-header'
 import Image from 'next/image'
 import coverImg from '@/assets/images/lawyers.png'
 import * as CTA from '@/components/cta'
 import { ContentHeading } from './components/content-heading'
-import { BookOpen } from 'lucide-react'
+import { ArrowRight } from 'lucide-react'
+import Link from 'next/link'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Blog',
@@ -37,9 +37,13 @@ export default function Blog() {
           <SocialsHeader />
 
           <RecentPostsList />
-          <Button color="outline" className="mt-8">
-            Ver todos
-          </Button>
+
+          <Link href="/blog/posts" prefetch={false}>
+            <Button color="outline" className="mt-8 flex items-center gap-1">
+              Ver todos
+              <ArrowRight className="h-4 w-4" />
+            </Button>
+          </Link>
         </Container.Content>
       </Container.Root>
 
@@ -48,10 +52,7 @@ export default function Blog() {
         <Container.Content className="flex flex-col items-center">
           <ContentHeading heading="Principais Categorias" />
 
-          <FeaturedCategories />
-          <Button color="outline" className="mt-8">
-            Ver todas
-          </Button>
+          <PostsCategories />
         </Container.Content>
       </Container.Root>
 
@@ -61,7 +62,7 @@ export default function Blog() {
           <div className="h-96 relative flex items-center justify-center">
             <Image
               src={coverImg}
-              alt=""
+              alt="Imagem de capa"
               className="h-96 object-cover object-top absolute top-0 right-0"
             />
 
@@ -79,21 +80,6 @@ export default function Blog() {
               </Text>
 
               <Button color="uncolored">Entrar em contato</Button>
-            </div>
-          </div>
-        </Container.Content>
-      </Container.Root>
-
-      <Container.Root backgroundColor="white">
-        <Container.Content>
-          <div className="flex flex-col gap-1 items-center text-center">
-            <BookOpen className="text-secondary-main" />
-            <ContentHeading heading="Assuntos abordados recentemente" />
-          </div>
-
-          <div className="grid grid-cols-4">
-            <div className="border rounded-sm shadow-sm py-2 px-2">
-              <span>Sequestro relampago</span>
             </div>
           </div>
         </Container.Content>

@@ -3,7 +3,8 @@
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { sendEmail } from '@/utils/send-email'
+import { useState } from 'react'
+import toast from 'react-hot-toast'
 
 const sendEmailFormSchema = z.object({
   name: z
@@ -38,6 +39,8 @@ const sendEmailFormSchema = z.object({
 type SendEmailFormData = z.infer<typeof sendEmailFormSchema>
 
 export function useEmailController() {
+  const [isLoading, setIsLoading] = useState<boolean>(false)
+
   const {
     register,
     handleSubmit: hookFormHandleSubmit,
@@ -48,10 +51,29 @@ export function useEmailController() {
 
   const handleSubmit = hookFormHandleSubmit(
     ({ name, phoneNumber, email, subject, message }: SendEmailFormData) => {
-      console.log({ name, phoneNumber, email, subject, message })
-      sendEmail({ name, phoneNumber, email, subject, message })
+      setIsLoading(true)
+      const apiEndpoint = '/api/email'
+
+      fetch(apiEndpoint, {
+        method: 'POST',
+        body: JSON.stringify({ name, phoneNumber, email, subject, message }),
+      })
+        .then((res) => res.json())
+        .then((response) => {
+          toast.success('Email enviado com sucesso.', {
+            position: 'bottom-right',
+          })
+          setIsLoading(false)
+
+          return response
+        })
+        .catch((err) => {
+          console.error(err)
+          toast.error('Erro ao enviar email.', { position: 'bottom-right' })
+          setIsLoading(false)
+        })
     },
   )
 
-  return { register, errors, isSubmitting, handleSubmit }
+  return { register, errors, isSubmitting, handleSubmit, isLoading }
 }

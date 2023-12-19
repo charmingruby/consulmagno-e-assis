@@ -1,17 +1,13 @@
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
 
-interface FeaturedCategoryItemProps {
+interface PostCategoryItemProps {
   name: string
   slug: string
   image: StaticImageData
 }
 
-export function FeaturedCategoryItem({
-  image,
-  name,
-  slug,
-}: FeaturedCategoryItemProps) {
+export function PostCategoryItem({ image, name, slug }: PostCategoryItemProps) {
   return (
     <Link href={`/blog/${slug}`}>
       <div className="h-64 relative rounded-sm shadow-sm">

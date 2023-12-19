@@ -1,5 +1,5 @@
 import * as Container from '@/components/ui/container'
-import { ArrowRight, Briefcase, HelpCircle, Target } from 'lucide-react'
+import { ArrowRight, Goal, HelpCircle, Target } from 'lucide-react'
 import { slugTransformer } from '@/utils/slug-transformer'
 import { ReturnLink } from './components/return-link'
 import Image from 'next/image'
@@ -49,16 +49,13 @@ export default function AreaPage({ params: { slug } }: PageProps) {
       {/* Descriptions */}
       <Container.Root backgroundColor="white">
         <Container.Content>
-          <div className="grid grid-col-1 md:grid-cols-2 justify-center text-left gap-12">
+          <div className="grid grid-col-1 lg:grid-cols-3 justify-center text-left gap-12 w-full">
             {/* Problem abordation */}
-            <div className="flex flex-col">
-              <ExplanationTopicTitle
-                icon={HelpCircle}
-                title="O que oferecemos?"
-              />
+            <div className="flex flex-col lg:col-span-2">
+              <ExplanationTopicTitle icon={Target} title="Nossas soluções" />
 
               {/* Content */}
-              <div className="space-y-4">
+              <div className="space-y-4 mb-8">
                 <Text>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Temporibus fuga dolorum optio officiis a, maxime illum, magnam
@@ -75,15 +72,20 @@ export default function AreaPage({ params: { slug } }: PageProps) {
                   accusantium minima nobis recusandae incidunt.
                 </Text>
               </div>
+
+              <ServicesList slug={slug} />
             </div>
 
             {/* How we act */}
-            <div className="flex flex-col">
-              <ExplanationTopicTitle icon={Target} title="Como agimos" />
-
+            <div className="order-first lg:order-last flex flex-col border border-gray-100 h-fit p-4 w-full">
+              <ExplanationTopicTitle
+                icon={HelpCircle}
+                title="Sobre a área de atuação"
+                small={true}
+              />
               {/* Action content */}
               <div className="pb-4">
-                <p className="text-lg  flex ">
+                <p className="text-base flex">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Pariatur id suscipit voluptate libero est inventore
                   laboriosamLorem ipsum dolor sit amet consectetur adipisicing
@@ -92,16 +94,13 @@ export default function AreaPage({ params: { slug } }: PageProps) {
                 </p>
               </div>
 
-              <div className="mt-auto border-t border-gray-100 pt-4 gap-2 flex items-center">
-                <span className="font-semibold text-lg">
-                  É o que você está procurando?
-                </span>
+              <div className="border-t border-gray-100 pt-4 gap-2 flex lg:flex-col">
                 <Link
                   href="/contato"
                   prefetch={false}
                   className="flex items-center gap-1 group"
                 >
-                  <span className="text-lg text-gray-400 group-hover:text-primary-main group-hover:underline transition-all">
+                  <span className="text-gray-400 group-hover:text-primary-main group-hover:underline transition-all">
                     Entre em contato
                   </span>
                   <ArrowRight className="w-4 h-4 text-gray-300 group-hover:text-secondary-main transition-colors" />
@@ -112,28 +111,12 @@ export default function AreaPage({ params: { slug } }: PageProps) {
         </Container.Content>
       </Container.Root>
 
-      {/* Serviços */}
-      <Container.Root border="borderBottom" backgroundColor="white">
-        <Container.Content className="flex flex-col">
-          <div className="flex flex-col gap-4 mb-8">
-            <ExplanationTopicTitle
-              icon={Briefcase}
-              title="Nossos serviços"
-              hasSpacing={false}
-            />
-
-            <small className="text-gray-400 text-sm">
-              Tipos de serviços que executamos nessa area.
-            </small>
-          </div>
-
-          <ServicesList slug={slug} />
-        </Container.Content>
-      </Container.Root>
-
       {/* Insights */}
-      <Container.Root border="borderBottom">
-        <Container.Content className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      <Container.Root border="borderY">
+        <Container.Content
+          spacing="spaceless"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12 py-8"
+        >
           {/* Heading */}
           <h2 className="col-span-1">
             <strong className="text-3xl text-primary-main">
@@ -142,15 +125,16 @@ export default function AreaPage({ params: { slug } }: PageProps) {
             </strong>
           </h2>
 
-          <RelatedInsights />
+          <RelatedInsights slug={slugTransformed} />
         </Container.Content>
       </Container.Root>
 
       {/* Veja também */}
       <Container.Root backgroundColor="white">
         <Container.Content>
-          <div className="text-center w-full mb-8">
-            <strong className="text-3xl">Veja também</strong>
+          <div className="flex items-center justify-center gap-2 w-full mb-8 text-secondary-main">
+            <Goal className="h-7 w-7" />
+            <strong className="text-3xl text-primary-main">Veja também</strong>
           </div>
           <SeeAlsoPosts />
         </Container.Content>

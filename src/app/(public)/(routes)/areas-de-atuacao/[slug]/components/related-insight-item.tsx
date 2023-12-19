@@ -12,7 +12,7 @@ export function RelatedInsightsItem({
   slug,
 }: RelatedInsightsProps) {
   return (
-    <div className="space-y-3">
+    <div className="space-y-1">
       <Link
         href={`/blog/posts/${slug}`}
         prefetch={false}
@@ -21,8 +21,8 @@ export function RelatedInsightsItem({
         <strong className="text-xl font-semibold">{title}</strong>
       </Link>
 
-      <div className="space-y-1.5">
-        <span className="text-gray-400">Assuntos abordados</span>
+      <div className="space-y-1">
+        <span className="text-gray-400 text-sm">Assuntos abordados</span>
 
         <div className="flex gap-2 flex-wrap">
           {subjects.map((subject) => (

@@ -1,5 +1,6 @@
 import { Facebook, Instagram } from 'lucide-react'
 import { ContentHeading } from './content-heading'
+import Link from 'next/link'
 
 export function SocialsHeader() {
   return (
@@ -7,12 +8,18 @@ export function SocialsHeader() {
       <ContentHeading heading="Publicações mais recentes" margin={false} />
 
       <div className="flex items-center justify-end gap-2 w-full">
-        <div className="bg-gray-50 p-2 border border-gray-100 shadow-sm rounded-full">
-          <Instagram className="h-5 w-5" />
-        </div>
-        <div className="bg-gray-50 p-2 border border-gray-100 shadow-sm rounded-full">
-          <Facebook className="h-5 w-5" />
-        </div>
+        <Link
+          href="/"
+          className="p-2 border border-gray-100 shadow-sm rounded-full group hover:border-primary-main transition-colors"
+        >
+          <Instagram className="h-5 w-5 text-gray-300 group-hover:text-primary-main transition-colors" />
+        </Link>
+        <Link
+          href="/"
+          className="p-2 border border-gray-100 shadow-sm rounded-full group hover:border-primary-main transition-colors "
+        >
+          <Facebook className="h-5 w-5 text-gray-300 group-hover:text-primary-main transition-colors" />
+        </Link>
       </div>
     </header>
   )

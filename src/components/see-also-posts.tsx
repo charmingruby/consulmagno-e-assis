@@ -3,13 +3,14 @@ import { FETCH_RECENT_POSTS } from '@/libs/graphql/queries/fetch-recent-posts/qu
 import { FetchRecentPostsReponse } from '@/libs/graphql/queries/fetch-recent-posts/types'
 import { Loader } from './loader'
 import { PostCard } from './post-card'
+import { revalidationCooldownInSeconds } from '@/libs/graphql/configs'
 
 export async function SeeAlsoPosts() {
   const { data, loading } = await getClient().query({
     query: FETCH_RECENT_POSTS,
     context: {
       fetchOptions: {
-        next: { revalidate: 20 },
+        next: { revalidate: revalidationCooldownInSeconds },
       },
     },
   })

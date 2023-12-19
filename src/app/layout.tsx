@@ -2,6 +2,7 @@ import { MenuContextProvider } from '@/contexts/menu-context'
 import '../styles/globals.css'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
+import { Toaster } from 'react-hot-toast'
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ export default function RootLayout({
           className={`${montserrat.variable} font-sans text-gray-900 bg-gray-50 scroll-smooth scrollbar-thin scrollbar-track-gray-300 scrollbar-thumb-gray-100`}
         >
           {children}
+          <Toaster />
         </body>
       </MenuContextProvider>
     </html>
