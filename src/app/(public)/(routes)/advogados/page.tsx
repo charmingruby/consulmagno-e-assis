@@ -46,88 +46,84 @@ export default function Team() {
       {/* Mostrar membros do time com foto */}
       <Container.Root backgroundColor="white">
         <Container.Content>
-          <div className="max-w-2xl mx-auto text-center flex flex-col items-center">
-            <Users className="text-secondary-main h-8 w-8 mb-4" />
-            <PageTitle title="Conheça nossa equipe" />
+          <div className="flex flex-col gap-4">
+            <div className="max-w-2xl mx-auto text-center flex flex-col items-center">
+              <Users className="text-secondary-main h-8 w-8 mb-4" />
+              <PageTitle title="Conheça nossa equipe" />
+            </div>
+            <div className="flex flex-col gap-2">
+              <Text className="text-center">
+                Nossos profissionais são altamente capacitados e especializados
+                para entender as suas demandas e oferecerem a solução ideal para
+                você. Acreditamos que cada pessoa é única e por isso, oferecemos
+                um atendimento personalíssimo, humano e diferenciado para cada
+                cliente, sem perder de vista o comprometimento e a qualidade.
+              </Text>
+            </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mt-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
             <LayerCard
               avatarUrl={lawyer}
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere, dolore sint fugit laborum suscipit officiis harum placeat esse eum libero ad debitis eaque. Quia incidunt asperiores distinctio sequi amet!"
+              description="Paulo Renato é sócio fundador do Consulmagno e Assis Advocacia e responsável pelas áreas de Direito Empresarial, Societário e Tributário. É mestrando em Direito e Inovação pela UFJF (Universidade Federal de Juiz de Fora) na área de Direito Tributário, possui o título de LLM (Latin Legum Magister) em Direito Empresarial pela Fundação Getúlio Vargas (FGV - Rio de Janeiro), além de ser especialista em Processo Civil, Negociação e Arbitragem.
+              Também atua como Procurador da Legislativo, e é Professor das disciplinas de Direito Tributário e Financeiro em Cursos Preparatórios para Concursos.
+              É membro da Comissão de Direito Empresarial da OAB/JF."
               emailUrl=" contato@consulmagnoassis.com"
-              instagramUrl="https://www.instagram.com/consulmagnoassisadv/"
-              linkedinUrl="https://www.linkedin.com/company/consulmagnoeassis/about/?viewAsMember=true"
-              name="John Doe"
-              role="Estagiário"
-              phoneNumber="(32) 98834-4973"
+              instagramUrl="https://www.instagram.com/adv.pauloassis/"
+              linkedinUrl="https://www.linkedin.com/in/paulo-renato-assis/"
+              name="Paulo Renato Rodrigues Assis"
+              role="Sócio"
               areas={[
                 {
-                  label: 'Direito civil',
-                  url: '/areas-de-atuacao/direito-civil',
+                  label: 'Direito Empresarial',
+                  url: '/areas-de-atuacao/direito-empresarial',
                 },
                 {
-                  label: 'Direito imobiliario',
-                  url: '/areas-de-atuacao/direito-imobiliario',
+                  label: 'Direito Societário ',
+                  url: '/areas-de-atuacao/direito-societario',
+                },
+                {
+                  label: 'Direito Tributário ',
+                  url: '/areas-de-atuacao/direito-tributario',
                 },
               ]}
             />
 
             <LayerCard
               avatarUrl={lawyer}
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere, dolore sint fugit laborum suscipit officiis harum placeat esse eum libero ad debitis eaque. Quia incidunt asperiores distinctio sequi amet!"
+              description="Lucas é sócio fundador do Consulmagno e Assis Advocacia e responsável pelas áreas de Direito Civil, Consumidor e Administrativo. Atuante na Advocacia há mais de 9 anos, é Mestre em Direito pela UCP – RJ, professor de Pós-Graduação e Graduação das disciplinas de Processo Civil, Direito Empresarial e Direito Tributário, foi Procurador Geral Municipal e é autor de diversos artigos científicos."
               emailUrl=" contato@consulmagnoassis.com"
-              instagramUrl="https://www.instagram.com/consulmagnoassisadv/"
-              linkedinUrl="https://www.linkedin.com/company/consulmagnoeassis/about/?viewAsMember=true"
-              name="John Doe"
-              role="Estagiário"
-              phoneNumber="(32) 98834-4973"
+              instagramUrl="https://www.instagram.com/lucas_consulmagno/"
+              name="Lucas Goulart Consulmagno Prata"
+              role="Sócio"
               areas={[
                 {
                   label: 'Direito civil',
                   url: '/areas-de-atuacao/direito-civil',
                 },
                 {
-                  label: 'Direito imobiliario',
-                  url: '/areas-de-atuacao/direito-imobiliario',
+                  label: 'Direito Consumidor',
+                  url: '/areas-de-atuacao/direito-do-consumidor',
+                },
+                {
+                  label: 'Direito Administrativo ',
+                  url: '/areas-de-atuacao/direito-administrativo',
                 },
               ]}
             />
 
             <LayerCard
               avatarUrl={lawyer}
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere, dolore sint fugit laborum suscipit officiis harum placeat esse eum libero ad debitis eaque. Quia incidunt asperiores distinctio sequi amet!"
+              description="Tárik é advogado associado, responsável pelas áreas de Direito do Trabalho e Imobiliário. Possui Pós-Graduação em Planejamento Tributário, e possui graduação em Gestão Financeira."
               emailUrl=" contato@consulmagnoassis.com"
-              instagramUrl="https://www.instagram.com/consulmagnoassisadv/"
-              linkedinUrl="https://www.linkedin.com/company/consulmagnoeassis/about/?viewAsMember=true"
-              name="John Doe"
-              role="Estagiário"
-              phoneNumber="(32) 98834-4973"
+              instagramUrl="https://www.instagram.com/tarikbellini/ "
+              linkedinUrl="https://www.linkedin.com/in/t%C3%A1rik-bellini-89ab92174/"
+              name="Tárik Bellini Pereira do Valle"
+              role="Advogado Associado "
               areas={[
                 {
-                  label: 'Direito civil',
-                  url: '/areas-de-atuacao/direito-civil',
-                },
-                {
-                  label: 'Direito imobiliario',
-                  url: '/areas-de-atuacao/direito-imobiliario',
-                },
-              ]}
-            />
-
-            <LayerCard
-              avatarUrl={lawyer}
-              description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et facere, dolore sint fugit laborum suscipit officiis harum placeat esse eum libero ad debitis eaque. Quia incidunt asperiores distinctio sequi amet!"
-              emailUrl=" contato@consulmagnoassis.com"
-              instagramUrl="https://www.instagram.com/consulmagnoassisadv/"
-              linkedinUrl="https://www.linkedin.com/company/consulmagnoeassis/about/?viewAsMember=true"
-              name="John Doe"
-              role="Estagiário"
-              phoneNumber="(32) 98834-4973"
-              areas={[
-                {
-                  label: 'Direito civil',
-                  url: '/areas-de-atuacao/direito-civil',
+                  label: 'Direito do Trabalho',
+                  url: '/areas-de-atuacao/direito-do-trabalho',
                 },
                 {
                   label: 'Direito imobiliario',
@@ -149,30 +145,40 @@ export default function Team() {
             </div>
             <div className="flex flex-col gap-2">
               <Text className="text-center">
-                No nosso escritório, entendemos que cada caso é único e merece a
-                atenção dedicada e especializada que ele exige. É por isso que
-                oferecemos expertise em diversas áreas do direito para atender
-                às necessidades variadas dos nossos clientes.
+                No nosso escritório, acreditamos que soluções jurídicas
+                adequadas, são essenciais para o crescimento e o sucesso de
+                nossos clientes. Perseguimos a excelência e a qualidade em nosso
+                serviço sem renunciar aos nossos valores.
               </Text>
             </div>
           </div>
           <div className=" flex flex-col">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <AreaCard
-                name="Respeito"
-                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"
+                name="Pessoalidade"
+                description="Acreditamos que pessoas se conectam com pessoas, buscamos prestar nosso serviço de forma mais pessoal e humanizada possível, nos aproximando de nossos clientes."
               />
               <AreaCard
-                name="Gentileza"
-                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"
+                name="Qualidade"
+                description="Somos pautados por elevado nível de qualidade técnica, estamos sempre em busca de aperfeiçoamento profissional e delimitamos um alto patamar de qualidade em nosso escritório."
               />
               <AreaCard
-                name="Esforço"
-                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"
+                name="Disponibilidade"
+                description="O tempo é um bem escasso e todos querem resolver suas demandas de forma célere. Buscamos estar sempre disponíveis em situações ordinárias e em emergências para auxiliar nossos clientes."
               />
               <AreaCard
-                name="Harmonia"
-                description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odio nobis amet, praesentium magni iusto earum aliquam ut itaque sint cum, doloribus repellendus tenetur laboriosam ad modi temporibus consequuntur accusamus!"
+                name="Ética"
+                description="Acreditamos que a Ética deve permear todo trabalho realizado e nas relações com clientes e terceiros. 
+                "
+              />
+              <AreaCard
+                name="Comprometimento"
+                description="Nos comprometemos com nossos clientes e suas demandas, identificando em seus problemas os nossos problemas.
+                "
+              />
+              <AreaCard
+                name="Empatia"
+                description="O cliente não é mero consumidor do nosso serviço muito menos um número. Buscamos compreender o sentimento que o outro está vivendo."
               />
             </div>
           </div>

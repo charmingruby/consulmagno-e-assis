@@ -56,12 +56,63 @@ export default function Cases() {
 
           {/* Listagem de clientes */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
-            <CustomerStory />
-            <CustomerStory />
-            <CustomerStory />
-            <CustomerStory />
-            <CustomerStory />
-            <CustomerStory />
+            <CustomerStory
+              category="Direito abordado"
+              companyName="Nome empresa"
+              name="Vitória"
+              office="Cargo"
+              problem="Problema"
+              reporter="Eterna gratidão por vocês. Super indico o serviço, são ótimas pessoas e ótimos profissionais. Com o conhecimento de vocês, meu filho conseguiu vaga no CTI e hoje teve alta. Eu sou imensamente grata por vocês, me faltam palavras para escrever aqui, mas me senti aliviada quando meu problema foi resolvido"
+            />
+            <CustomerStory
+              category="Direito abordado"
+              companyName="Nome empresa"
+              name="Nadia"
+              office="Juiz de fora"
+              problem="Problema"
+              reporter="Nossa, decisão completa, estou lendo aqui. Estava precisando de uma noticia boa. Lucas, tenho que te agradecer!! Muito Obrigado."
+            />
+            <CustomerStory
+              category="Direito abordado"
+              companyName="Nome empresa"
+              name="Nome pessoa"
+              office="Cargo"
+              problem="Problema"
+              reporter="Dr. Paulo Renato, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito ao senhor, foi Deus que colocou o senhor no meu caminho. Eu não tenho palavras para agradecer o senhor. Deus sabe o alivio que eu estou sentindo agora.” "
+            />
+            <CustomerStory
+              category="Direito abordado"
+              companyName="Nome empresa"
+              name="Neide"
+              office="Cargo"
+              problem="Problema"
+              reporter="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          eveniet eius impedit odio. Nulla perferendis dignissimos eligendi
+          similique incidunt magni dolore deserunt illum. Deserunt quasi
+          nesciunt sapiente consequuntur, temporibus distinctio."
+            />
+            <CustomerStory
+              category="Direito abordado"
+              companyName="Nome empresa"
+              name="Neide"
+              office="Cargo"
+              problem="Problema"
+              reporter="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          eveniet eius impedit odio. Nulla perferendis dignissimos eligendi
+          similique incidunt magni dolore deserunt illum. Deserunt quasi
+          nesciunt sapiente consequuntur, temporibus distinctio."
+            />
+            <CustomerStory
+              category="Direito abordado"
+              companyName="Nome empresa"
+              name="Neide"
+              office="Cargo"
+              problem="Problema"
+              reporter="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+          eveniet eius impedit odio. Nulla perferendis dignissimos eligendi
+          similique incidunt magni dolore deserunt illum. Deserunt quasi
+          nesciunt sapiente consequuntur, temporibus distinctio."
+            />
           </div>
         </Container.Content>
       </Container.Root>

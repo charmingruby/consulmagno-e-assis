@@ -14,8 +14,8 @@ interface Area {
 interface LawyerCardProps {
   name: string
   description: string
-  linkedinUrl: string
-  phoneNumber: string
+  linkedinUrl?: string
+  phoneNumber?: string
   instagramUrl: string
   emailUrl: string
   role: string
@@ -60,16 +60,20 @@ export function LayerCard(props: LawyerCardProps) {
             <AtSign strokeWidth={1.5} className="w-4 h-4" />
             <small>{props.emailUrl}</small>
           </div>
-          <div className="flex items-center gap-1">
-            <Phone strokeWidth={1.5} className="w-4 h-4" />
-            <small>{props.phoneNumber}</small>
-          </div>
+          {props.phoneNumber && (
+            <div className="flex items-center gap-1">
+              <Phone strokeWidth={1.5} className="w-4 h-4" />
+              <small>{props.phoneNumber}</small>
+            </div>
+          )}
         </div>
 
         {/* redes sociais  */}
         <div className="flex justify-evenly gap-4 text-primary-main mt-4">
           <SocialMedia url={props.instagramUrl} icon={Instagram} />
-          <SocialMedia url={props.linkedinUrl} icon={Linkedin} />
+          {props.linkedinUrl && (
+            <SocialMedia url={props.linkedinUrl} icon={Linkedin} />
+          )}
         </div>
       </div>
     </Box>

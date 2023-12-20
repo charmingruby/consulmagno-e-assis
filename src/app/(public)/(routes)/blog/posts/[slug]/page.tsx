@@ -14,9 +14,12 @@ interface PostPageProps {
 
 const categorias = [
   { name: 'Direito Civil', url: '/blog/categorias/direito-civil' },
-  { name: 'Direito do trabalho', url: '/blog/categorias/direito-civil' },
-  { name: 'Direito do consumidor', url: '/blog/categorias/direito-civil' },
-  { name: 'Direito Civil', url: '/blog/categorias/direito-civil' },
+  { name: 'Direito Tributário', url: '/blog/categorias/direito-tributario' },
+  {
+    name: 'Direito do consumidor',
+    url: '/blog/categorias/direito-do-consumidor',
+  },
+  { name: 'Direito Digital', url: '/blog/categorias/direito-digital' },
 ]
 
 export default function PostPage({ params }: PostPageProps) {

@@ -40,7 +40,7 @@ export function AreaItem({
         {/* Link */}
         <div className="flex justify-center">
           <Link
-            href={url}
+            href={`areas-de-atuacao/${url}`}
             prefetch={false}
             className="flex items-center justify-center gap-1 group w-fit"
           >

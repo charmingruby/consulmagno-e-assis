@@ -3,20 +3,18 @@ import Image from 'next/image'
 
 interface DepositionItemProps {
   deposition: string
-  avatarUrl: string
+  avatarUrl?: string
   role: string
   name: string
 }
 
-export function DepositionItem() {
+export function DepositionItem(props: DepositionItemProps) {
   return (
     <div className="flex flex-col gap-6">
       <p className="text-base italic text-foreground/70">
-        {`"`}Eterna gratidão por vocês. Super indico o serviço, são ótimas
-        pessoas e ótimos profissionais. Com o conhecimento de vocês, meu filho
-        conseguiu vaga no CTI e hoje teve alta. Eu sou imensamente grata por
-        vocês, me faltam palavras para escrever aqui, mas me senti aliviada
-        quando meu problema foi resolvido.{`"`}
+        {`"`}
+        {props.deposition}
+        {`"`}
       </p>
 
       <div className="flex items-center gap-2">
@@ -30,12 +28,10 @@ export function DepositionItem() {
 
         <div className="flex flex-col">
           {/* Name */}
-          <strong className="text-base text-gray-600">Paulo Renato</strong>
+          <strong className="text-base text-gray-600">{props.name}</strong>
 
           {/* Role */}
-          <small className="block text-sm text-gray-500">
-            Fundador do Consulmagno & Assis
-          </small>
+          <small className="block text-sm text-gray-500">{props.role}</small>
         </div>
       </div>
     </div>

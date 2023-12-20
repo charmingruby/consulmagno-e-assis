@@ -171,9 +171,17 @@ export default function Home() {
           {/* Depositions */}
           <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 w-full">
             <div className="mt-12 space-y-6">
-              <DepositionItem />
+              <DepositionItem
+                name="Vitória"
+                role="Cargo"
+                deposition="Eterna gratidão por vocês. Super indico o serviço, são ótimas pessoas e ótimos profissionais. Com o conhecimento de vocês, meu filho conseguiu vaga no CTI e hoje teve alta. Eu sou imensamente grata por vocês, me faltam palavras para escrever aqui, mas me senti aliviada quando meu problema foi resolvido."
+              />
               <Separator />
-              <DepositionItem />
+              <DepositionItem
+                name="Nadia"
+                role="Cargo"
+                deposition="Nossa, decisão completa, estou lendo aqui. Estava precisando de uma noticia boa. Lucas, tenho que te agradecer!! Muito Obrigado."
+              />
             </div>
 
             <div className="block lg:hidden my-6">
@@ -181,9 +189,17 @@ export default function Home() {
             </div>
 
             <div className="space-y-6">
-              <DepositionItem />
+              <DepositionItem
+                name="Neide"
+                role="Cargo"
+                deposition="Dr. Paulo Renato, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito ao senhor, foi Deus que colocou o senhor no meu caminho. Eu não tenho palavras para agradecer o senhor. Deus sabe o alivio que eu estou sentindo agora.” "
+              />
               <Separator />
-              <DepositionItem />
+              <DepositionItem
+                name="Nome"
+                role="Cargo"
+                deposition="Dr. Paulo Renato, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito ao senhor, foi Deus que colocou o senhor no meu caminho. Eu não tenho palavras para agradecer o senhor. Deus sabe o alivio que eu estou sentindo agora.” "
+              />
             </div>
           </div>
         </Container.Content>
