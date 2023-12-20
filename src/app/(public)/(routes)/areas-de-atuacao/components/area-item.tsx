@@ -2,6 +2,7 @@ import { ChevronRight } from 'lucide-react'
 import Link from 'next/link'
 import { Box } from '@/components/ui/box'
 import { ElementType } from 'react'
+import { areas, Area } from '@/data/areas'
 
 interface AreaItemProps {
   icon: ElementType
@@ -14,6 +15,11 @@ export function AreaItem({ icon: Icon, name, slug }: AreaItemProps) {
 
   const prefix = name.split(' ')[0]
   const restOfTheName = name.slice(prefix.length + 1)
+
+  const getAreaBySlug = (slug: string): Area | undefined => {
+    return areas.find((area) => area.slug === slug)
+  }
+  const specificArea = getAreaBySlug(slug)
 
   return (
     <Link prefetch={false} href={fullUrl} className="flex h-full w-full">
@@ -32,9 +38,7 @@ export function AreaItem({ icon: Icon, name, slug }: AreaItemProps) {
         </div>
 
         <div className="text-gray-400 mt-4 mb-8">
-          <small>
-            Lidar com documentos Lidar com documentos Lidar com documentos
-          </small>
+          <small>{specificArea?.description}</small>
         </div>
 
         <div className="flex items-center gap-1 mt-auto group text-gray-400 hover:text-primary-main transition-all w-fit">

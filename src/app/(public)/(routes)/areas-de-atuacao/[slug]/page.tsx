@@ -11,6 +11,7 @@ import * as CTA from '@/components/cta'
 import { ServicesList } from './components/services-list'
 import { RelatedInsights } from './components/related-insights'
 import { SeeAlsoPosts } from '@/components/see-also-posts'
+import { areas, Area } from '@/data/areas'
 
 interface PageProps {
   params: { slug: string }
@@ -18,6 +19,11 @@ interface PageProps {
 
 export default function AreaPage({ params: { slug } }: PageProps) {
   const slugTransformed = slugTransformer(slug)
+
+  const getAreaBySlug = (slug: string): Area | undefined => {
+    return areas.find((area) => area.slug === slug)
+  }
+  const specificArea = getAreaBySlug(slug)
 
   return (
     <>
@@ -33,7 +39,7 @@ export default function AreaPage({ params: { slug } }: PageProps) {
             <h1 className="text-white font-bold md:text-5xl text-3xl flex flex-col gap-2">
               Atuamos em{' '}
               <span className="text-secondary-main block">
-                {slugTransformed}
+                {specificArea?.name}
               </span>
             </h1>
 
@@ -56,21 +62,7 @@ export default function AreaPage({ params: { slug } }: PageProps) {
 
               {/* Content */}
               <div className="space-y-4 mb-8">
-                <Text>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus fuga dolorum optio officiis a, maxime illum, magnam
-                  accusantium minima nobis recusandae incidunt.
-                </Text>
-                <Text className="text-lg ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus fuga dolorum optio officiis a, maxime illum, magnam
-                  accusantium minima nobis recusandae incidunt.
-                </Text>
-                <Text className="text-lg ">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Temporibus fuga dolorum optio officiis a, maxime illum, magnam
-                  accusantium minima nobis recusandae incidunt.
-                </Text>
+                <Text>{specificArea?.soluction}</Text>
               </div>
 
               <ServicesList slug={slug} />
@@ -85,13 +77,7 @@ export default function AreaPage({ params: { slug } }: PageProps) {
               />
               {/* Action content */}
               <div className="pb-4">
-                <p className="text-base flex">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Pariatur id suscipit voluptate libero est inventore
-                  laboriosamLorem ipsum dolor sit amet consectetur adipisicing
-                  elit. Temporibus fuga dolorum optio officiis a, maxime illum,
-                  magnam accusantium minima nobis recusandae incidunt.
-                </p>
+                <p className="text-base flex">{specificArea?.about}</p>
               </div>
 
               <div className="border-t border-gray-100 pt-4 gap-2 flex lg:flex-col">
