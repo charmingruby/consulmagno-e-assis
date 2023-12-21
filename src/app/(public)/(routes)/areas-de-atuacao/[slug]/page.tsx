@@ -107,7 +107,7 @@ export default function AreaPage({ params: { slug } }: PageProps) {
           <h2 className="col-span-1">
             <strong className="text-3xl text-primary-main">
               {`Publicações sobre`}{' '}
-              <span className="text-secondary-main">{slugTransformed}</span>
+              <span className="text-secondary-main">{specificArea?.name}</span>
             </strong>
           </h2>
 

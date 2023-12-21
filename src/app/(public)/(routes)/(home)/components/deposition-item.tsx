@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 interface DepositionItemProps {
   deposition: string
-  avatarUrl?: string
+  avatarUrl: string
   role: string
   name: string
 }
@@ -18,11 +18,14 @@ export function DepositionItem(props: DepositionItemProps) {
       </p>
 
       <div className="flex items-center gap-2">
-        <div className="p-0.5 border-2 border-gray-100 rounded-full ">
+        <div className="p-0.5 border-2 border-gray-100 rounded-full w-12 h-12 ">
           <Image
-            src={exampleImage}
+            src={props.avatarUrl}
             alt="Example deposition image"
-            className="rounded-full h-12 w-12"
+            className=" rounded-full h-12 w-12"
+            layout="responsive"
+            height={500}
+            width={500}
           />
         </div>
 
