@@ -75,12 +75,8 @@ export default function Team() {
               role="Sócio"
               areas={[
                 {
-                  label: 'Direito Empresarial',
-                  url: '/areas-de-atuacao/direito-empresarial',
-                },
-                {
-                  label: 'Direito Societário ',
-                  url: '/areas-de-atuacao/direito-societario',
+                  label: 'Direito Empresarial / Societário',
+                  url: '/areas-de-atuacao/societario-e-m-a',
                 },
                 {
                   label: 'Direito Tributário ',

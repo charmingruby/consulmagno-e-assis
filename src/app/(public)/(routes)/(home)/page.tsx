@@ -174,14 +174,14 @@ export default function Home() {
               <DepositionItem
                 name="Vitória"
                 avatarUrl="https://s2-valor.glbimg.com/De0dzTkTxmfVvurpH3NvdyJP0-k=/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2020/X/l/ve88uhQVKaezAFNEMFPA/foto27carr-101-abre-b2.jpg"
-                role="Cargo"
+                role="Cidade"
                 deposition="Eterna gratidão por vocês. Super indico o serviço, são ótimas pessoas e ótimos profissionais. Com o conhecimento de vocês, meu filho conseguiu vaga no CTI e hoje teve alta. Eu sou imensamente grata por vocês, me faltam palavras para escrever aqui, mas me senti aliviada quando meu problema foi resolvido."
               />
               <Separator />
               <DepositionItem
                 avatarUrl="https://s2-valor.glbimg.com/De0dzTkTxmfVvurpH3NvdyJP0-k=/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2020/X/l/ve88uhQVKaezAFNEMFPA/foto27carr-101-abre-b2.jpg"
                 name="Nadia"
-                role="Cargo"
+                role="Cidade"
                 deposition="Nossa, decisão completa, estou lendo aqui. Estava precisando de uma noticia boa. Lucas, tenho que te agradecer!! Muito Obrigado."
               />
             </div>
@@ -194,13 +194,13 @@ export default function Home() {
               <DepositionItem
                 name="Neide"
                 avatarUrl="https://s2-valor.glbimg.com/De0dzTkTxmfVvurpH3NvdyJP0-k=/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2020/X/l/ve88uhQVKaezAFNEMFPA/foto27carr-101-abre-b2.jpg"
-                role="Cargo"
+                role="Cidade"
                 deposition="Dr. Paulo Renato, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito ao senhor, foi Deus que colocou o senhor no meu caminho. Eu não tenho palavras para agradecer o senhor. Deus sabe o alivio que eu estou sentindo agora.” "
               />
               <Separator />
               <DepositionItem
                 name="Nome"
-                role="Cargo"
+                role="Cidade"
                 avatarUrl="https://s2-valor.glbimg.com/De0dzTkTxmfVvurpH3NvdyJP0-k=/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_63b422c2caee4269b8b34177e8876b93/internal_photos/bs/2020/X/l/ve88uhQVKaezAFNEMFPA/foto27carr-101-abre-b2.jpg"
                 deposition="Dr. Paulo Renato, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito ao senhor, foi Deus que colocou o senhor no meu caminho. Eu não tenho palavras para agradecer o senhor. Deus sabe o alivio que eu estou sentindo agora.” "
               />
