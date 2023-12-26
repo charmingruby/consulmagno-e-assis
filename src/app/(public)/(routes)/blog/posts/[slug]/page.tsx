@@ -2,74 +2,80 @@ import * as Container from '@/components/ui/container'
 import * as CTA from '@/components/cta'
 import { Text } from '@/components/ui/text'
 import { OtherPosts } from '@/app/(public)/(routes)/areas-de-atuacao/[slug]/components/other-posts'
-import CardItem from './components/card-item'
 import { CardMedias } from './components/card-medias'
 import Link from 'next/link'
 import { mapLink } from '@/site'
 import { MapPin } from 'lucide-react'
+import { ContentHeading } from '../../components/content-heading'
+import { getClient } from '@/libs/graphql/client'
+import { FETCH_POST_BY_SLUG } from '@/libs/graphql/queries/fetch-post-by-slug/query'
+import { revalidationCooldownInSeconds } from '@/libs/graphql/configs'
+import { Loader } from '@/components/loader'
+import { FetchPostBySlugResponse } from '@/libs/graphql/queries/fetch-post-by-slug/types'
+import { FETCH_POSTS_BY_CATEGORY_AT_A_POST } from '@/libs/graphql/queries/fetch-posts-by-category-at-a-post/query'
+import { FetchPostsByCategoryAtAPostResponse } from '@/libs/graphql/queries/fetch-posts-by-category-at-a-post/types'
+import { PostCard } from '../../components/post-card'
 
 interface PostPageProps {
   params: { slug: string }
 }
 
-const categorias = [
-  { name: 'Direito Civil', url: '/blog/categorias/direito-civil' },
-  { name: 'Direito Tributário', url: '/blog/categorias/direito-tributario' },
-  {
-    name: 'Direito do consumidor',
-    url: '/blog/categorias/direito-do-consumidor',
-  },
-  { name: 'Direito Digital', url: '/blog/categorias/direito-digital' },
-]
+export default async function PostPage({ params }: PostPageProps) {
+  const { data: postData, loading: postLoading } = await getClient().query({
+    query: FETCH_POST_BY_SLUG,
+    variables: { slug: params.slug },
+    context: {
+      fetchOptions: {
+        next: { revalidate: revalidationCooldownInSeconds },
+      },
+    },
+  })
 
-export default function PostPage({ params }: PostPageProps) {
+  const post = postData.posts[0] as FetchPostBySlugResponse
+
+  const { data: categoriesData, loading: categoriesLoading } =
+    await getClient().query({
+      query: FETCH_POSTS_BY_CATEGORY_AT_A_POST,
+      variables: { area: post.categories[0].name },
+      context: {
+        fetchOptions: {
+          next: { revalidate: revalidationCooldownInSeconds },
+        },
+      },
+    })
+
+  const { posts } = categoriesData
+    .categories[0] as FetchPostsByCategoryAtAPostResponse
+
+  if (postLoading || categoriesLoading) {
+    return <Loader />
+  }
+
   return (
     <>
       {/* Hero */}
-      <Container.Root className="hero-img flex items-center sm:pt-16 bg-no-repeat bg-center bg-fixed md:min-h-screen sm:text-left">
+      <Container.Root className="hero-img flex items-center pt-16 bg-no-repeat bg-center bg-fixed sm:text-left">
         <Container.Content>
-          <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
+          <div className="z-10 w-full md:max-w-2xl flex flex-col justify-center ">
             {/* Title */}
             <h1 className="text-gray-50 font-semibold m-0 text-4xl md:text-4xl mb-6 break-words">
-              {params.slug}
+              {post.title}
             </h1>
 
-            <p className="text-gray-100 text-lg mb-16">
-              Uma análise detalhada das garantias no contexto imobiliário sob as
-              disposições do Marco Legal. Conheça seus direitos e as
-              salvaguardas essenciais para transações seguras.
-            </p>
+            <p className="text-gray-100 text-lg">{post.subtitle}</p>
           </div>
         </Container.Content>
       </Container.Root>
 
       {/* Conteúdo */}
       <Container.Root border="borderBottom" backgroundColor="white">
-        <Container.Content>
+        <Container.Content className="py-10 lg:py-10">
           <div className="flex pt-4 gap-8 ">
-            <div className="flex text-lg text-left flex-1">
-              Structured gripped tape invisible moulded cups for sauppor firm
-              hold strong powermesh front liner sport detail. Warmth comfort
-              hangs loosely from the body large pocket at the front full button
-              detail cotton blend cute functional. Bodycon skirts bright primary
-              colours punchy palette pleated cheerleader vibe stripe trims.
-              Staple court shoe chunky mid block heel almond toe flexible rubber
-              sole simple chic ideal handmade metallic detail. Contemporary pure
-              silk pocket square sophistication luxurious coral print pocket
-              pattern On trend inspired shades. Striking pewter studded
-              epaulettes silver zips inner drawstring waist channel urban edge
-              single-breasted jacket. Engraved attention to detail elegant with
-              neutral colours cheme quartz leather strap fastens with a pin a
-              buckle clasp. Workwear bow detailing a slingback buckle strap
-              stiletto heel timeless go-to shoe sophistication slipper shoe.
-              Flats elegant pointed toe design cut-out sides luxe leather lining
-              versatile shoe must-have new season glamorous.
-            </div>
             <div className="flex flex-col justify-start gap-6">
               <div className="flex flex-col  items-start">
                 <p className="font-bold pb-3 ">Nos siga nas redes sociais</p>
                 <div>
-                  <CardMedias></CardMedias>
+                  <CardMedias />
                 </div>
               </div>
               <div className="flex flex-col items-start ">
@@ -81,11 +87,16 @@ export default function PostPage({ params }: PostPageProps) {
                     target="blank"
                     className="text-gray-300 cursor-pointer w-fit rounded-md hover:text-secondary-main transition-colors"
                   >
-                    <MapPin className="h-6 w-6"></MapPin>
+                    <MapPin className="h-6 w-6" />
                   </Link>
                 </div>
               </div>
             </div>
+
+            <div
+              className="flex flex-col text-lg text-left flex-1"
+              dangerouslySetInnerHTML={{ __html: post.content.html }}
+            />
           </div>
         </Container.Content>
       </Container.Root>
@@ -94,14 +105,12 @@ export default function PostPage({ params }: PostPageProps) {
       <Container.Root border="borderBottom">
         <Container.Content>
           <div className="text-left w-full mb-8">
-            <strong className="text-3xl">
-              Venha ver mais posts relacionados
-            </strong>
+            <ContentHeading heading="Venha ver mais posts relacionados" />
           </div>
 
           <div className="flex gap-4 justify-start">
-            {categorias.map((item, index) => (
-              <CardItem key={index} name={item.name} url={item.url} />
+            {posts.map((post) => (
+              <PostCard key={post.id} {...post} />
             ))}
           </div>
         </Container.Content>
@@ -111,7 +120,7 @@ export default function PostPage({ params }: PostPageProps) {
       <Container.Root backgroundColor="white">
         <Container.Content>
           <div className="text-center w-full mb-8">
-            <strong className="text-3xl">Veja também</strong>
+            <ContentHeading heading="Veja também" />
           </div>
           <OtherPosts />
         </Container.Content>
