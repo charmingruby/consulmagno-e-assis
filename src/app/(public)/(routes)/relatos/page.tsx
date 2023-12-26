@@ -8,7 +8,7 @@ import { generateStaticSeo } from '@/components/seo/static'
 export const metadata = generateStaticSeo({
   rawTitle: 'Relatos',
   description:
-    'Descubra histórias reais de sucesso de clientes que confiaram em nosso escritório para suas questões legais em Juiz de Fora. Nossos relatos destacam nossa dedicação e resultados positivos.',
+    'Descubra histórias reais de sucesso de clientes que confiaram em nosso escritório para suas questões legais em Juiz de fora e em todo o Brasil. Nossos relatos destacam nossa dedicação e resultados positivos.',
 })
 
 export default function Cases() {

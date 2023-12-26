@@ -19,7 +19,7 @@ import { RecentPosts } from './components/recent-posts'
 export const metadata = generateStaticSeo({
   rawTitle: 'Início',
   description:
-    'Escritório de advocacia em juiz de fora. Melhores advogados em Juiz de Fora. Advogados que trabalham remotamente.',
+    'Escritório de advocacia em juiz de fora que trabalha remotamente para todo o Brasil. Soluções jurídicas personalizadas para o crescimento e sucesso dos nossos clientes.',
 })
 
 export default function Home() {

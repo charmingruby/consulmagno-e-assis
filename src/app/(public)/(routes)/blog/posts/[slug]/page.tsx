@@ -3,9 +3,6 @@ import * as CTA from '@/components/cta'
 import { Text } from '@/components/ui/text'
 import { OtherPosts } from '@/app/(public)/(routes)/areas-de-atuacao/[slug]/components/other-posts'
 import { CardMedias } from './components/card-medias'
-import Link from 'next/link'
-import { mapLink } from '@/site'
-import { MapPin } from 'lucide-react'
 import { ContentHeading } from '../../components/content-heading'
 import { getClient } from '@/libs/graphql/client'
 import { FETCH_POST_BY_SLUG } from '@/libs/graphql/queries/fetch-post-by-slug/query'
@@ -15,6 +12,7 @@ import { FetchPostBySlugResponse } from '@/libs/graphql/queries/fetch-post-by-sl
 import { FETCH_POSTS_BY_CATEGORY_AT_A_POST } from '@/libs/graphql/queries/fetch-posts-by-category-at-a-post/query'
 import { FetchPostsByCategoryAtAPostResponse } from '@/libs/graphql/queries/fetch-posts-by-category-at-a-post/types'
 import { PostCard } from '../../components/post-card'
+import Image from 'next/image'
 
 interface PostPageProps {
   params: { slug: string }
@@ -54,15 +52,25 @@ export default async function PostPage({ params }: PostPageProps) {
   return (
     <>
       {/* Hero */}
-      <Container.Root className="hero-img flex items-center pt-16 bg-no-repeat bg-center bg-fixed sm:text-left">
+      <Container.Root className=" flex items-center pt-8  sm:text-left">
         <Container.Content>
-          <div className="z-10 w-full md:max-w-2xl flex flex-col justify-center ">
+          <div className=" w-full md:max-w-2xl flex flex-col justify-center ">
             {/* Title */}
-            <h1 className="text-gray-50 font-semibold m-0 text-4xl md:text-4xl mb-6 break-words">
+            <h1 className="text-primary-light font-semibold m-0 text-4xl md:text-4xl mb-2 break-words">
               {post.title}
             </h1>
 
-            <p className="text-gray-100 text-lg">{post.subtitle}</p>
+            <p className=" text-primary-light text-lg">{post.subtitle}</p>
+          </div>
+
+          <div className=" flex items-center  bg-no-repeat bg-center bg-fixed sm:text-left mt-8 rounded-md">
+            <Image
+              alt="Foto de capa"
+              src={post.coverImage.url}
+              width={1000}
+              height={400}
+              className="w-full h-[400px] object-cover"
+            />
           </div>
         </Container.Content>
       </Container.Root>
@@ -70,27 +78,9 @@ export default async function PostPage({ params }: PostPageProps) {
       {/* Conteúdo */}
       <Container.Root border="borderBottom" backgroundColor="white">
         <Container.Content className="py-10 lg:py-10">
-          <div className="flex pt-4 gap-8 ">
-            <div className="flex flex-col justify-start gap-6">
-              <div className="flex flex-col  items-start">
-                <p className="font-bold pb-3 ">Nos siga nas redes sociais</p>
-                <div>
-                  <CardMedias />
-                </div>
-              </div>
-              <div className="flex flex-col items-start ">
-                <p className="font-bold pb-3 ">Venha nos visitar</p>
-                <div>
-                  <Link
-                    href={mapLink}
-                    prefetch={false}
-                    target="blank"
-                    className="text-gray-300 cursor-pointer w-fit rounded-md hover:text-secondary-main transition-colors"
-                  >
-                    <MapPin className="h-6 w-6" />
-                  </Link>
-                </div>
-              </div>
+          <div className="flex pt-4 gap-16 ">
+            <div className="">
+              <CardMedias />
             </div>
 
             <div

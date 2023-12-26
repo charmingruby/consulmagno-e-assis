@@ -12,10 +12,17 @@ import { ServicesList } from './components/services-list'
 import { RelatedInsights } from './components/related-insights'
 import { SeeAlsoPosts } from '@/components/see-also-posts'
 import { areas, Area } from '@/data/areas'
+import { generateStaticSeo } from '@/components/seo/static'
 
 interface PageProps {
   params: { slug: string }
 }
+
+export const metadata = generateStaticSeo({
+  rawTitle: 'Áreas de Atuação',
+  description:
+    'Explore as diversas áreas de atuação do nosso escritório de advocacia em Juiz de Fora. Contamos com uma equipe especializada em oferecer soluções jurídicas eficientes para questões variadas. Conheça nossas competências agora e beneficie-se de um serviço personalizado e inovador.',
+})
 
 export default function AreaPage({ params: { slug } }: PageProps) {
   const slugTransformed = slugTransformer(slug)

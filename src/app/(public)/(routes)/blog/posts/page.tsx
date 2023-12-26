@@ -5,9 +5,9 @@ import { Text } from '@/components/ui/text'
 import { RecentPostsList } from '../components/recent-posts-list'
 
 export const metadata = generateStaticSeo({
-  rawTitle: 'Áreas de Atuação',
+  rawTitle: 'Publicações',
   description:
-    '"Explore as diversas publicações do nosso escritório de advocacia em Juiz de Fora. Contamos com uma equipe especializada em oferecer soluções jurídicas eficientes para questões variadas. Conheça nossas competências agora',
+    'Explore as diversas publicações do nosso escritório de advocacia em Juiz de Fora. Contamos com uma equipe especializada em oferecer soluções jurídicas eficientes para questões variadas. Conheça nossas competências agora',
 })
 
 export default function PostsPage() {

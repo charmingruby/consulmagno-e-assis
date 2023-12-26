@@ -10,13 +10,16 @@ import { Gem, Users } from 'lucide-react'
 import { AreaCard } from './components/area-card'
 import * as CTA from '@/components/cta'
 import { generateStaticSeo } from '@/components/seo/static'
+import PauloImg from '@/assets/team/Paulo 01.png'
+import LucasImg from '@/assets/team/Lucas 02.png'
 import heroImg from '@/assets/team/hero.png'
+import TarikImg from '@/assets/team/Tarik 01.png'
 import Image from 'next/image'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Advogados',
   description:
-    'Conheça nossa equipe de advogados em Juiz de Fora. Profissionais experientes e dedicados em diversas áreas do direito',
+    'Conheça nossa equipe de advogados em Juiz de Fora. Profissionais experientes e dedicados em diversas áreas do direito. Atendimento personalizado e soluções jurídicas inovadoras para nossos clientes.',
 })
 
 export default function Team() {
@@ -64,7 +67,7 @@ export default function Team() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
             <LayerCard
-              avatarUrl={lawyer}
+              avatarUrl={PauloImg}
               description="Paulo Renato é sócio fundador do Consulmagno e Assis Advocacia e responsável pelas áreas de Direito Empresarial, Societário e Tributário. É mestrando em Direito e Inovação pela UFJF (Universidade Federal de Juiz de Fora) na área de Direito Tributário, possui o título de LLM (Latin Legum Magister) em Direito Empresarial pela Fundação Getúlio Vargas (FGV - Rio de Janeiro), além de ser especialista em Processo Civil, Negociação e Arbitragem.
               Também atua como Procurador da Legislativo, e é Professor das disciplinas de Direito Tributário e Financeiro em Cursos Preparatórios para Concursos.
               É membro da Comissão de Direito Empresarial da OAB/JF."
@@ -86,7 +89,7 @@ export default function Team() {
             />
 
             <LayerCard
-              avatarUrl={lawyer}
+              avatarUrl={LucasImg}
               description="Lucas é sócio fundador do Consulmagno e Assis Advocacia e responsável pelas áreas de Direito Civil, Consumidor e Administrativo. Atuante na Advocacia há mais de 9 anos, é Mestre em Direito pela UCP – RJ, professor de Pós-Graduação e Graduação das disciplinas de Processo Civil, Direito Empresarial e Direito Tributário, foi Procurador Geral Municipal e é autor de diversos artigos científicos."
               emailUrl=" contato@consulmagnoassis.com"
               instagramUrl="https://www.instagram.com/lucas_consulmagno/"
@@ -109,7 +112,7 @@ export default function Team() {
             />
 
             <LayerCard
-              avatarUrl={lawyer}
+              avatarUrl={TarikImg}
               description="Tárik é advogado associado, responsável pelas áreas de Direito do Trabalho e Imobiliário. Possui Pós-Graduação em Planejamento Tributário, e possui graduação em Gestão Financeira."
               emailUrl=" contato@consulmagnoassis.com"
               instagramUrl="https://www.instagram.com/tarikbellini/ "

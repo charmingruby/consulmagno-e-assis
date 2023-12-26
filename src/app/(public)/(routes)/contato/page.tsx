@@ -15,7 +15,7 @@ import { email, mapLink, whatsappLink } from '@/site'
 export const metadata = generateStaticSeo({
   rawTitle: 'Contato',
   description:
-    'Precisa de assistência jurídica em Juiz de Fora? Entre em contato conosco para uma consultoria personalizada. Nossa equipe especializada está pronta para ajudar. Fale conosco agora!',
+    'Precisa de assistência jurídica? Entre em contato conosco para uma consultoria personalizada. Nossa equipe especializada está pronta para ajudar. Fale conosco agora!',
 })
 
 export default function Contact() {

@@ -7,13 +7,27 @@ import { FetchPostsByCategoryResponse } from '@/libs/graphql/queries/fetch-posts
 import { slugTransformer } from '@/utils/slug-transformer'
 import { PostCard } from '../../components/post-card'
 import { Frown } from 'lucide-react'
+import { areas, Area } from '@/data/areas'
+import { generateStaticSeo } from '@/components/seo/static'
 
 interface PostPageProps {
   params: { slug: string }
 }
 
+const getAreaBySlug = (slug: string): Area | undefined => {
+  return areas.find((area) => area.slug === slug)
+}
+
+export const metadata = generateStaticSeo({
+  rawTitle: `Categorias`,
+  description:
+    'Conheça as diversas categorias em que o escritório de advocacia Consulmagno e Assis atua.Ficou interessado? Entre em contato',
+})
+
 export default async function CategoryPage({ params }: PostPageProps) {
   const title = slugTransformer(params.slug)
+
+  const specificArea = getAreaBySlug(params.slug)
 
   const { data, loading } = await getClient().query({
     query: FETCH_POSTS_BY_CATEGORY,
@@ -36,7 +50,9 @@ export default async function CategoryPage({ params }: PostPageProps) {
       {/* Header */}
       <Container.Root className="md:pt-16 bg-primary-gradient">
         <Container.Content className="py-10 pt-24 md:pt-10 lg:py-10 flex flex-col text-left md:text-center items-start md:items-center gap-6">
-          <h2 className="text-white font-bold text-5xl">{title}</h2>
+          <h2 className="text-white font-bold text-5xl">
+            {specificArea?.name}
+          </h2>
         </Container.Content>
       </Container.Root>
 
