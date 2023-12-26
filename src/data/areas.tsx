@@ -6,10 +6,8 @@ import {
   HeartHandshake,
   HomeIcon,
   Landmark,
-  Shield,
   ShoppingBag,
   User,
-  Users,
 } from 'lucide-react'
 import { ElementType } from 'react'
 
@@ -85,7 +83,7 @@ export const areas: Area[] = [
       'Sobre a área de atuação Sobre a área de atuação Sobre a área de atuação Sobre a área de atuação  Sobre a área de atuação',
   },
   {
-    slug: 'planejamento-sucessorio-epatrimonial',
+    slug: 'planejamento-sucessorio-e-patrimonial',
     name: 'Planejamento Sucessório e Patrimonial',
     icon: ShoppingBag,
     description:

@@ -9,7 +9,7 @@ interface PostCategoryItemProps {
 
 export function PostCategoryItem({ image, name, slug }: PostCategoryItemProps) {
   return (
-    <Link href={`/blog/${slug}`}>
+    <Link href={`/blog/categorias/${slug}`}>
       <div className="h-64 relative rounded-sm shadow-sm">
         <Image
           src={image}
