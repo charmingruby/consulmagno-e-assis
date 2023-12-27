@@ -40,15 +40,17 @@ export default function ActionAreasPage() {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Casos de Sucesso: Descubra Como Resolvemos Desafios Jurídicos!
+            Descubram o que falam de nós
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Descubra como nossa equipe superou desafios legais para alcançar
-            resultados positivos. Conheça histórias de sucesso que moldaram
-            nosso compromisso com a excelência jurídica.
+            Tendo sempre como prioridade a satisfação dos nossos clientes ao
+            proporcionar soluções jurídicas eficientes, não podíamos deixar de
+            expressar nossa imensa alegria ao saber que auxiliamos de maneira
+            eficaz, comprometida, atingindo o resultado esperado. É isso que
+            alguns dos nossos clientes falam de nós. Veja.
           </Text>
         </div>
 

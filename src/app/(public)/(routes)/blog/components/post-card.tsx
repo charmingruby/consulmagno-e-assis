@@ -28,8 +28,8 @@ export function PostCard({
         <div className="absolute h-full w-full bg-gray-900 rounded-t-sm opacity-40" />
         <Image
           src={coverUrl}
-          width={480}
-          height={480}
+          width={800}
+          height={800}
           alt="Foto de exemplo"
           className="rounded-t-sm"
         />

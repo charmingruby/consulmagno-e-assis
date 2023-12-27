@@ -2,7 +2,7 @@ import { Box } from '@/components/ui/box'
 import { Text } from '@/components/ui/text'
 import { Quote, PersonStanding } from 'lucide-react'
 import Image from 'next/image'
-import exampleLogo from '@/assets/images/logo.svg'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 interface CustomerStoryProps {
   category: string
@@ -11,7 +11,7 @@ interface CustomerStoryProps {
   companyName: string
   name: string
   office: string
-  url: string
+  url: StaticImport | string
 }
 
 export function CustomerStory(props: CustomerStoryProps) {

@@ -13,10 +13,17 @@ import { FETCH_POSTS_BY_CATEGORY_AT_A_POST } from '@/libs/graphql/queries/fetch-
 import { FetchPostsByCategoryAtAPostResponse } from '@/libs/graphql/queries/fetch-posts-by-category-at-a-post/types'
 import { PostCard } from '../../components/post-card'
 import Image from 'next/image'
+import { generateStaticSeo } from '@/components/seo/static'
 
 interface PostPageProps {
   params: { slug: string }
 }
+
+export const metadata = generateStaticSeo({
+  rawTitle: 'Publicação',
+  description:
+    'Explore as diversas publicações do nosso escritório de advocacia em Juiz de Fora. Contamos com uma equipe especializada em oferecer soluções jurídicas eficientes para questões variadas. Conheça nossas competências agora',
+})
 
 export default async function PostPage({ params }: PostPageProps) {
   const { data: postData, loading: postLoading } = await getClient().query({
@@ -60,7 +67,7 @@ export default async function PostPage({ params }: PostPageProps) {
               {post.title}
             </h1>
 
-            <p className=" text-primary-light text-lg">{post.subtitle}</p>
+            <p className=" text-lg">{post.subtitle}</p>
           </div>
 
           <div className=" flex items-center  bg-no-repeat bg-center bg-fixed sm:text-left mt-8 rounded-md">
@@ -69,16 +76,11 @@ export default async function PostPage({ params }: PostPageProps) {
               src={post.coverImage.url}
               width={1000}
               height={400}
-              className="w-full h-[400px] object-cover"
+              className="w-full h-[400px] object-cover rounded-lg"
             />
           </div>
-        </Container.Content>
-      </Container.Root>
 
-      {/* Conteúdo */}
-      <Container.Root border="borderBottom" backgroundColor="white">
-        <Container.Content className="py-10 lg:py-10">
-          <div className="flex pt-4 gap-16 ">
+          <div className="flex flex-col md:flex-row pt-12 gap-16 ">
             <div className="">
               <CardMedias />
             </div>
@@ -98,7 +100,7 @@ export default async function PostPage({ params }: PostPageProps) {
             <ContentHeading heading="Venha ver mais posts relacionados" />
           </div>
 
-          <div className="flex gap-4 justify-start">
+          <div className="grid grid-cols-1 gap-4 justify-start lg:grid-cols-3 md:grid-cols-3 ">
             {posts.map((post) => (
               <PostCard key={post.id} {...post} />
             ))}

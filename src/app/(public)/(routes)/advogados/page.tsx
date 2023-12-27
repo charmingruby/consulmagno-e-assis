@@ -4,7 +4,6 @@
 import { PageTitle } from '@/components/page-title'
 import * as Container from '@/components/ui/container'
 import { LayerCard } from './components/lawyer-card'
-import lawyer from '@/assets/images/lawyer.jpg'
 import { Text } from '@/components/ui/text'
 import { Gem, Users } from 'lucide-react'
 import { AreaCard } from './components/area-card'

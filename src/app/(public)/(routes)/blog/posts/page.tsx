@@ -40,9 +40,10 @@ export default function PostsPage() {
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Compreendemos que cada caso é único. Nossa equipe está pronta para
-            ouvir você e fornecer soluções legais eficazes e sob medida para sua
-            situação.
+            O escritório Consulmagno e Assis Advocacia está preparado para lhe
+            oferecer a solução jurídica mais adequada ao seu caso, buscando
+            construir possibilidades jurídicas baseadas no que há de mais
+            atualizado no cenário jurídico nacional. Como podemos lhe auxiliar?
           </Text>
         </div>
 

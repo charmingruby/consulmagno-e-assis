@@ -19,7 +19,7 @@ interface PageProps {
 }
 
 export const metadata = generateStaticSeo({
-  rawTitle: 'Áreas de Atuação',
+  rawTitle: 'Área de Atuação',
   description:
     'Explore as diversas áreas de atuação do nosso escritório de advocacia em Juiz de Fora. Contamos com uma equipe especializada em oferecer soluções jurídicas eficientes para questões variadas. Conheça nossas competências agora e beneficie-se de um serviço personalizado e inovador.',
 })

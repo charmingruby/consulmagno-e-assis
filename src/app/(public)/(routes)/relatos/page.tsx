@@ -4,6 +4,9 @@ import { Text } from '@/components/ui/text'
 import { CustomerStory } from './components/customer-story'
 import * as CTA from '@/components/cta'
 import { generateStaticSeo } from '@/components/seo/static'
+import PauloImg from '@/assets/team/Paulo 01.png'
+import LucasImg from '@/assets/team/Lucas 02.png'
+import TarikImg from '@/assets/team/Tarik 01.png'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Relatos',
@@ -62,7 +65,7 @@ export default function Cases() {
               name="Vitória"
               office="Cidade"
               problem="Problema"
-              url="https://img.freepik.com/fotos-premium/foto-de-rosto-de-mulher-jovem-latina-feliz-com-fundo-de-expressao-de-sorriso-com-espaco-de-copia-retrato-de-rosto-de-pessoas-reais-etnicas-da-america-do-sul-boliviana_394926-96.jpg"
+              url={LucasImg}
               reporter="Eterna gratidão por vocês. Super indico o serviço, são ótimas pessoas e ótimos profissionais. Com o conhecimento de vocês, meu filho conseguiu vaga no CTI e hoje teve alta. Eu sou imensamente grata por vocês, me faltam palavras para escrever aqui, mas me senti aliviada quando meu problema foi resolvido"
             />
             <CustomerStory
@@ -71,7 +74,7 @@ export default function Cases() {
               name="Nadia"
               office="Juiz de fora"
               problem="Problema"
-              url="https://i.pinimg.com/736x/fd/fc/ef/fdfcefc24e58a4e3ed4dd6099d530353.jpg"
+              url={TarikImg}
               reporter="Nossa, decisão completa, estou lendo aqui. Estava precisando de uma noticia boa. Lucas, tenho que te agradecer!! Muito Obrigado."
             />
             <CustomerStory
@@ -80,7 +83,7 @@ export default function Cases() {
               name="Nome pessoa"
               office="Cidade"
               problem="Problema"
-              url="https://i.pinimg.com/736x/fd/fc/ef/fdfcefc24e58a4e3ed4dd6099d530353.jpg"
+              url={PauloImg}
               reporter="Dr. Paulo Renato, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito ao senhor, foi Deus que colocou o senhor no meu caminho. Eu não tenho palavras para agradecer o senhor. Deus sabe o alivio que eu estou sentindo agora.” "
             />
             <CustomerStory
@@ -89,7 +92,7 @@ export default function Cases() {
               name="Neide"
               office="Cidade"
               problem="Problema"
-              url="https://i.pinimg.com/736x/fd/fc/ef/fdfcefc24e58a4e3ed4dd6099d530353.jpg"
+              url={TarikImg}
               reporter="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
           eveniet eius impedit odio. Nulla perferendis dignissimos eligendi
           similique incidunt magni dolore deserunt illum. Deserunt quasi
@@ -101,7 +104,7 @@ export default function Cases() {
               name="Neide"
               office="Cidade"
               problem="Problema"
-              url="https://i.pinimg.com/736x/fd/fc/ef/fdfcefc24e58a4e3ed4dd6099d530353.jpg"
+              url={PauloImg}
               reporter="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
           eveniet eius impedit odio. Nulla perferendis dignissimos eligendi
           similique incidunt magni dolore deserunt illum. Deserunt quasi
@@ -113,7 +116,7 @@ export default function Cases() {
               name="Neide"
               office="Cidade"
               problem="Problema"
-              url="https://i.pinimg.com/736x/fd/fc/ef/fdfcefc24e58a4e3ed4dd6099d530353.jpg"
+              url={LucasImg}
               reporter="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
           eveniet eius impedit odio. Nulla perferendis dignissimos eligendi
           similique incidunt magni dolore deserunt illum. Deserunt quasi
@@ -133,9 +136,10 @@ export default function Cases() {
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Compreendemos que cada caso é único. Nossa equipe está pronta para
-            ouvir você e fornecer soluções legais eficazes e sob medida para sua
-            situação.
+            O escritório Consulmagno e Assis Advocacia está preparado para lhe
+            oferecer a solução jurídica mais adequada ao seu caso, buscando
+            construir possibilidades jurídicas baseadas no que há de mais
+            atualizado no cenário jurídico nacional. Como podemos lhe auxiliar?
           </Text>
         </div>
 

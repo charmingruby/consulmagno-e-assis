@@ -1,9 +1,9 @@
-import exampleImage from '@/assets/images/lawyer.jpg'
 import Image from 'next/image'
+import { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 interface DepositionItemProps {
   deposition: string
-  avatarUrl: string
+  avatarUrl: StaticImport | string
   role: string
   name: string
 }

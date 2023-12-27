@@ -120,10 +120,10 @@ export default function Contact() {
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            odio veniam ad exercitationem fugit dolorum enim eveniet voluptatum
-            laboriosam soluta repellendus fugiat reprehenderit velit, ullam
-            libero, cupiditate doloribus perferendis cumque?
+            O escritório Consulmagno e Assis Advocacia está preparado para lhe
+            oferecer a solução jurídica mais adequada ao seu caso, buscando
+            construir possibilidades jurídicas baseadas no que há de mais
+            atualizado no cenário jurídico nacional. Como podemos lhe auxiliar?
           </Text>
         </div>
 
