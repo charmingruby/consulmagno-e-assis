@@ -93,7 +93,7 @@ export function PostCard({
 
           <Link
             prefetch={false}
-            href={`/post/${slug}`}
+            href={`/blog/posts/${slug}`}
             className="flex items-center gap-1 group w-fit "
           >
             <span className="font-semibold text-base text-primary-main group-hover:underline transition-all">

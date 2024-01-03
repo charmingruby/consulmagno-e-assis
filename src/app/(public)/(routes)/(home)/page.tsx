@@ -68,7 +68,7 @@ export default function Home() {
       </Container.Root>
 
       {/* Why Us */}
-      <Container.Root className="w-full bg-white">
+      <Container.Root className="w-full bg-white pt-0 mt-0">
         <Container.Content>
           <div className="w-full mb-10">
             <div className="grid grid-rows-1-1 gap-8 lg:grid-rows-2">
