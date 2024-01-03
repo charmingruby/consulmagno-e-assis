@@ -26,7 +26,8 @@ export default function Blog() {
         <Container.Content className="pt-24 flex flex-col text-left md:text-center items-start md:items-center gap-6">
           <h2 className="text-white font-bold text-5xl">Blog</h2>
           <span className="text-gray-200 text-xl">
-            Veja nossa qualidade atraves dos nossos clientes
+            Acesse os nossos conteúdos jurídicos exclusivos, de alta qualidade,
+            em linguagem simples e de fácil compreensão.
           </span>
         </Container.Content>
       </Container.Root>
@@ -71,12 +72,12 @@ export default function Blog() {
 
             <div className="absolute z-20 max-w-2xl text-center text-gray-50 space-y-4">
               <h2 className="text-3xl font-semibold">
-                Consulmagno & Assis criando soluções para seus problemas
+                O Consulmagno & Assis tem a solução adequada para o seu problema
               </h2>
               <Text className="text-gray-50" size="md">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Incidunt, reprehenderit asperiores et odit quidem deserunt
-                nesciunt deleniti at voluptas repellendus mollitia.
+                Não perca tempo para solucionar seu problema ou tirar sua
+                dúvida, entre em contato agora com um de nossos profissionais
+                para agendar um atendimento.
               </Text>
 
               <Button color="uncolored">Entrar em contato</Button>
@@ -89,16 +90,15 @@ export default function Blog() {
       <CTA.Root>
         <div className="text-center">
           <strong className="text-3xl md:text-4xl text-white">
-            Nossas Áreas de Atuação
+            Conheça as nossas áreas de atuação
           </strong>
         </div>
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Abordamos diversas áreas, do direito empresarial à resolução de
-            conflitos, para atender suas necessidades. Descubra como nossa
-            expertise pode impulsionar o sucesso dos seus casos. Clique para
-            explorar.
+            Nossa equipe especializada oferece soluções sob medida para suas
+            necessidades, conheça nossas áreas de atuação e encontre a expertise
+            que você procura.
           </Text>
         </div>
 

@@ -37,7 +37,7 @@ export function BrandPresentation() {
         {/* Phone */}
         <div className="flex items-center gap-2">
           <Phone className="h-4 w-4" />
-          <small className="text-sm font-medium">(32) 988344973</small>
+          <small className="text-sm font-medium">(32) 99138-6324</small>
         </div>
 
         {/* Time */}

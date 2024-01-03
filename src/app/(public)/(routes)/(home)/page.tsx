@@ -68,10 +68,10 @@ export default function Home() {
       </Container.Root>
 
       {/* Why Us */}
-      <Container.Root className="w-full bg-white pt-0 mt-0">
+      <Container.Root className="w-full bg-white ">
         <Container.Content>
           <div className="w-full mb-10">
-            <div className="grid grid-rows-1-1 gap-8 lg:grid-rows-2">
+            <div className="grid grid-rows-1-1 gap-0 lg:grid-rows-2">
               <h2 className="text-4xl font-bold text-primary-main">
                 Por que escolher o escritório Consulmagno e Assis advocacia?
               </h2>
@@ -251,8 +251,9 @@ export default function Home() {
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Estamos aqui para ajudar. Entre em contato conosco para obter
-            assistência personalizada.
+            Não perca tempo em agendar uma consulta com nossos profissionais de
+            forma rápida e simples! Estamos sempre disponíveis para oferecer a
+            melhor solução para você.
           </Text>
         </div>
 

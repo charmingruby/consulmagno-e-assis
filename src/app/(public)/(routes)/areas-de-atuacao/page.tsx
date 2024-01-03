@@ -23,8 +23,12 @@ export default function ActionAreasPage() {
             Conheça Nossas Áreas de Atuação
           </h2>
           <span className="text-gray-200 text-xl">
-            Onde a Experiência e o Comprometimento se Encontram para Proteger
-            Seus Interesses{' '}
+            Possuímos profissionais especializados nas mais variadas áreas do
+            Direito, e por meio da multidisciplinaridade de cada colaborador,
+            somos capazes de entender a complexidade das questões apresentadas
+            pelos clientes e a apresentar soluções adequadas e criativas,
+            garantindo a segurança e o sucesso de suas atividades dos nossos
+            clientes.{' '}
           </span>
         </Container.Content>
       </Container.Root>

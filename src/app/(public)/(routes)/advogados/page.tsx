@@ -192,9 +192,9 @@ export default function Team() {
 
         <div>
           <Text size="md" align="center" className="text-gray-50">
-            Explore nosso blog para inspiração e dicas diárias. Não perca os
-            melhores conteúdos para elevar sua rotina com insights valiosos.
-            Clique para explorar!
+            Acesse agora nosso Blog para conteúdos valiosos e exclusivos, e em
+            casa de dúvidas não perca tempo e entre em contato imediatamente
+            conosco.
           </Text>
         </div>
 

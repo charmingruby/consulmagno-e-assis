@@ -28,16 +28,15 @@ export default function Contact() {
               Entre em <strong className="text-secondary-main">Contato</strong>
             </h2>
             <Text opacity="low" className="mt-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-              sequi, commodi minus incidunt sunt recusandae ut? Asperiores quis
-              aperiam vero doloribus, harum eligendi. Ipsa recusandae, eum
-              placeat ducimus non a?
+              Entre em contato conosco hoje mesmo e dê o primeiro passo para
+              encontrar a solução que você precisa. Nossa equipe está disponível
+              para oferecer orientação personalizada e suporte especializado.
             </Text>
 
             <div className="mt-12 flex flex-col gap-4">
               <MeanItem content={email} icon={AtSign} url={`mailto:${email}`} />
               <MeanItem
-                content="(32) 98834-4973"
+                content="(32) 99138-6324"
                 icon={Phone}
                 url={whatsappLink}
               />

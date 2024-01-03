@@ -22,7 +22,8 @@ export default function Cases() {
           {' '}
           <h2 className="text-white font-bold text-5xl">Relatos de clientes</h2>
           <span className="text-gray-200 text-xl">
-            Veja nossa qualidade atraves dos nossos clientes
+            Veja a qualidade de nosso serviço através dos relatos de nossos
+            clientes.
           </span>
         </Container.Content>
       </Container.Root>
@@ -36,10 +37,10 @@ export default function Cases() {
             <div className="md:col-span-2 flex flex-col gap-4">
               <PageTitle title="Nossos clientes" />
               <Text>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui
-                accusamus molestiae voluptatum recusandae atque, labore,
-                deserunt quas mollitia saepe maiores, velit nihil earum. Quam ad
-                aut cupiditate quod totam culpa.
+                Por meio de um serviço qualificado, eficiente, moderno, pautado
+                no atendimento personalizado a cada cliente, compreendendo suas
+                expectativas e atividades, entregamos soluções jurídicas para
+                clientes em todo o Brasil.
               </Text>
             </div>
             <div className="flex flex-col md:justify-center md:items-end gap-2">
