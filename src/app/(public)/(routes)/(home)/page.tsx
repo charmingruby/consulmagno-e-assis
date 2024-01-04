@@ -90,7 +90,7 @@ export default function Home() {
               icon={Target}
               prefixTitle="Nossa"
               sufixTitle="missão"
-              description="Prestar um serviço altamente qualificado, eficiente, moderno, por meio de um atendimento diferenciado, personalíssimo e humano, gerando valor às atividades dos nossos clientes"
+              description="Prestar um serviço altamente qualificado, eficiente, moderno, por meio de um atendimento diferenciado, personalíssimo e humano, gerando valor às atividades dos nossos clientes."
             />
             <ReasonCard
               icon={Eye}
@@ -102,7 +102,7 @@ export default function Home() {
               icon={Gem}
               prefixTitle="Nossos"
               sufixTitle="valores"
-              description="Ética, Qualidade, Pessoalidade, Disponibilidade e Comprometimento"
+              description="Ética, Qualidade, Pessoalidade, Disponibilidade e Comprometimento."
             />
           </div>
         </Container.Content>
@@ -114,11 +114,11 @@ export default function Home() {
           <div className="flex flex-col justify-center gap-12">
             <MapAnnotations
               title="Atendendo Clientes em Todo o Brasil"
-              description="O escritório Consulmagno e Assis atua nacionalmente, oferecendo soluções jurídicas em qualquer localização do país. Atualmente estamos presentes em mais de 100 municípios e em mais de 20 Estados"
+              description="O escritório Consulmagno e Assis atua nacionalmente, oferecendo soluções jurídicas em qualquer localização do país. Atualmente estamos presentes em mais de 100 municípios e em mais de 20 Estados.s"
             />
             <MapAnnotations
               title="Nossa sede"
-              description="Nossa sede está localizada em Juiz de Fora – MG, na Av. Barão do Rio Branco, 1871, Sala 613"
+              description="Nossa sede está localizada em Juiz de Fora – MG, na Av. Barão do Rio Branco, 1871, Sala 613."
             />
           </div>
           <div className="order-first md:order-last">
@@ -140,7 +140,7 @@ export default function Home() {
               somos capazes de entender a complexidade das questões apresentadas
               pelos clientes e a apresentar soluções adequadas e criativas,
               garantindo a segurança e o sucesso de suas atividades dos nossos
-              clientes
+              clientes.
             </Text>
           </div>
 
@@ -182,10 +182,10 @@ export default function Home() {
               />
               <Separator />
               <DepositionItem
-                avatarUrl={PauloImg}
-                name="Nadia"
-                role="Lima Duarte MG"
-                deposition="Nossa, decisão completa, estou lendo aqui. Estava precisando de uma noticia boa. Lucas, tenho que te agradecer!! Muito Obrigado."
+                name="Neide"
+                role="Juiz de Fora MG"
+                avatarUrl={LucasImg}
+                deposition="Dr. Paulo Renato, quero agradecer ao Dr. Lucas, aquele dia cheguei no escritório desesperada, ele me acalmou, ele foi um anjo na minha vida. Deus abençoe vocês, nunca vou esquecer de vocês. Hoje realmente vou deitar na cama e dormi tranquila, muito feliz. Não tenho como explicar.” "
               />
             </div>
 
@@ -202,10 +202,10 @@ export default function Home() {
               />
               <Separator />
               <DepositionItem
-                name="Nome"
-                role="Juiz de Fora MG"
-                avatarUrl={LucasImg}
-                deposition="Dr. Paulo Renato, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito ao senhor, foi Deus que colocou o senhor no meu caminho. Eu não tenho palavras para agradecer o senhor. Deus sabe o alivio que eu estou sentindo agora.” "
+                avatarUrl={PauloImg}
+                name="Nadia"
+                role="Lima Duarte MG"
+                deposition="Nossa, decisão completa, estou lendo aqui. Estava precisando de uma noticia boa. Lucas, tenho que te agradecer!! Muito Obrigado."
               />
             </div>
           </div>
