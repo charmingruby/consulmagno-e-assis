@@ -11,11 +11,13 @@ export function SocialsHeader() {
       <div className="flex items-center justify-end gap-2 w-full">
         <Link
           href={instagramLink}
+          target="_blank"
           className="p-2 border border-gray-100 shadow-sm rounded-full group hover:border-primary-main transition-colors"
         >
           <Instagram className="h-5 w-5 text-gray-300 group-hover:text-primary-main transition-colors" />
         </Link>
         <Link
+          target="_blank"
           href={facebookLink}
           className="p-2 border border-gray-100 shadow-sm rounded-full group hover:border-primary-main transition-colors "
         >

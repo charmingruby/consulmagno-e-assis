@@ -22,8 +22,8 @@ export function AreaItem({ icon: Icon, name, slug }: AreaItemProps) {
   const specificArea = getAreaBySlug(slug)
 
   return (
-    <Link prefetch={false} href={fullUrl} className="flex h-full w-full">
-      <Box className="text-primary-main flex flex-col justify-center w-full">
+    <Link prefetch={false} href={fullUrl} className="flex h-full w-full ">
+      <Box className="text-primary-main flex flex-col justify-center w-full hover:border-primary-main transition-all">
         <div className="flex gap-3">
           <Icon className="h-6" />
 
