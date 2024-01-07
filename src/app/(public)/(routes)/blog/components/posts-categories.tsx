@@ -1,6 +1,5 @@
 'use client'
 
-import exampleImage from '@/assets/images/lawyers.png'
 import { areas } from '@/data/areas'
 import { Button } from '@/components/ui/button'
 import { Minus, Plus } from 'lucide-react'
@@ -21,20 +20,10 @@ export function PostsCategories() {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         {allCategories
           ? areas.map(({ name, slug }) => (
-              <PostCategoryItem
-                key={name}
-                image={exampleImage}
-                name={name}
-                slug={slug}
-              />
+              <PostCategoryItem key={name} name={name} slug={slug} />
             ))
           : featuredCategories.map(({ name, slug }) => (
-              <PostCategoryItem
-                key={name}
-                image={exampleImage}
-                name={name}
-                slug={slug}
-              />
+              <PostCategoryItem key={name} name={name} slug={slug} />
             ))}
       </div>
 
