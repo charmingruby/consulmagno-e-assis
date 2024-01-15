@@ -52,7 +52,7 @@ export default function Cases() {
 
               <span className="text-xl">
                 {' '}
-                <strong className="text-primary-main">+22</strong> cidades
+                <strong className="text-primary-main">+20</strong> cidades
                 diferentes
               </span>
             </div>
