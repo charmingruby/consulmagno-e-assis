@@ -1,15 +1,31 @@
 import {
   AtSign,
-  Binary,
   Briefcase,
+  Building2,
+  CircleDollarSign,
   DollarSign,
+  Fingerprint,
   HeartHandshake,
-  HomeIcon,
   Landmark,
-  ShoppingBag,
+  Network,
+  ListChecks,
   User,
+  Users,
 } from 'lucide-react'
 import { ElementType } from 'react'
+
+export function teste() {
+  return (
+    <div>
+      <AtSign></AtSign>
+      <Building2></Building2>
+      <Fingerprint></Fingerprint>
+      <Network></Network>
+      <CircleDollarSign></CircleDollarSign>
+      <Users></Users>
+    </div>
+  )
+}
 
 export interface Area {
   slug: string
@@ -88,7 +104,7 @@ export const areas: Area[] = [
   {
     slug: 'planejamento-sucessorio-e-patrimonial',
     name: 'Planejamento Sucessório e Patrimonial',
-    icon: ShoppingBag,
+    icon: ListChecks,
     description:
       'É comum que com o falecimento de membros da família, ocorram disputas pelos bens deixados ou dúvidas acerca da continuidade da administração desses bens. No Brasil, empresas familiares representam 90% dos empreendimentos, e deste número, cerca de 75% fecham após o falecimento do fundador, e somente 15% conseguem sobreviver até a terceira geração.',
     soluction:
@@ -123,7 +139,7 @@ export const areas: Area[] = [
   {
     slug: 'direito-imobiliario',
     name: 'Direito Imobiliário',
-    icon: HomeIcon,
+    icon: Building2,
     description:
       'O Direito Imobiliário regulamenta as relações jurídicas que envolvem propriedades e posse, estabelecendo regras para a compra, venda, locação, uso e ocupação de imóveis. Contratos bem redigidos, normas claras e procedimentos legais adequados são essenciais para prevenir litígios e garantir a proteção dos direitos das partes envolvidas.',
     soluction:
@@ -144,9 +160,9 @@ export const areas: Area[] = [
   {
     slug: 'direito-digital',
     name: 'Direito Digital',
-    icon: Binary,
+    icon: Fingerprint,
     description:
-      'Breve descrição Breve descrição Breve descrição Breve descrição Breve descrição ',
+      'Com o mercado em constante transformação, inovando em novos bens e serviços, é essencial o assessoramento jurídico para entender as especificidades regulatórias, conferindo segurança ao seu negócio.',
     soluction:
       'Realizamos todo o procedimento de adequação à LGPD, realizando o mapeamento dos dados, política de privacidade, cookies, termo de privacidade, dentre outros documentos e ofertando treinamentos aos colaboradores das empresas.',
     services: [
@@ -162,9 +178,9 @@ export const areas: Area[] = [
   {
     slug: 'compliance-e-governanca-corporativa',
     name: 'Compliance e Governança Corporativa',
-    icon: AtSign,
+    icon: Network,
     description:
-      'Breve descrição Breve descrição Breve descrição Breve descrição Breve descrição ',
+      'Estudos afirmam que as empresas comprometidas em estar em conformidade com as leis e regulamentos, além de alinhadas com os interesses dos stakeholders, conseguem apresentar maiores retornos financeiros além de impactar positivamente a sociedade.',
     soluction:
       'Elaboramos políticas internas, organizamos a companhia como um todo em busca de transparência nas relações para garantir que os demais pilares ESG sejam cumpridos e desenvolvidos, sempre com atenção aos stakeholders. Verificamos a conformidade das empresas com as normas aplicáveis, sugerindo correções e melhorias se for o caso, e ofertamos treinamentos com os colaboradores e diretores.',
     services: [
@@ -179,9 +195,9 @@ export const areas: Area[] = [
   {
     slug: 'direito-tributario',
     name: 'Direito Tributário',
-    icon: DollarSign,
+    icon: CircleDollarSign,
     description:
-      'Breve descrição Breve descrição Breve descrição Breve descrição Breve descrição ',
+      'O Brasil é o país que possui o sistema tributário mais complexo do mundo, sofrendo constantemente alterações legislativas no âmbito Federal, Estadual e Municipal, de forma que é essencial uma assessoria jurídica para evitar o pagamento de tributo em duplicidade, elaboração de planejamento visando uma redução da carga tributária e também a defesa dos contribuintes decorrentes de execuções fiscais ou multas.',
     soluction:
       'Elaboramos um planejamento tributário seguro para que o contribuinte tenha uma incidência mais branda dos impostos. Atuamos de forma extrajudicial em procedimentos administrativos e de forma judicial em execuções fiscais defendendo os interesses dos contribuintes Atuamos com a recuperação de crédito tributário decorrente de impostos pagos indevidamente, e também com teses tributárias.',
     services: [
@@ -197,15 +213,15 @@ export const areas: Area[] = [
   {
     slug: 'direito-do-trabalho',
     name: 'Direito do Trabalho',
-    icon: DollarSign,
+    icon: Users,
     description:
-      'Breve descrição Breve descrição Breve descrição Breve descrição Breve descrição ',
+      'Todos os anos são ajuizados aproximadamente 8.000.000 de processos trabalhistas, dessa forma, é essencial que as empresas mitiguem seus riscos trabalhistas e que estejam preparadas para eventuais ações.',
     soluction:
       'Atuamos de forma preventiva, visando a redução de possíveis passivos trabalhistas, realizando negociações, elaborando contratos de trabalhos, planejamento trabalhista para o menor pagamento de impostos. Atuamos também de forma judicial, representando empresas e funcionários em reclamações trabalhistas.',
     services: [
       'Planejamento Trabalhista Fiscal e Previdenciário',
       'Reclamações Trabalhistas',
-      ' Elaboração de Contrato de Trabalho',
+      'Elaboração de Contrato de Trabalho',
       'Negociações',
     ],
     about:

@@ -43,7 +43,7 @@ export function BrandPresentation() {
         {/* Time */}
         <div className="flex items-center gap-2">
           <Clock8 className="h-4 w-4"></Clock8>
-          <small className="text-sm font-medium">08:00 - 18:00</small>
+          <small className="text-sm font-medium">09:00 - 18:00</small>
         </div>
       </div>
     </div>

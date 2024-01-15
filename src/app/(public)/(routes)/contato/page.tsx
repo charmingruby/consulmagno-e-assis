@@ -63,7 +63,10 @@ export default function Contact() {
           <div className="grid grid-cols-1 gap-4 mb-12">
             <PageTitle title="Nossas localidades" />
 
-            <Text opacity="low">Atendemos quando e onde voce quiser.</Text>
+            <Text opacity="low">
+              Realizamos um atendimento de excelência e personalizado de forma
+              presencial ou virtual.
+            </Text>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
@@ -76,10 +79,10 @@ export default function Contact() {
                 </strong>
               </div>
               <Text>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
-                veniam, eveniet vitae harum eos deleniti numquam molestias
-                exercitationem omnis nam expedita repellendus mollitia quasi est
-                suscipit quam dicta corporis error?
+                Estamos sediados no coração de Juiz de Fora - MG, na Avenida
+                Barão do Rio Branco, nº 1871, Edifício Rossi Rio Branco, Sala
+                613, onde realizamos os nossos atendimentos presenciais de
+                segunda a sexta-feira.
               </Text>
               <Link target="_blank" prefetch={false} href={mapLink}>
                 <Button className="w-full">Localização</Button>
@@ -95,10 +98,11 @@ export default function Contact() {
                 </strong>
               </div>
               <Text className="text-gray-50">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. A,
-                veniam, eveniet vitae harum eos deleniti numquam molestias
-                exercitationem omnis nam expedita repellendus mollitia quasi est
-                suscipit quam dicta corporis error?
+                Com a facilidade do ambiente eletrônico, realizamos qualquer
+                atendimento de forma remota por ambiente virtual, sem perder a
+                qualidade e a pessoalidade do nosso atendimento, e sempre nos
+                colocamos à disposição para conhecer de forma presencial nossos
+                clientes, se for o caso.
               </Text>
               <Link target="_blank" href={whatsappLink} prefetch={false}>
                 <Button color="secondary" className="w-full">

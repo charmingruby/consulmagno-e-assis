@@ -89,7 +89,7 @@ export default function Team() {
 
             <LayerCard
               avatarUrl={LucasImg}
-              description="Lucas é sócio fundador do Consulmagno e Assis Advocacia e responsável pelas áreas de Direito Civil, Consumidor e Administrativo. Atuante na Advocacia há mais de 9 anos, é Mestre em Direito pela UCP – RJ, professor de Pós-Graduação e Graduação das disciplinas de Processo Civil, Direito Empresarial e Direito Tributário, foi Procurador Geral Municipal e é autor de diversos artigos científicos."
+              description=" Lucas Consulmagno é sócio fundador do Consulmagno e Assis Advocacia, responsável pelas áreas de Direito Civil, Consumidor e Administrativo, com quase 10 anos de atuação no mercado, advogando para concessionárias de veículos, construtoras, empresas do ramo alimentício, dentre outras. É Mestre em Direito pela UCP - RJ (Universidade Católica de Petrópolis) na área de Direito Processual Civil. É Professor Universitário no curso de Direito, lecionando disciplinas como, Direito Processual Civil, Direito Tributário e Direito Empresarial. É professor de cursos preparatórios para concursos. Foi Procurador Municipal e é autor de diversos artigos científicos."
               emailUrl=" contato@consulmagnoassis.com"
               instagramUrl="https://www.instagram.com/lucas_consulmagno/"
               name="Lucas Goulart Consulmagno Prata"

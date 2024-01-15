@@ -61,64 +61,57 @@ export default function Cases() {
           {/* Listagem de clientes */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             <CustomerStory
-              category="Direito abordado"
+              category="Direito Civil"
               companyName="Vitória"
               name="Vitória"
               office="Cabo Frio RJ"
-              problem="Problema"
-              url={LucasImg}
+              problem="Recusa de tratamento médico"
               reporter="Eterna gratidão por vocês. Super indico o serviço, são ótimas pessoas e ótimos profissionais. Com o conhecimento de vocês, meu filho conseguiu vaga no CTI e hoje teve alta. Eu sou imensamente grata por vocês, me faltam palavras para escrever aqui, mas me senti aliviada quando meu problema foi resolvido"
             />
+
             <CustomerStory
-              category="Direito abordado"
+              category="Direito Civil"
+              companyName="José Alício"
+              name="José Alício"
+              office="Cataguases MG"
+              problem="Atraso em Vôo"
+              reporter="Estou muito contente com o excelente atendimento do advogado Paulo Renato, da Consulmagno e Assis Advocacia. Sua capacidade de esclarecer cada fase do processo de forma transparente e compreensível reflete um cuidado notável. A dedicação personalizada que recebi ao longo de todo o procedimento destaca a competência e comprometimento do advogado. Recomendo seus serviços sem reservas."
+            />
+
+            <CustomerStory
+              category="Direito Civil e Societário"
+              companyName="Yuri Padilha"
+              name="Yuri Padilha"
+              office="São Paulo SP"
+              problem="Inadimplemento Contratual e Exclusão Societária"
+              reporter="Estou sendo atendido pelo Dr. Paulo Renato do Consulmagno e Assis advocacia e estou tendo uma experiência excelente! Foi a primeira vez que tive que ter contato direto com um escritório de advocacia, o que no geral traz bastante insegurança, mas desde o começo me senti muito confiante com as explicações e suporte recebido pelo profissional! Consigo ver um atendimento muito humanizado, explicações compreensíveis e numa linguagem adequada por um preço justo. Só tenho a agradecer!"
+            />
+
+            <CustomerStory
+              category="Direito Imobiliário"
+              companyName="Daniel Parreira"
+              name="Daniel Parreira"
+              office="Juiz de Fore MG"
+              problem="Due Dilligence Imobiliária"
+              reporter="Parabéns pelo trabalho eficiente que desempenharam e pela agilidade no retorno! 👏🏻👏🏻👏🏻” "
+            />
+
+            <CustomerStory
+              category="Direito Civil"
               companyName="Nadia"
               name="Nadia"
               office="Lima Duarte MG"
-              problem="Problema"
-              url={TarikImg}
+              problem="Fraude Contratual"
               reporter="Nossa, decisão completa, estou lendo aqui. Estava precisando de uma noticia boa. Lucas, tenho que te agradecer!! Muito Obrigado."
             />
+
             <CustomerStory
-              category="Direito abordado"
+              category="Direito Civil"
               companyName="Neide"
               name="Neide"
               office="Juiz de Fora MG"
-              problem="Problema"
-              url={PauloImg}
-              reporter="Dr. Paulo Renato, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito ao senhor, foi Deus que colocou o senhor no meu caminho. Eu não tenho palavras para agradecer o senhor. Deus sabe o alivio que eu estou sentindo agora.” "
-            />
-            <CustomerStory
-              category="Direito abordado"
-              companyName="Neide"
-              name="Neide"
-              office="Juiz de Fore MG"
-              problem="Problema"
-              url={TarikImg}
-              reporter="Dr. Paulo Renato, quero agradecer ao Dr. Lucas, aquele dia cheguei no escritório desesperada, ele me acalmou, ele foi um anjo na minha vida. Deus abençoe vocês, nunca vou esquecer de vocês. Hoje realmente vou deitar na cama e dormi tranquila, muito feliz. Não tenho como explicar.” "
-            />
-            <CustomerStory
-              category="Direito abordado"
-              companyName="Nome empresa"
-              name="Neide"
-              office="Cidade"
-              problem="Problema"
-              url={PauloImg}
-              reporter="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          eveniet eius impedit odio. Nulla perferendis dignissimos eligendi
-          similique incidunt magni dolore deserunt illum. Deserunt quasi
-          nesciunt sapiente consequuntur, temporibus distinctio."
-            />
-            <CustomerStory
-              category="Direito abordado"
-              companyName="Nome empresa"
-              name="Neide"
-              office="Cidade"
-              problem="Problema"
-              url={LucasImg}
-              reporter="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-          eveniet eius impedit odio. Nulla perferendis dignissimos eligendi
-          similique incidunt magni dolore deserunt illum. Deserunt quasi
-          nesciunt sapiente consequuntur, temporibus distinctio."
+              problem="Fraude Contratual"
+              reporter=" Dr. Paulo Renato e Dr. Lucas, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito aos senhores, foi Deus que colocou vocês no meu caminho, eu não tenho palavras para agradecer vocês, hoje realmente vou deitar na cama e dormi tranquila, muito feliz. Não tenho como explicar.” "
             />
           </div>
         </Container.Content>

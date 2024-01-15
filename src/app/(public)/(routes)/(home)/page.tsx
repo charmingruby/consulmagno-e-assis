@@ -114,7 +114,7 @@ export default function Home() {
           <div className="flex flex-col justify-center gap-12">
             <MapAnnotations
               title="Atendendo Clientes em Todo o Brasil"
-              description="O escritório Consulmagno e Assis atua nacionalmente, oferecendo soluções jurídicas em qualquer localização do país. Atualmente estamos presentes em mais de 100 municípios e em mais de 20 Estados.s"
+              description="O escritório Consulmagno e Assis atua nacionalmente, oferecendo soluções jurídicas em qualquer localização do país. Atualmente estamos presentes em mais de 100 municípios e em mais de 20 Estados."
             />
             <MapAnnotations
               title="Nossa sede"
@@ -176,16 +176,14 @@ export default function Home() {
             <div className="mt-12 space-y-6">
               <DepositionItem
                 name="Vitória"
-                avatarUrl={TarikImg}
                 role="Cabo Frio RJ"
                 deposition="Eterna gratidão por vocês. Super indico o serviço, são ótimas pessoas e ótimos profissionais. Com o conhecimento de vocês, meu filho conseguiu vaga no CTI e hoje teve alta. Eu sou imensamente grata por vocês, me faltam palavras para escrever aqui, mas me senti aliviada quando meu problema foi resolvido."
               />
               <Separator />
               <DepositionItem
-                name="Neide"
-                role="Juiz de Fora MG"
-                avatarUrl={LucasImg}
-                deposition="Dr. Paulo Renato, quero agradecer ao Dr. Lucas, aquele dia cheguei no escritório desesperada, ele me acalmou, ele foi um anjo na minha vida. Deus abençoe vocês, nunca vou esquecer de vocês. Hoje realmente vou deitar na cama e dormi tranquila, muito feliz. Não tenho como explicar.” "
+                name="José Alício "
+                role="Cataguases MG"
+                deposition="Estou muito contente com o excelente atendimento do advogado Paulo Renato, da Consulmagno e Assis Advocacia. Sua capacidade de esclarecer cada fase do processo de forma transparente e compreensível reflete um cuidado notável. A dedicação personalizada que recebi ao longo de todo o procedimento destaca a competência e comprometimento do advogado. Recomendo seus serviços sem reservas"
               />
             </div>
 
@@ -196,13 +194,11 @@ export default function Home() {
             <div className="space-y-6">
               <DepositionItem
                 name="Neide"
-                avatarUrl={PauloImg}
                 role="Juiz de Fora MG"
-                deposition="Dr. Paulo Renato, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito ao senhor, foi Deus que colocou o senhor no meu caminho. Eu não tenho palavras para agradecer o senhor. Deus sabe o alivio que eu estou sentindo agora.” "
+                deposition="Dr. Paulo Renato e Dr. Lucas, bom dia. Agradeço a Deus, N.S.Aparecida, tenho rezado muito. Agradeço muito aos senhores, foi Deus que colocou vocês no meu caminho, eu não tenho palavras para agradecer vocês, hoje realmente vou deitar na cama e dormi tranquila, muito feliz. Não tenho como explicar.” "
               />
               <Separator />
               <DepositionItem
-                avatarUrl={PauloImg}
                 name="Nadia"
                 role="Lima Duarte MG"
                 deposition="Nossa, decisão completa, estou lendo aqui. Estava precisando de uma noticia boa. Lucas, tenho que te agradecer!! Muito Obrigado."

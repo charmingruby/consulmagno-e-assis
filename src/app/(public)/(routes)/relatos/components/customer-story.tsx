@@ -11,7 +11,7 @@ interface CustomerStoryProps {
   companyName: string
   name: string
   office: string
-  url: StaticImport | string
+  url?: StaticImport | string
 }
 
 export function CustomerStory(props: CustomerStoryProps) {
@@ -26,16 +26,6 @@ export function CustomerStory(props: CustomerStoryProps) {
       {/* Nome do cliente */}
       <div className="flex items-center gap-3 mb-8">
         {/* Logo */}
-        <div className="border-2 border-primary-main h-14 w-14 rounded-full flex items-center justify-center p-0.5">
-          <Image
-            src={props.url}
-            alt="Logo"
-            layout="responsive"
-            width={500}
-            height={500}
-            className="h-14 w-14 rounded-full"
-          />
-        </div>
 
         {/* Nome */}
         <div className="flex flex-col">

@@ -49,7 +49,7 @@ export default function Blog() {
       </Container.Root>
 
       {/* Categories */}
-      <Container.Root backgroundColor="white">
+      <Container.Root backgroundColor="default" border="borderY">
         <Container.Content className="flex flex-col items-center">
           <ContentHeading heading="Principais Categorias" />
 
