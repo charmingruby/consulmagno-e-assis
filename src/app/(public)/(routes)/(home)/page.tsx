@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <Container.Root className="bg-primary-gradient flex items-center sm:pt-16 bg-no-repeat bg-center bg-fixed md:min-h-screen sm:text-left relative h-screen e w-full grid-col-2 ">
-        <Container.Content className="z-10 ">
+      <Container.Root className="bg-primary-main flex items-center sm:pt-16 bg-no-repeat bg-center bg-fixed md:min-h-screen sm:text-left relative h-screen e w-full grid-col-2 ">
+        <Container.Content className="z-10 bg-primary-main">
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
             {/* Title */}
             <h1 className="text-gray-50 font-semibold m-0 text-4xl md:text-4xl mb-6 break-words">
@@ -67,10 +67,8 @@ export default function Home() {
         <Image
           alt="Foto de capa"
           src={Foto}
-          className=" h-full w-full object-center object-cover lg:object-fill absolute"
+          className=" h-full w-full object-top"
         />
-
-        <div className="h-full w-full bg-black/70 absolute" />
       </Container.Root>
 
       {/* Why Us */}
