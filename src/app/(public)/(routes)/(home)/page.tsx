@@ -15,9 +15,7 @@ import { Separator } from './components/separator'
 import { generateStaticSeo } from '@/components/seo/static'
 import { Socials } from '@/components/cta/socials'
 import { RecentPosts } from './components/recent-posts'
-import PauloImg from '@/assets/team/Paulo 01.png'
-import LucasImg from '@/assets/team/Lucas 02.png'
-import TarikImg from '@/assets/team/Tarik 01.png'
+import Foto from '@/assets/team/Paulo e Lucas 3.png'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Início',
@@ -29,8 +27,8 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <Container.Root className="hero-img flex items-center sm:pt-16 bg-no-repeat bg-center bg-fixed md:min-h-screen sm:text-left">
-        <Container.Content>
+      <Container.Root className="bg-primary-main flex items-center sm:pt-16 bg-no-repeat bg-center bg-fixed md:min-h-screen sm:text-left relative h-screen e w-full grid-col-2 ">
+        <Container.Content className="z-10 bg-primary-main">
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
             {/* Title */}
             <h1 className="text-gray-50 font-semibold m-0 text-4xl md:text-4xl mb-6 break-words">
@@ -65,6 +63,11 @@ export default function Home() {
             </div>
           </div>
         </Container.Content>
+        <Image
+          alt="Foto de capa"
+          src={Foto}
+          className=" h-full w-full object-top "
+        />
       </Container.Root>
 
       {/* Why Us */}
