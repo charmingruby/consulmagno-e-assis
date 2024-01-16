@@ -3,7 +3,6 @@ import {
   Briefcase,
   Building2,
   CircleDollarSign,
-  DollarSign,
   Fingerprint,
   HeartHandshake,
   Landmark,

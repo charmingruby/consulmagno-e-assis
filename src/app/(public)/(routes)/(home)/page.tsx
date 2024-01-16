@@ -15,7 +15,7 @@ import { Separator } from './components/separator'
 import { generateStaticSeo } from '@/components/seo/static'
 import { Socials } from '@/components/cta/socials'
 import { RecentPosts } from './components/recent-posts'
-import Foto from '@/assets/team/Paulo e Lucas 3.png'
+import Foto from '@/assets/team/Paulo_e_Lucas_4.png'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Início',
@@ -27,8 +27,8 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <Container.Root className="bg-primary-main flex items-center sm:pt-16 bg-no-repeat bg-center bg-fixed md:min-h-screen sm:text-left relative h-screen e w-full grid-col-2 ">
-        <Container.Content className="z-10 bg-primary-main">
+      <Container.Root className="bg-primary-gradient flex items-center sm:pt-16 bg-no-repeat bg-center bg-fixed md:min-h-screen sm:text-left relative h-screen e w-full grid-col-2 ">
+        <Container.Content className="z-10 ">
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
             {/* Title */}
             <h1 className="text-gray-50 font-semibold m-0 text-4xl md:text-4xl mb-6 break-words">
@@ -47,7 +47,7 @@ export default function Home() {
                 prefetch={false}
                 className="flex justify-center"
               >
-                <Button color="primary" className="w-full">
+                <Button color="uncolored" className="w-full">
                   Soluções
                 </Button>
               </Link>
@@ -63,11 +63,14 @@ export default function Home() {
             </div>
           </div>
         </Container.Content>
+
         <Image
           alt="Foto de capa"
           src={Foto}
-          className=" h-full w-full object-top "
+          className=" h-full w-full object-center object-cover lg:object-fill absolute"
         />
+
+        <div className="h-full w-full bg-black/70 absolute" />
       </Container.Root>
 
       {/* Why Us */}
