@@ -27,8 +27,9 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <Container.Root className="bg-primary-main flex items-center sm:pt-16 bg-no-repeat bg-center bg-fixed md:min-h-screen sm:text-left relative h-screen e w-full grid-col-2 ">
-        <Container.Content className="z-10 bg-primary-main">
+      <Container.Root className="bg-primary-gradient flex lg:flex-row flex-col items-center sm:pt-16 md:min-h-screen sm:text-left relative lg:h-screen w-full">
+        {/* Content */}
+        <Container.Content className="w-full lg:min-w-[600px] flex flex-1">
           <div className="z-10 mt-16 sm:mt-0 w-full md:max-w-2xl flex flex-col justify-center ">
             {/* Title */}
             <h1 className="text-gray-50 font-semibold m-0 text-4xl md:text-4xl mb-6 break-words">
@@ -41,7 +42,7 @@ export default function Home() {
               humanizado gerando valor para nossos clientes.
             </p>
 
-            <div className="flex flex-col md:flex-row gap-6">
+            <div className="flex flex-col md:flex-row gap-3">
               <Link
                 href="/relatos"
                 prefetch={false}
@@ -64,11 +65,19 @@ export default function Home() {
           </div>
         </Container.Content>
 
-        <Image
-          alt="Foto de capa"
-          src={Foto}
-          className=" h-full w-full object-top"
-        />
+        {/* Image with filter */}
+        <div className="flex relative w-full ">
+          <Image
+            alt="Foto de capa"
+            src={Foto}
+            priority
+            quality={100}
+            className="h-full w-full object-top rounded-l-full select-none"
+          />
+
+          {/* Filter */}
+          <div className="absolute w-full h-full bg-primary-light opacity-40 rounded-l-full" />
+        </div>
       </Container.Root>
 
       {/* Why Us */}
