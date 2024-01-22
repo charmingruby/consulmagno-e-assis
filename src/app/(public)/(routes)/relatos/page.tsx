@@ -4,9 +4,6 @@ import { Text } from '@/components/ui/text'
 import { CustomerStory } from './components/customer-story'
 import * as CTA from '@/components/cta'
 import { generateStaticSeo } from '@/components/seo/static'
-import PauloImg from '@/assets/team/Paulo 01.png'
-import LucasImg from '@/assets/team/Lucas 02.png'
-import TarikImg from '@/assets/team/Tarik 01.png'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Relatos',

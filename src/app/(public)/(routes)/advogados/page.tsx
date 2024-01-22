@@ -11,9 +11,9 @@ import * as CTA from '@/components/cta'
 import { generateStaticSeo } from '@/components/seo/static'
 import PauloImg from '@/assets/team/Paulo 01.png'
 import LucasImg from '@/assets/team/Lucas 02.png'
-import heroImg from '@/assets/team/hero.png'
 import TarikImg from '@/assets/team/Tarik 01.png'
 import Image from 'next/image'
+import heroImg from '@/assets/team/foto capa.png'
 
 export const metadata = generateStaticSeo({
   rawTitle: 'Advogados',
@@ -24,11 +24,11 @@ export const metadata = generateStaticSeo({
 export default function Team() {
   return (
     <>
-      {/* Foto da equipe com uma texto */}
-      <Container.Root className="relative flex items-center sm:py-16 md:h-screen">
+      {/* Foto da equipe com uma texto - lg */}
+      <Container.Root className="hidden relative lg:flex items-center sm:py-16 md:h-screen">
         <Image
           src={heroImg}
-          className="absolute bg-no-repeat object-center object-cover object-fixed h-screen z-10"
+          className="absolute bg-no-repeat object-center object-cover object-fixed h-screen z-10 w-full"
           alt="Foto da equipe"
           priority
           quality={100}
@@ -43,6 +43,24 @@ export default function Team() {
             </h1>
           </div>
         </Container.Content>
+      </Container.Root>
+
+      {/* Foto da equipe com uma texto - sm e md */}
+      <Container.Root className="lg:hidden relative flex flex-col items-center w-full bg-primary-gradient">
+        <Container.Content className="pt-24 flex flex-col text-start items-start md:items-center md:text-center lg:text-start  gap-6 ">
+          {' '}
+          <h2 className="text-white font-bold text-5xl">
+            Nossa equipe de advogados{' '}
+          </h2>
+        </Container.Content>
+
+        <Image
+          src={heroImg}
+          className=" bg-no-repeat object-center object-contain object-fixed w-full"
+          alt="Foto da equipe"
+          priority
+          quality={100}
+        />
       </Container.Root>
 
       {/* Mostrar membros do time com foto */}
