@@ -16,6 +16,7 @@ export async function RecentPosts() {
   })
 
   const parsedData = data as FetchHomePostsResponse
+
   const [highlightedPost, ...restOfThePosts] = parsedData.posts.slice(0)
 
   if (loading) {

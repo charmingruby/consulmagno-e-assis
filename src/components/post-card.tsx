@@ -51,7 +51,7 @@ export function PostCard({
           <Image
             src={coverPhoto}
             alt="Foto de exemplo"
-            className={`max-h-80 overflow-hidden rounded-t-sm w-full`}
+            className={`max-h-80 overflow-hidden object-cover rounded-t-sm w-full`}
             width={480}
             height={480}
           />
@@ -123,7 +123,7 @@ export function PostCard({
         <Image
           src={coverPhoto}
           alt="Foto de exemplo"
-          className={`h-56 overflow-hidden rounded-t-sm w-full`}
+          className={`h-56 overflow-hidden object-cover rounded-t-sm w-full`}
           width={480}
           height={480}
         />
