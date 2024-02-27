@@ -1,3 +1,3 @@
-const revalidationCooldownInSeconds = 60 * 60 * 24
+const revalidationCooldownInSeconds = 0
 
 export { revalidationCooldownInSeconds }
