@@ -12,7 +12,6 @@ import { FetchPostBySlugResponse } from '@/libs/graphql/queries/fetch-post-by-sl
 import { FETCH_POSTS_BY_CATEGORY_AT_A_POST } from '@/libs/graphql/queries/fetch-posts-by-category-at-a-post/query'
 import { FetchPostsByCategoryAtAPostResponse } from '@/libs/graphql/queries/fetch-posts-by-category-at-a-post/types'
 import { PostCard } from '../../components/post-card'
-import Image from 'next/image'
 import { generateStaticSeo } from '@/components/seo/static'
 
 interface PostPageProps {
@@ -61,34 +60,26 @@ export default async function PostPage({ params }: PostPageProps) {
       {/* Hero */}
       <Container.Root className=" flex items-center pt-8  sm:text-left">
         <Container.Content>
-          <div className=" w-full md:max-w-2xl flex flex-col justify-center ">
+          <div className=" w-full flex flex-col justify-center ">
             {/* Title */}
             <h1 className="text-primary-light font-semibold m-0 text-4xl md:text-4xl mb-2 break-words">
               {post.title}
             </h1>
 
-            <p className=" text-lg">{post.subtitle}</p>
+            <p className=" text-lg font-medium">{post.subtitle}</p>
           </div>
 
-          <div className=" flex items-center  bg-no-repeat bg-center bg-fixed sm:text-left mt-8 rounded-md">
-            <Image
-              alt="Foto de capa"
-              src={post.coverImage.url}
-              width={1000}
-              height={400}
-              className="w-full h-[400px] object-cover rounded-lg"
-            />
-          </div>
+          <div className="h-px w-full bg-gray-200 my-8" />
 
-          <div className="flex flex-col md:flex-row pt-12 gap-16 ">
-            <div className="">
-              <CardMedias />
-            </div>
-
+          <div className="flex flex-col md:flex-row gap-16 ">
             <div
               className="flex flex-col text-lg text-left flex-1"
               dangerouslySetInnerHTML={{ __html: post.content.html }}
             />
+
+            <div className="">
+              <CardMedias />
+            </div>
           </div>
         </Container.Content>
       </Container.Root>
