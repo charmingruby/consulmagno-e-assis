@@ -1,8 +1,7 @@
 import { Box } from '@/components/ui/box'
 import { Text } from '@/components/ui/text'
 import { Quote, PersonStanding } from 'lucide-react'
-import Image from 'next/image'
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import type { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 interface CustomerStoryProps {
   category: string

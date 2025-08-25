@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { StaticImport } from 'next/dist/shared/lib/get-img-props'
+import type { StaticImport } from 'next/dist/shared/lib/get-img-props'
 
 interface DepositionItemProps {
   deposition: string

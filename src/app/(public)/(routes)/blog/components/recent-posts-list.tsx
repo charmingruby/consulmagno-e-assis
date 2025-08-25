@@ -2,7 +2,7 @@ import { FETCH_BLOG_MAIN_PAGE_POSTS } from '@/libs/graphql/queries/fetch-blog-ma
 import { getClient } from '@/libs/graphql/client'
 import { revalidationCooldownInSeconds } from '@/libs/graphql/configs'
 import { Loader } from '@/components/loader'
-import { FetchBlogMainPagePosts } from '@/libs/graphql/queries/fetch-blog-main-page-posts/types'
+import type { FetchBlogMainPagePosts } from '@/libs/graphql/queries/fetch-blog-main-page-posts/types'
 import { PostCard } from './post-card'
 
 export async function RecentPostsList() {
